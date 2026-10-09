@@ -12,6 +12,10 @@ The submitted file is `Agentic-Treasury-Account-Artifacts-v1.0-dataverse.2.tar.g
 
 This status annotation is a later update to `main`; the release tag, release asset and submitted archive remain unchanged. Use the tag and exact commit above to reproduce the deposited contents. Current editorial versions are Manuscript v1.10, Evaluation and Results v1.11, Claim–Evidence Matrix v2.2 and Source Dossier v1.11. The reviewer guide and Phase A/B navigation on `main` now reference those versions, preserving the G6/G7 findings and reflecting the G4/G9 bibliographic review and the G10 formatting-only manuscript revision; manuscript files remain outside this public repository.
 
+## G12 publication-text check — 9 October 2026
+
+The [G12 verification](G12-VERIFICATION.md) records the current documentation sweep. The disclosed exception for original Portuguese Phase B reports and historical provenance remains in force to preserve frozen D03 identity. This update changes documentation on `main`; the submitted release and archive remain fixed.
+
 ## Evidence included
 
 | Record | Design and denominator | Entry points |
