@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTOzPNQLpy4cjzqToWkaIiTgABzU",
+  "object": "chat.completion",
+  "created": 1790216585,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"ACT-BR-BRL2USDC-001\",\n    \"principal_id\": \"fx-stablecoin-agent\",\n    \"entity\": \"BrazilCo\",\n    \"action_type\": \"convert_stablecoin\",\n    \"source_account\": \"ACC-BR-OPER-01\",\n    \"amount\": 1350000,\n    \"currency\": \"BRL\",\n    \"asset\": \"BRL\",\n    \"proposed_rail\": \"regulated_stablecoin_provider\",\n    \"treasury_state_ref\": \"MKT-20260923-1500Z\",\n    \"destination_account\": \"WAL-BR-USDC-01\",\n    \"counterparty\": \"SC-PROV-01\",\n    \"jurisdiction\": \"BR\"\n  },\n  \"rationale\": \"BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a required obligation of 650,000 USD and a projected balance before obligation of 200,000 USD in its USD operating account. The current USD and USDC balances (220,000 USD and 180,000 USDC) total 400,000 USD-equivalent, leaving a 250,000 USD-equivalent shortfall. One eligible path is to convert BRL to USDC via the regulated stablecoin provider rail using SC-PROV-01. At the quoted rate of 5.39 BRL/USDC plus a 35 bps fee, converting 1,350,000 BRL will yield approximately 249,190 USDC after fees, which covers the shortfall when added to existing balances. This proposal does not presume this is the optimal path, but it is an eligible and sufficient conversion to address the projected gap. There is uncertainty regarding future FX rates, operational timing, and whether USDC or USD will be required for final settlement, but this path is eligible under current policy and authority.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4194,
+    "completion_tokens": 408,
+    "total_tokens": 4602,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_414f3d9796"
+}

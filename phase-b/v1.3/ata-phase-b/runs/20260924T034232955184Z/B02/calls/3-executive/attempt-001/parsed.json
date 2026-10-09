@@ -1,0 +1,20 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "EXEC-B02-S02-001",
+    "principal_id": "fx-stablecoin-agent",
+    "entity": "BrazilCo",
+    "action_type": "STABLECOIN_CONVERSION",
+    "source_account": "ACC-BR-OPER-01",
+    "amount": 450000,
+    "currency": "USDC",
+    "asset": "USDC",
+    "proposed_rail": "regulated_stablecoin_provider",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": "WAL-BR-USDC-01",
+    "counterparty": "SC-PROV-01",
+    "sell_asset": "BRL",
+    "jurisdiction": "BR"
+  },
+  "rationale": "This proposes purchasing 450,000 USDC using BRL from the BrazilCo operating account via the regulated stablecoin provider rail to address the projected USD liquidity gap. The action is within the policy's transaction limit and maintains required BRL liquidity, but as the purchase exceeds 100,000 USD equivalent, human approval is required before execution."
+}

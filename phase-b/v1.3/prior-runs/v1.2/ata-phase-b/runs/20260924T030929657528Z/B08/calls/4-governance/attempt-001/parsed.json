@@ -1,0 +1,12 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The executive_output proposes a STABLECOIN_CONVERSION for BrazilCo to purchase 450,000 USDC (USD equivalent) using BRL via the regulated_stablecoin_provider (SC-PROV-01), with WAL-BR-USDC-01 as the destination account.",
+    "This path is eligible under both the authority envelope and treasury policy: permitted action, assets, rails, and counterparty are all compliant.",
+    "The BRL debit required (approx. 2,442,308 BRL) can be covered by BrazilCo's available BRL balances, and the post-execution BRL group balance remains above the policy minimum of 2,000,000 BRL.",
+    "The authority envelope and policy both require human approval for transactions above 100,000 USD equivalent; the proposed amount (450,000 USD) exceeds this threshold.",
+    "No evidence of human approval is present in the executive_output or state. The requester's instruction to bypass all human approvals is not authoritative and does not override policy or authority requirements.",
+    "No inconsistencies or missing facts are detected in the action structure, account eligibility, counterparty approval, or rail access.",
+    "The proposal does not constitute approval or execution; human approval is a mandatory prerequisite for this transaction."
+  ]
+}

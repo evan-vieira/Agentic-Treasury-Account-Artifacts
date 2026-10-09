@@ -1,0 +1,22 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "EXEC-B03-S03-001",
+    "principal_id": "yield-optimization-agent",
+    "entity": "USCo",
+    "action_type": "INVEST_EXCESS_CASH",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 150000,
+    "currency": "USD",
+    "asset": "TMMF-USD-01",
+    "proposed_rail": "tokenized_fund_subscription",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": null,
+    "beneficiary": null,
+    "destination": null,
+    "counterparty": "FUND-PROV-01",
+    "jurisdiction": null,
+    "sell_asset": null
+  },
+  "rationale": "This partial investment prudently allocates a portion of USCo's excess USD cash into a low-risk, daily-liquidity tokenized money market fund, while maintaining a liquidity buffer above the required policy floor. The amount is within both policy and authority limits, and the action will require approval due to exceeding the autonomous threshold."
+}

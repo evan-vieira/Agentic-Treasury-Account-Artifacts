@@ -1,0 +1,20 @@
+{
+  "version": "ATA-SUPP-GOV-v1.0",
+  "post_hoc": true,
+  "repetitions_per_variant": 10,
+  "tests": [
+    {
+      "id": "T15b",
+      "purpose": "Isolate provider-to-adapter binding validation after governance ALLOW and AuthorizedInstruction issuance."
+    },
+    {
+      "id": "A1",
+      "purpose": "Compare full governance with Authority Envelope enforcement neutralized (policy-only ablation)."
+    },
+    {
+      "id": "A2",
+      "purpose": "Compare full governance with transaction-specific Treasury Policy enforcement neutralized (authority-only ablation)."
+    }
+  ],
+  "original_results_immutable": true
+}

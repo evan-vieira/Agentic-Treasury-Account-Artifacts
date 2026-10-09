@@ -1,0 +1,8 @@
+policy_id: POL-DATA-001
+version: '1.0'
+status: ACTIVE
+data_requirements:
+  treasury_state_max_age_seconds: 300
+  missing_mandatory_field_outcome: REQUIRE_ADDITIONAL_INFORMATION
+audit:
+  mandatory: true

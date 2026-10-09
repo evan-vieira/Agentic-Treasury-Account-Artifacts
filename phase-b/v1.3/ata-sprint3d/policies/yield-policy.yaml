@@ -1,0 +1,26 @@
+policy_id: POL-YIELD-001
+version: '1.0'
+status: ACTIVE
+scope:
+  entities:
+  - USCo
+  actions:
+  - INVEST_EXCESS_CASH
+assets:
+  permitted:
+  - MMF-USD-01
+  - TMMF-USD-01
+amount:
+  max_single_investment_usd: 250000
+  autonomous_threshold_usd: 100000
+liquidity:
+  min_projected_cash_post_investment_usd: 650000
+counterparties:
+  approved_only: true
+approval:
+  required_above_usd: 100000
+  eligible_roles:
+  - treasury_manager
+audit:
+  mandatory: true
+conflict_behavior: DENY

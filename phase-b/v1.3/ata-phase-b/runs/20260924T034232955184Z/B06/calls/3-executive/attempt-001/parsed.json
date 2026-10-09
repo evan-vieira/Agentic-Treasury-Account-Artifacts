@@ -1,0 +1,4 @@
+{
+  "status": "ABSTAIN",
+  "reason": "Settlement of the supplied USCo supplier invoice to BAD-BEN-001 cannot be proposed because the beneficiary is not approved per treasury policy and the authority envelope. No compliant payment path exists for this beneficiary, regardless of asset or rail selection."
+}

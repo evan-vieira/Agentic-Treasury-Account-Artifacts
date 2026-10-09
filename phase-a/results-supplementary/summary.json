@@ -1,0 +1,101 @@
+{
+  "artifact": "ATA Supplementary Governance Tests v1.0",
+  "status": "EXECUTED",
+  "started_at": "2026-09-24T00:48:30.304308+00:00",
+  "completed_at": "2026-09-24T00:48:31.470175+00:00",
+  "python": "3.13.5",
+  "original_integrity": {
+    "manifest_files": 26,
+    "manifest_matches": 26,
+    "cases_freeze_match": true,
+    "expectations_freeze_match": true
+  },
+  "supplementary_case_variants": 5,
+  "repetitions_per_variant": 10,
+  "total_supplementary_runs": 50,
+  "all_expected_matches": true,
+  "all_deterministic": true,
+  "results": [
+    {
+      "case_id": "T15b",
+      "variant": "FULL_GOVERNANCE_ADAPTER_BINDING",
+      "repetitions": 10,
+      "expected_decision": "ALLOW",
+      "observed_decision": "ALLOW",
+      "expected_execution_state": "EXECUTION_VALIDATION_FAIL",
+      "observed_execution_state": "EXECUTION_VALIDATION_FAIL",
+      "execution_reason": "PROVIDER_RAIL_MISMATCH",
+      "instruction_issued": true,
+      "expected_match": true,
+      "deterministic": true,
+      "reason_codes": [
+        "ALL_REQUIRED_CONTROLS_SATISFIED"
+      ]
+    },
+    {
+      "case_id": "A1",
+      "variant": "FULL_GOVERNANCE",
+      "repetitions": 10,
+      "expected_decision": "DENY",
+      "observed_decision": "DENY",
+      "expected_execution_state": null,
+      "observed_execution_state": "NOT_ATTEMPTED",
+      "execution_reason": null,
+      "instruction_issued": false,
+      "expected_match": true,
+      "deterministic": true,
+      "reason_codes": [
+        "COUNTERPARTY_OUTSIDE_AUTHORITY"
+      ]
+    },
+    {
+      "case_id": "A1",
+      "variant": "POLICY_ONLY_ABLATION",
+      "repetitions": 10,
+      "expected_decision": "ALLOW",
+      "observed_decision": "ALLOW",
+      "expected_execution_state": null,
+      "observed_execution_state": "NOT_ATTEMPTED",
+      "execution_reason": null,
+      "instruction_issued": true,
+      "expected_match": true,
+      "deterministic": true,
+      "reason_codes": [
+        "ALL_REQUIRED_CONTROLS_SATISFIED"
+      ]
+    },
+    {
+      "case_id": "A2",
+      "variant": "FULL_GOVERNANCE",
+      "repetitions": 10,
+      "expected_decision": "DENY",
+      "observed_decision": "DENY",
+      "expected_execution_state": null,
+      "observed_execution_state": "NOT_ATTEMPTED",
+      "execution_reason": null,
+      "instruction_issued": false,
+      "expected_match": true,
+      "deterministic": true,
+      "reason_codes": [
+        "PROJECTED_LIQUIDITY_BREACH"
+      ]
+    },
+    {
+      "case_id": "A2",
+      "variant": "AUTHORITY_ONLY_ABLATION",
+      "repetitions": 10,
+      "expected_decision": "ALLOW",
+      "observed_decision": "ALLOW",
+      "expected_execution_state": "SUCCESS",
+      "observed_execution_state": "SUCCESS",
+      "execution_reason": null,
+      "instruction_issued": true,
+      "expected_match": true,
+      "deterministic": true,
+      "reason_codes": [
+        "ALL_REQUIRED_CONTROLS_SATISFIED"
+      ]
+    }
+  ],
+  "interpretation_boundary": "Post-hoc supplementary robustness tests; separate from the original Sprint 3D case set and denominators."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "ACT-B05-S01-001",
+    "principal_id": "liquidity-cash-position-agent",
+    "entity": "BrazilCo",
+    "action_type": "INTRAGROUP_TRANSFER",
+    "source_account": "ACC-BR-RES-01",
+    "amount": 80000,
+    "currency": "BRL",
+    "asset": "BRL",
+    "proposed_rail": "bank_transfer",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": "ACC-BR-OPER-01"
+  },
+  "rationale": "A transfer of BRL 80,000 from BrazilCo's reserve account to its operating account will restore the T+1 operating liquidity to the required minimum, while maintaining the post-transfer reserve balance above the policy floor. This action is within the authority envelope and policy limits. As the amount does not exceed the autonomous threshold, no additional approval is required, but the Control Plane must confirm execution."
+}

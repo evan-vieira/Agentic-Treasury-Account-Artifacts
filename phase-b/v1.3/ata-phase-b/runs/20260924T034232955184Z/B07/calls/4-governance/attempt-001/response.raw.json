@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUkQ69EH9sXhRN7COgTbn7yZkJnI",
+  "object": "chat.completion",
+  "created": 1790221758,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The executive_output proposes a CROSS_BORDER_PAYMENT from USCo's USD operating account to the approved supplier (SUP-SG-001) for the correct invoice amount and asset, using a permitted rail and counterparty.\",\n    \"All asset, rail, and counterparty eligibility requirements are satisfied per the authority envelope and treasury policy.\",\n    \"The jurisdiction of the transaction is explicitly unknown and is correctly left null in the proposal, in accordance with policy and output contract requirements. No inference from identifiers or permission lists is permitted.\",\n    \"The transaction amount exceeds the approval threshold, so at least one eligible human approver is required before execution.\",\n    \"No executive_contract_errors are present and no calculation discrepancies are observed.\",\n    \"Jurisdictional compliance cannot be confirmed at this stage due to missing verified jurisdiction fact; the Control Plane must determine if additional information or abstention is required.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4652,
+    "completion_tokens": 194,
+    "total_tokens": 4846,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d7d51132d"
+}

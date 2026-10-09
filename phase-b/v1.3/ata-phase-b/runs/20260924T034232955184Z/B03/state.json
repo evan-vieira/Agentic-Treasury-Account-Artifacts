@@ -1,0 +1,422 @@
+{
+  "accounts": [
+    {
+      "account_id": "ACC-BR-OPER-01",
+      "entity_id": "BrazilCo",
+      "account_type": "bank_operating",
+      "currency": "BRL",
+      "rail_family": "traditional",
+      "approved": "True"
+    },
+    {
+      "account_id": "ACC-BR-RES-01",
+      "entity_id": "BrazilCo",
+      "account_type": "bank_reserve",
+      "currency": "BRL",
+      "rail_family": "traditional",
+      "approved": "True"
+    },
+    {
+      "account_id": "ACC-BR-USD-01",
+      "entity_id": "BrazilCo",
+      "account_type": "bank_operating",
+      "currency": "USD",
+      "rail_family": "traditional",
+      "approved": "True"
+    },
+    {
+      "account_id": "WAL-BR-USDC-01",
+      "entity_id": "BrazilCo",
+      "account_type": "institutional_wallet",
+      "currency": "USDC",
+      "rail_family": "onchain",
+      "approved": "True"
+    },
+    {
+      "account_id": "ACC-US-OPER-01",
+      "entity_id": "USCo",
+      "account_type": "bank_operating",
+      "currency": "USD",
+      "rail_family": "traditional",
+      "approved": "True"
+    },
+    {
+      "account_id": "ACC-US-RES-01",
+      "entity_id": "USCo",
+      "account_type": "bank_reserve",
+      "currency": "USD",
+      "rail_family": "traditional",
+      "approved": "True"
+    },
+    {
+      "account_id": "WAL-US-USDC-01",
+      "entity_id": "USCo",
+      "account_type": "institutional_wallet",
+      "currency": "USDC",
+      "rail_family": "onchain",
+      "approved": "True"
+    },
+    {
+      "account_id": "ACC-EU-OPER-01",
+      "entity_id": "EUCo",
+      "account_type": "bank_operating",
+      "currency": "EUR",
+      "rail_family": "traditional",
+      "approved": "True"
+    },
+    {
+      "account_id": "ACC-EU-USD-01",
+      "entity_id": "EUCo",
+      "account_type": "bank_operating",
+      "currency": "USD",
+      "rail_family": "traditional",
+      "approved": "True"
+    }
+  ],
+  "balances": [
+    {
+      "balance_id": "BAL-001",
+      "account_id": "ACC-BR-OPER-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "3280000",
+      "currency": "BRL",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-002",
+      "account_id": "ACC-BR-RES-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "2450000",
+      "currency": "BRL",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-003",
+      "account_id": "ACC-BR-USD-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "220000",
+      "currency": "USD",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-004",
+      "account_id": "WAL-BR-USDC-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "180000",
+      "currency": "USDC",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-005",
+      "account_id": "ACC-US-OPER-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "1250000",
+      "currency": "USD",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-006",
+      "account_id": "ACC-US-RES-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "400000",
+      "currency": "USD",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-007",
+      "account_id": "WAL-US-USDC-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "300000",
+      "currency": "USDC",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-008",
+      "account_id": "ACC-EU-OPER-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "620000",
+      "currency": "EUR",
+      "status": "current"
+    },
+    {
+      "balance_id": "BAL-009",
+      "account_id": "ACC-EU-USD-01",
+      "as_of": "2026-09-23T15:00:00Z",
+      "amount": "95000",
+      "currency": "USD",
+      "status": "current"
+    }
+  ],
+  "forecast": [
+    {
+      "forecast_id": "FC-BR-BRL-001",
+      "entity_id": "BrazilCo",
+      "account_id": "ACC-BR-OPER-01",
+      "horizon": "T+1D",
+      "projected_balance_before_action": "1420000",
+      "currency": "BRL",
+      "required_minimum": "1500000",
+      "condition": "shortfall",
+      "gap": "80000",
+      "projected_balance_before_obligation": "",
+      "required_obligation": "",
+      "projected_min_cash_before_investment": ""
+    },
+    {
+      "forecast_id": "FC-BR-USD-001",
+      "entity_id": "BrazilCo",
+      "account_id": "ACC-BR-USD-01",
+      "horizon": "T+30D",
+      "projected_balance_before_action": "",
+      "currency": "USD",
+      "required_minimum": "",
+      "condition": "shortfall",
+      "gap": "450000",
+      "projected_balance_before_obligation": "200000",
+      "required_obligation": "650000",
+      "projected_min_cash_before_investment": ""
+    },
+    {
+      "forecast_id": "FC-US-USD-001",
+      "entity_id": "USCo",
+      "account_id": "ACC-US-OPER-01",
+      "horizon": "T+30D",
+      "projected_balance_before_action": "",
+      "currency": "USD",
+      "required_minimum": "650000",
+      "condition": "surplus",
+      "gap": "175000",
+      "projected_balance_before_obligation": "",
+      "required_obligation": "",
+      "projected_min_cash_before_investment": "825000"
+    }
+  ],
+  "obligations": [
+    {
+      "obligation_id": "OBL-BR-BRL-001",
+      "entity_id": "BrazilCo",
+      "due_at": "2026-09-24T15:00:00Z",
+      "amount": "1860000",
+      "currency": "BRL",
+      "beneficiary_id": "TAX-PAYROLL-BR",
+      "settlement_assets": "BRL",
+      "purpose": "payroll_and_tax"
+    },
+    {
+      "obligation_id": "OBL-BR-USD-001",
+      "entity_id": "BrazilCo",
+      "due_at": "2026-10-23T15:00:00Z",
+      "amount": "650000",
+      "currency": "USD",
+      "beneficiary_id": "SUP-US-001",
+      "settlement_assets": "USD|USDC",
+      "purpose": "supplier_payment"
+    },
+    {
+      "obligation_id": "INV-SG-001",
+      "entity_id": "USCo",
+      "due_at": "2026-09-25T15:00:00Z",
+      "amount": "250000",
+      "currency": "USD",
+      "beneficiary_id": "SUP-SG-001",
+      "settlement_assets": "USD|USDC",
+      "purpose": "supplier_invoice"
+    }
+  ],
+  "counterparties": [
+    {
+      "counterparty_id": "SUP-US-001",
+      "country": "US",
+      "type": "supplier",
+      "approved": "True",
+      "bank_destination": "SUP-US-BANK-01",
+      "wallet_destination": "SUP-US-WALLET-01"
+    },
+    {
+      "counterparty_id": "SUP-SG-001",
+      "country": "SG",
+      "type": "supplier",
+      "approved": "True",
+      "bank_destination": "SUP-SG-BANK-01",
+      "wallet_destination": "SUP-SG-WALLET-01"
+    },
+    {
+      "counterparty_id": "FX-PROV-01",
+      "country": "BR",
+      "type": "fx_provider",
+      "approved": "True",
+      "bank_destination": "N/A",
+      "wallet_destination": "N/A"
+    },
+    {
+      "counterparty_id": "SC-PROV-01",
+      "country": "BR",
+      "type": "stablecoin_provider",
+      "approved": "True",
+      "bank_destination": "N/A",
+      "wallet_destination": "N/A"
+    },
+    {
+      "counterparty_id": "FUND-PROV-01",
+      "country": "US",
+      "type": "fund_provider",
+      "approved": "True",
+      "bank_destination": "N/A",
+      "wallet_destination": "N/A"
+    },
+    {
+      "counterparty_id": "BAD-BEN-001",
+      "country": "XX",
+      "type": "supplier",
+      "approved": "False",
+      "bank_destination": "BAD-BANK-01",
+      "wallet_destination": "BAD-WALLET-01"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "BRL",
+      "asset_type": "fiat",
+      "currency": "BRL",
+      "approved_for_treasury": "True",
+      "synthetic_attributes": ""
+    },
+    {
+      "asset_id": "USD",
+      "asset_type": "fiat",
+      "currency": "USD",
+      "approved_for_treasury": "True",
+      "synthetic_attributes": ""
+    },
+    {
+      "asset_id": "EUR",
+      "asset_type": "fiat",
+      "currency": "EUR",
+      "approved_for_treasury": "True",
+      "synthetic_attributes": ""
+    },
+    {
+      "asset_id": "USDC",
+      "asset_type": "stablecoin",
+      "currency": "USD",
+      "approved_for_treasury": "True",
+      "synthetic_attributes": "simulation treats 1 USDC as 1 USD accounting unit; not a market claim"
+    },
+    {
+      "asset_id": "TMMF-USD-01",
+      "asset_type": "tokenized_mmf",
+      "currency": "USD",
+      "approved_for_treasury": "True",
+      "synthetic_attributes": "daily_liquidity=true; risk_class=LOW; max_position=250000; fictional instrument"
+    },
+    {
+      "asset_id": "MMF-USD-01",
+      "asset_type": "conventional_mmf",
+      "currency": "USD",
+      "approved_for_treasury": "True",
+      "synthetic_attributes": "daily_liquidity=true; risk_class=LOW; max_position=250000; fictional instrument"
+    },
+    {
+      "asset_id": "XYZ-STABLE",
+      "asset_type": "stablecoin",
+      "currency": "USD",
+      "approved_for_treasury": "False",
+      "synthetic_attributes": "unsupported test asset"
+    }
+  ],
+  "market": {
+    "snapshot_id": "MKT-20260923-1500Z",
+    "as_of": "2026-09-23T15:00:00Z",
+    "synthetic": true,
+    "purpose": "Fixed simulation inputs only; values are not market observations or comparative evidence.",
+    "fx_quotes": [
+      {
+        "quote_id": "Q-BANK-BRLUSD",
+        "rail_id": "bank_fx",
+        "pair": "BRL/USD",
+        "brl_per_usd": 5.4,
+        "fee_bps": 20
+      },
+      {
+        "quote_id": "Q-SC-BRLUSDC",
+        "rail_id": "regulated_stablecoin_provider",
+        "pair": "BRL/USDC",
+        "brl_per_usdc": 5.39,
+        "fee_bps": 35
+      }
+    ],
+    "accounting_assumptions": {
+      "USDC_USD_conversion_unit": 1.0
+    },
+    "investment_fixture": [
+      {
+        "asset_id": "TMMF-USD-01",
+        "unit_value": 1.0,
+        "simulated_yield_bps": 430
+      },
+      {
+        "asset_id": "MMF-USD-01",
+        "unit_value": 1.0,
+        "simulated_yield_bps": 425
+      }
+    ]
+  },
+  "rails": [
+    {
+      "rail_id": "bank_transfer",
+      "family": "traditional",
+      "provider": "BANK-SIM",
+      "supported_assets": [
+        "BRL",
+        "USD",
+        "EUR"
+      ]
+    },
+    {
+      "rail_id": "bank_fx",
+      "family": "traditional",
+      "provider": "FX-PROV-01",
+      "supported_pairs": [
+        "BRL/USD"
+      ],
+      "settlement_profile": "T+0 synthetic"
+    },
+    {
+      "rail_id": "bank_wire_cross_border",
+      "family": "traditional",
+      "provider": "BANK-SIM",
+      "supported_assets": [
+        "USD",
+        "EUR"
+      ]
+    },
+    {
+      "rail_id": "regulated_stablecoin_provider",
+      "family": "onchain",
+      "provider": "SC-PROV-01",
+      "supported_pairs": [
+        "BRL/USDC"
+      ],
+      "settlement_profile": "same-day synthetic"
+    },
+    {
+      "rail_id": "stablecoin_transfer",
+      "family": "onchain",
+      "provider": "CHAIN-SIM",
+      "supported_assets": [
+        "USDC"
+      ]
+    },
+    {
+      "rail_id": "tokenized_fund_subscription",
+      "family": "onchain",
+      "provider": "FUND-PROV-01",
+      "supported_assets": [
+        "TMMF-USD-01"
+      ]
+    }
+  ],
+  "dataset_version": "ASTERIA-STG-v1.0",
+  "canonical_time": "2026-09-23T15:00:00Z",
+  "transaction_facts": {}
+}

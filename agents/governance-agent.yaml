@@ -1,0 +1,13 @@
+id: governance-agent
+name: Treasury Governance and Controls Agent
+status: proposed_contract_not_phase_a_executed
+purpose: Explain applicable controls, flag conflicts and recommend information requests or escalation.
+request_fields: [treasury_state, objective, constraints, context]
+response_fields: [observation, reasoning_summary, proposed_action, expected_effect, confidence, required_controls, evidence]
+candidate_action_types: [CONTROL_ADVISORY]
+required_evidence: [policy_refs, authority_refs, state_ref, identified_conflicts]
+guardrails:
+  - CONTROL_ADVISORY is analytical and cannot be submitted to an execution adapter.
+  - This agent does not decide ALLOW, DENY, REQUIRE_APPROVAL or REQUIRE_ADDITIONAL_INFORMATION.
+  - The deterministic Control Plane evaluates versioned inputs independently.
+handoff: null

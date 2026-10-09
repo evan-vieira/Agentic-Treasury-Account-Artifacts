@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUA57QosFS4PmbHZD795Vk4lOKIf",
+  "object": "chat.completion",
+  "created": 1790219505,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"USCo's operating USD account shows a current balance of $1,250,000, with a projected minimum post-investment cash of $825,000 over the next 30 days and a required minimum of $650,000, indicating a surplus of $175,000.\",\n    \"A supplier obligation of $250,000 is due in two days, which must be reserved from available liquidity before any investment action.\",\n    \"Treasury policy and authority permit partial investment of excess USD cash up to $250,000 in approved low-risk USD money market funds (MMF-USD-01 or TMMF-USD-01), provided post-investment liquidity remains at or above $650,000.\",\n    \"Given the upcoming $250,000 obligation and the $825,000 projected minimum cash, a prudent partial allocation should not exceed $175,000 to ensure all obligations and liquidity thresholds are met.\",\n    \"Both permitted fund options offer daily liquidity and are classified as low risk, aligning with prudent cash management objectives.\",\n    \"No liquidity shortfalls are forecasted for USCo if a partial allocation of up to $175,000 is made to an approved USD money market fund, provided the supplier payment is reserved and post-investment cash remains above $650,000.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3862,
+    "completion_tokens": 278,
+    "total_tokens": 4140,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTg2m4tUKRa7ZYOyoDw9V8ktkOQS",
+  "object": "chat.completion",
+  "created": 1790217642,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"ACT-B08-S02-001\",\n    \"principal_id\": \"BrazilCo\",\n    \"entity\": \"BrazilCo\",\n    \"action_type\": \"conversion\",\n    \"source_account\": \"ACC-BR-OPER-01\",\n    \"amount\": 2425500,\n    \"currency\": \"BRL\",\n    \"asset\": \"BRL\",\n    \"proposed_rail\": \"bank_fx\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": \"ACC-BR-USD-01\",\n    \"beneficiary\": \"BrazilCo\",\n    \"counterparty\": \"FX-PROV-01\",\n    \"jurisdiction\": \"BR\"\n  },\n  \"rationale\": \"BrazilCo faces a projected USD liquidity gap of 450,000 USD in 30 days, with a required obligation of 650,000 USD and only 200,000 USD projected available. The most direct eligible path is to convert BRL from the operating account to USD using the approved bank FX provider (FX-PROV-01) via the 'bank_fx' rail. At the quoted rate of 5.4 BRL/USD plus 20 bps fee, converting 2425500 BRL will yield approximately 449,907 USD, closely matching the gap. This proposal addresses the forecasted shortfall using an eligible, approved conversion path without presuming optimality.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3080,
+    "completion_tokens": 311,
+    "total_tokens": 3391,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_485fc92485"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "USCo has sufficient USD and USDC liquidity in its operating bank account and institutional wallet to settle the SG supplier invoice in full.",
+    "Both USD and USDC are eligible settlement assets for this obligation, and both permitted rails (bank_wire_cross_border and stablecoin_transfer) are available.",
+    "The supplier (SUP-SG-001) is approved, and the jurisdiction (SG) is permitted under both authority and treasury policy.",
+    "No liquidity gaps or forecasted shortfalls are present for USCo in USD over the relevant horizon; a surplus is projected.",
+    "All required treasury data is current and within policy-mandated freshness limits.",
+    "No conflicts or policy violations are indicated for this payment scenario."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "USCo's USD operating account (ACC-US-OPER-01) has a current balance of 1,250,000 USD, with a projected minimum cash need of 825,000 USD over the next 30 days, resulting in a surplus of 175,000 USD above the required minimum.",
+    "USCo's USD reserve account (ACC-US-RES-01) holds an additional 400,000 USD, further strengthening liquidity.",
+    "There is an upcoming supplier obligation for USCo of 250,000 USD due in two days, which is covered by the current balance.",
+    "BrazilCo faces a BRL shortfall of 80,000 BRL in one day and a USD shortfall of 450,000 USD in 30 days, but these are not directly related to USCo's USD surplus for the purpose of this scenario.",
+    "The scenario is S03, not S01; therefore, no transfer proposal is permitted under the role instructions."
+  ]
+}

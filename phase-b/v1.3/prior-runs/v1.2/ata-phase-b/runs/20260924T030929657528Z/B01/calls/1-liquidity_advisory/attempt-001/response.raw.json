@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERU7vOpUV6U1W9IGTl0Rh8UM0rtgj",
+  "object": "chat.completion",
+  "created": 1790219371,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"BrazilCo's BRL operating account (ACC-BR-OPER-01) is forecasted to fall below the T+1 minimum required balance by BRL 80,000, resulting in a projected shortfall.\",\n    \"BrazilCo's reserve account (ACC-BR-RES-01) holds a current balance of BRL 2,450,000, which is sufficient to cover the shortfall while maintaining the post-transfer minimum required by policy.\",\n    \"Both the source (reserve) and destination (operating) accounts are approved, belong to the same legal entity, and are eligible for intragroup transfer under current policy and authority.\",\n    \"The authority envelope and treasury policy permit an intragroup transfer up to BRL 1,000,000 via bank transfer, with approval required for amounts above BRL 100,000.\",\n    \"All relevant balances and data are current and within the required data freshness window.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3557,
+    "completion_tokens": 210,
+    "total_tokens": 3767,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

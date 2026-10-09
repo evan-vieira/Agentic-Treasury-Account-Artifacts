@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERU9bKAaEjFk8tYU1MYVfotYfsAkC",
+  "object": "chat.completion",
+  "created": 1790219475,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The executive_output proposes converting BRL to 450,000 USD via the bank_fx rail (FX_CONVERSION) with FX-PROV-01, using BrazilCo's approved BRL operating account as the source and USD operating account as the destination.\",\n    \"The proposed amount (450,000 USD) is within the 500,000 USD single transaction cap set by both the authority envelope and treasury policy.\",\n    \"The calculated BRL debit (450,000 * 5.4 * 1.002 = 2,433,300 BRL) leaves a combined post-conversion BRL balance above the 2,000,000 BRL policy minimum, satisfying liquidity constraints.\",\n    \"FX-PROV-01 is an approved counterparty, and the bank_fx rail is permitted for this action under both policy and authority.\",\n    \"The transaction exceeds the 100,000 USD threshold, so explicit human approval by an eligible treasury manager is required before execution.\",\n    \"No inconsistencies or missing mandatory facts are identified in the executive_output. All referenced accounts, assets, rails, and counterparties are approved and current.\",\n    \"This advisory does not constitute approval or execution; the Control Plane must confirm all requirements, including human approval, before proceeding.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4723,
+    "completion_tokens": 276,
+    "total_tokens": 4999,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_7a5bd90f01"
+}

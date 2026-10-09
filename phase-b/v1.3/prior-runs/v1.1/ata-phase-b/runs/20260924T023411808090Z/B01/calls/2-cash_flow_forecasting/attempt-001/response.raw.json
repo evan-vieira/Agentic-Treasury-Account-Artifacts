@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTZzX7ekickm8v54SHu1gHi8jofj",
+  "object": "chat.completion",
+  "created": 1790217267,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"PROP-20260923-BR-RESERVE-TO-OPER-01\",\n    \"principal_id\": \"BrazilCo\",\n    \"entity\": \"BrazilCo\",\n    \"action_type\": \"internal_transfer\",\n    \"source_account\": \"ACC-BR-RES-01\",\n    \"destination_account\": \"ACC-BR-OPER-01\",\n    \"amount\": 80000,\n    \"currency\": \"BRL\",\n    \"asset\": \"BRL\",\n    \"proposed_rail\": \"bank_transfer\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\"\n  },\n  \"rationale\": \"The T+1 forecast for BrazilCo's BRL operating account (ACC-BR-OPER-01) shows a projected shortfall of 80,000 BRL below the required minimum. An internal transfer of 80,000 BRL from the BrazilCo reserve account (ACC-BR-RES-01), which has sufficient balance, will restore the operating account to the required minimum. This uses eligible same-entity funds and does not require FX or cross-entity movement.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3061,
+    "completion_tokens": 249,
+    "total_tokens": 3310,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_40629d06c8"
+}

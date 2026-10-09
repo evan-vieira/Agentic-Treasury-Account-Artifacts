@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-09-24T02:40:42.012804+00:00",
+  "finished_at": "2026-09-24T02:40:43.894247+00:00",
+  "started_epoch": 1790217642.012864,
+  "http_status": 200,
+  "response_headers": {
+    "date": "Thu, 24 Sep 2026 02:40:43 GMT",
+    "content-type": "application/json",
+    "x-ratelimit-limit-requests": "500",
+    "x-ratelimit-limit-tokens": "30000",
+    "x-ratelimit-remaining-requests": "499",
+    "x-ratelimit-remaining-tokens": "27582",
+    "x-ratelimit-reset-requests": "120ms",
+    "x-ratelimit-reset-tokens": "4.836s",
+    "x-request-id": "req_9fdaae8de6bc46988314122e1545cd0a"
+  },
+  "retryable": false,
+  "raw_response_sha256": "b734460b0a8c19d644a43ef94021be732d58225e86a3b38e1219fc8c3e5cea09",
+  "retry_not_before_epoch": 1790217643.8942132,
+  "transport_response_is_synthetic_error_record": false
+}

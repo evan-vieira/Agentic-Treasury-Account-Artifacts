@@ -1,0 +1,4 @@
+entity_id,country,functional_currency,entity_type,synthetic
+BrazilCo,BR,BRL,operating_company,True
+USCo,US,USD,operating_company,True
+EUCo,NL,EUR,operating_company,True

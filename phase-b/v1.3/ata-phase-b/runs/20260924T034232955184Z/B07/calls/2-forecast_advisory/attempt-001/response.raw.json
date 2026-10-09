@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUjwHCs4gyqScz0pnMbdSza6wreZ",
+  "object": "chat.completion",
+  "created": 1790221728,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The USCo supplier invoice (INV-SG-001) requires settlement in USD or USDC, and both eligible payment rails (bank_wire_cross_border and stablecoin_transfer) are available and permitted by policy and authority envelope.\",\n    \"USCo holds sufficient current balances in both USD (ACC-US-OPER-01) and USDC (WAL-US-USDC-01) to cover the invoice amount of 250,000 USD.\",\n    \"Forecasts indicate a surplus in USCo's USD position over the relevant horizon, with no projected liquidity shortfall or minimum cash constraint that would prevent settlement.\",\n    \"The beneficiary (SUP-SG-001) is approved, and both the assets (USD, USDC) and rails (bank_wire_cross_border, stablecoin_transfer) are permitted for this transaction.\",\n    \"The jurisdiction of the transaction remains unknown and cannot be inferred from any supplied data, in accordance with policy and output contract requirements.\",\n    \"All required treasury and authority policy conditions for asset, rail, and counterparty eligibility are met, but jurisdictional compliance cannot be confirmed at this stage due to missing verified jurisdiction fact.\",\n    \"No independent cash flow forecast is performed; all observations are based strictly on supplied and verified forecast and obligation data.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4047,
+    "completion_tokens": 273,
+    "total_tokens": 4320,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

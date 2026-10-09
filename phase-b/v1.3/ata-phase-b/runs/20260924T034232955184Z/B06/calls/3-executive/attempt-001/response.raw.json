@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUjD99vmN0tP7BNbbl4lNhl7x9DH",
+  "object": "chat.completion",
+  "created": 1790221683,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\": \"ABSTAIN\", \"reason\": \"Settlement of the supplied USCo supplier invoice to BAD-BEN-001 cannot be proposed because the beneficiary is not approved per treasury policy and the authority envelope. No compliant payment path exists for this beneficiary, regardless of asset or rail selection.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4777,
+    "completion_tokens": 60,
+    "total_tokens": 4837,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUiF8mAqMb1YH8FCT4sf0o4sVmRQ",
+  "object": "chat.completion",
+  "created": 1790221623,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"EXEC-B05-S01-T1\",\n    \"principal_id\": \"liquidity-cash-position-agent\",\n    \"entity\": \"BrazilCo\",\n    \"action_type\": \"INTRAGROUP_TRANSFER\",\n    \"source_account\": \"ACC-BR-RES-01\",\n    \"amount\": 80000,\n    \"currency\": \"BRL\",\n    \"asset\": \"BRL\",\n    \"proposed_rail\": \"bank_transfer\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": \"ACC-BR-OPER-01\"\n  },\n  \"rationale\": \"This action proposes transferring 80,000 BRL from BrazilCo's BRL reserve to its BRL operating account to resolve the forecasted T+1 shortfall and restore the required minimum. The transfer is within the autonomous execution threshold and complies with policy and authority envelope constraints. No approval is required for this amount.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4618,
+    "completion_tokens": 215,
+    "total_tokens": 4833,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_de7cb6aabe"
+}

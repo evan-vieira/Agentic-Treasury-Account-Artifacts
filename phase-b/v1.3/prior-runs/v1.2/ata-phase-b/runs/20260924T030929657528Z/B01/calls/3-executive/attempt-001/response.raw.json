@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERU8OpKm0wEhuaUmscHtsktHdvYa9",
+  "object": "chat.completion",
+  "created": 1790219400,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"ACT-B01-S01-EXEC-001\",\n    \"principal_id\": \"liquidity-cash-position-agent\",\n    \"entity\": \"BrazilCo\",\n    \"action_type\": \"INTRAGROUP_TRANSFER\",\n    \"source_account\": \"ACC-BR-RES-01\",\n    \"amount\": 80000,\n    \"currency\": \"BRL\",\n    \"asset\": \"BRL\",\n    \"proposed_rail\": \"bank_transfer\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": \"ACC-BR-OPER-01\"\n  },\n  \"rationale\": \"A transfer of BRL 80,000 from BrazilCo's reserve account to its operating account will restore the operating account to the required T+1 minimum. This amount is within the permitted authority envelope and below the threshold requiring additional approval. Both accounts are approved, belong to the same entity, and the transfer complies with treasury policy and liquidity floors.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4551,
+    "completion_tokens": 223,
+    "total_tokens": 4774,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_b6b8b754bb"
+}

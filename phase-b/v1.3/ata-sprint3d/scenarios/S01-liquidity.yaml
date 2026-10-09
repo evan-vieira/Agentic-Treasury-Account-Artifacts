@@ -1,0 +1,34 @@
+scenario_id: S01
+name: Intragroup Liquidity Movement
+base_state: ASTERIA-STG-v1.0
+reset_before_run: true
+objective: Restore BrazilCo operating account to its minimum T+1 liquidity level using
+  an approved same-entity reserve account.
+agents:
+- liquidity-cash-position-agent
+proposed_action:
+  action_id: ACT-S01-A
+  action_type: INTRAGROUP_TRANSFER
+  entity: BrazilCo
+  source_account: ACC-BR-RES-01
+  destination_account: ACC-BR-OPER-01
+  amount: 80000
+  currency: BRL
+  proposed_rail: bank_transfer
+  treasury_state_ref: ASTERIA-STG-v1.0
+expected_governance:
+  initial_outcome: ALLOW
+expected_post_execution:
+  source_balance: 2370000
+  destination_balance: 3360000
+  reconciliation: RECONCILED
+variants:
+- case_id: S01-B
+  change: amount=350000
+  expected: REQUIRE_APPROVAL
+- case_id: S01-C
+  change: source_min_post_execution_breach
+  expected: DENY
+- case_id: S01-D
+  change: balance_timestamp older than 300 seconds
+  expected: REQUIRE_ADDITIONAL_INFORMATION

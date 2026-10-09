@@ -1,0 +1,51 @@
+{
+  "instruction_id": "INS-8cd3b643be6cac93f495",
+  "action": {
+    "action_id": "PB-v1.2-B03-EXEC-B03-S03-001",
+    "principal_id": "yield-optimization-agent",
+    "entity": "USCo",
+    "action_type": "INVEST_EXCESS_CASH",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 175001,
+    "currency": "USD",
+    "asset": "TMMF-USD-01",
+    "proposed_rail": "tokenized_fund_subscription",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": null,
+    "beneficiary": null,
+    "destination": null,
+    "counterparty": "FUND-PROV-01",
+    "jurisdiction": null,
+    "sell_asset": null
+  },
+  "sid": "S03",
+  "approval": {
+    "approval_id": "APR-8cd3b643be6cac93",
+    "version": "1.0",
+    "action_hash": "8cd3b643be6cac93f495bc5f133b2251a04bb889309f53c06faa6cb975e7756e",
+    "action_id": "PB-v1.2-B03-EXEC-B03-S03-001",
+    "approver_id": "USER-TREASURY-01",
+    "decision": "APPROVE",
+    "issued_at": "2026-09-23T15:00:00Z",
+    "expires_at": "2026-09-23T16:00:00Z",
+    "max_amount": 175000,
+    "currency": "USD"
+  },
+  "action_hash": "8cd3b643be6cac93f495bc5f133b2251a04bb889309f53c06faa6cb975e7756e",
+  "decision": {
+    "outcome": "ALLOW",
+    "reason_codes": [
+      "ALL_REQUIRED_CONTROLS_SATISFIED"
+    ],
+    "action_hash": "8cd3b643be6cac93f495bc5f133b2251a04bb889309f53c06faa6cb975e7756e",
+    "authority_envelope_id": "AE-YIELD-001",
+    "authority_version": "1.0",
+    "policy_versions": {
+      "POL-YIELD-001": "1.0",
+      "POL-DATA-001": "1.0"
+    },
+    "context_hash": "002ca0c16fa43055e58b2779f7f959b760603fce3658cd8c5c129c70d24d67b1"
+  },
+  "expires_at": "2026-09-23T16:00:00Z",
+  "idempotency_key": "8cd3b643be6cac93f495bc5f133b2251a04bb889309f53c06faa6cb975e7756e"
+}

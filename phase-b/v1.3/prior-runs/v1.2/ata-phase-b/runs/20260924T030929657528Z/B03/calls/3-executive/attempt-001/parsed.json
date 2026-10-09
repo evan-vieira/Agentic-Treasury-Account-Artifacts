@@ -1,0 +1,22 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "EXEC-B03-S03-001",
+    "principal_id": "yield-optimization-agent",
+    "entity": "USCo",
+    "action_type": "INVEST_EXCESS_CASH",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 175000,
+    "currency": "USD",
+    "asset": "TMMF-USD-01",
+    "proposed_rail": "tokenized_fund_subscription",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": null,
+    "beneficiary": null,
+    "destination": null,
+    "counterparty": "FUND-PROV-01",
+    "jurisdiction": null,
+    "sell_asset": null
+  },
+  "rationale": "A $175,000 investment of USCo's excess USD cash into the approved low-risk tokenized money market fund (TMMF-USD-01) via the permitted rail and counterparty preserves projected post-investment liquidity at $825,000, well above the $650,000 minimum and after reserving for the imminent $250,000 supplier obligation. This amount is within the $250,000 policy and authority cap. As the proposed amount exceeds the autonomous threshold, treasury manager approval is required before execution."
+}

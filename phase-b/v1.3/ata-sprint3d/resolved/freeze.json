@@ -1,0 +1,6 @@
+{
+  "cases_sha256": "71c85720f30fef63d0b4561204971df492e044d30ac6387dce07516902c22ce2",
+  "expectations_sha256": "fc5e162feb201ba397d194526f418e878d02315b6d33f65ad70664ab57061703",
+  "case_count": 47,
+  "note": "Frozen before evaluator run. Additional safeguards are not preregistered Sprint 3C cases."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUgJ7N81FvGdaySJnPZbn7YOwN1P",
+  "object": "chat.completion",
+  "created": 1790221503,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"EXEC-B03-S03-001\",\n    \"principal_id\": \"yield-optimization-agent\",\n    \"entity\": \"USCo\",\n    \"action_type\": \"INVEST_EXCESS_CASH\",\n    \"source_account\": \"ACC-US-OPER-01\",\n    \"amount\": 150000,\n    \"currency\": \"USD\",\n    \"asset\": \"TMMF-USD-01\",\n    \"proposed_rail\": \"tokenized_fund_subscription\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": null,\n    \"beneficiary\": null,\n    \"destination\": null,\n    \"counterparty\": \"FUND-PROV-01\",\n    \"jurisdiction\": null,\n    \"sell_asset\": null\n  },\n  \"rationale\": \"This partial investment prudently allocates a portion of USCo's excess USD cash into a low-risk, daily-liquidity tokenized money market fund, while maintaining a liquidity buffer above the required policy floor. The amount is within both policy and authority limits, and the action will require approval due to exceeding the autonomous threshold.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4773,
+    "completion_tokens": 254,
+    "total_tokens": 5027,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_afe4792155"
+}

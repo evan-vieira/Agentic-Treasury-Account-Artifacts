@@ -1,0 +1,8 @@
+{
+  "offline_verification": true,
+  "network_blocked_by_test": true,
+  "new_http_calls": 0,
+  "http_attempts_before": 30,
+  "http_attempts_after": 30,
+  "completed_results_and_call_artifacts_unchanged": true
+}

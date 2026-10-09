@@ -1,0 +1,53 @@
+{
+  "artifact": "ATA Simulation Harness & Experimental Run v1.0",
+  "status": "EXECUTED_WITH_DOCUMENTED_EXPECTATION_DISCREPANCIES",
+  "started_at": "2026-09-23T22:56:25.410403+00:00",
+  "completed_at": "2026-09-23T22:56:30.586714+00:00",
+  "python": "3.12.14",
+  "case_count": 47,
+  "repetitions_per_case": 10,
+  "total_runs": 470,
+  "preregistered_cases": 33,
+  "preregistered_exact_matches": 31,
+  "preregistered_semantic_matches": 32,
+  "governance_expected_decision_matches": 27,
+  "governance_expected_decision_cases": 27,
+  "deterministic_cases": 47,
+  "audit_complete_runs": 470,
+  "unauthorized_execution_count": 0,
+  "duplicate_attempts": 10,
+  "duplicates_rejected": 10,
+  "adapter_submissions": 100,
+  "reconciled_settlements": 90,
+  "total_settlements": 100,
+  "discrepancies": [
+    {
+      "case_id": "T14",
+      "group": "negative",
+      "expected": "FAIL_CLOSED_OR_ESCALATE",
+      "observed": "DENY",
+      "exact_match": false,
+      "semantic_match": true,
+      "consistent": true,
+      "repetitions": 10,
+      "reason_codes": "MANDATORY_POLICY_CONFLICT_FAIL_CLOSED",
+      "execution_state": "NONE",
+      "reconciliation": "N/A"
+    },
+    {
+      "case_id": "T15",
+      "group": "negative",
+      "expected": "EXECUTION_VALIDATION_FAIL",
+      "observed": "DENY",
+      "exact_match": false,
+      "semantic_match": false,
+      "consistent": true,
+      "repetitions": 10,
+      "reason_codes": "COUNTERPARTY_NOT_APPROVED|COUNTERPARTY_OUTSIDE_AUTHORITY",
+      "execution_state": "NONE",
+      "reconciliation": "N/A"
+    }
+  ],
+  "phase_B": "NOT_RUN_OPTIONAL",
+  "synthetic_dataset_literature_gap": "OPEN"
+}

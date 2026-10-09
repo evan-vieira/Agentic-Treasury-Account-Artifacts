@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ata:design:v1.1:settlement:reconciliation.schema.json",
+  "title": "Reconciliation Result",
+  "description": "Comparison of expected and observed financial outcomes; simulated receipts do not prove external finality.",
+  "x-design-status": "proposed-not-validated-by-phase-a-engine",
+  "x-source-documents": [
+    "ATA Reference Architecture v1.2",
+    "Policy Schema & Authority Model v1.1"
+  ],
+  "x-original-source-documents": [
+    "ATA Reference Architecture v1.1",
+    "Policy Schema & Authority Model v1.0"
+  ],
+  "x-document-baseline": "Baseline Manifest v1.1 (2026-10-08); editorial alignment only",
+  "type": "object",
+  "properties": {
+    "reconciliation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instruction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transaction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "RECONCILED",
+        "EXCEPTION"
+      ]
+    },
+    "expected_state_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "difference_codes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evaluated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "reconciliation_id",
+    "instruction_id",
+    "status",
+    "expected_state_ref",
+    "observed_evidence_refs",
+    "evaluated_at"
+  ],
+  "additionalProperties": true
+}

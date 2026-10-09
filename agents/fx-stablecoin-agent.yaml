@@ -1,0 +1,13 @@
+id: fx-stablecoin-agent
+name: FX and Stablecoin Execution Agent
+status: proposed_contract_not_phase_a_executed
+purpose: Compare currency conversion and programmable-money paths for a stated treasury need.
+request_fields: [treasury_state, objective, constraints, context]
+response_fields: [observation, reasoning_summary, proposed_action, expected_effect, confidence, required_controls, evidence]
+candidate_action_types: [FX_CONVERSION, STABLECOIN_CONVERSION]
+required_evidence: [currency_pair, quote_ref, quote_timestamp, eligible_asset_ref, treasury_need_ref]
+guardrails:
+  - Report unsupported assets, missing quotes and stale data as unresolved constraints.
+  - Do not imply a proposed rail is approved or optimal in live markets.
+  - No direct FX contract, token transfer or transaction submission.
+handoff: execution/proposed-action.schema.json

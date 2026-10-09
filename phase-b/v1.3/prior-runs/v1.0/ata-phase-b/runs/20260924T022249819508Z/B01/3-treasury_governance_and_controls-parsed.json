@@ -1,0 +1,9 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "Authority: The authority envelope AE-LIQ-001 grants the liquidity-cash-position-agent the ability to propose intragroup transfers in BRL for BrazilCo, up to 1,000,000 BRL per transaction, via the bank_transfer rail. The proposed 80,000 BRL transfer is within this limit and does not require additional approval (threshold is 100,000 BRL). The envelope is active and valid for the transaction date.",
+    "Policy: Treasury policy POL-LIQ-001 requires that both source and destination accounts be approved and within the same legal entity for autonomous execution. Both ACC-BR-RES-01 (reserve) and ACC-BR-OPER-01 (operating) are approved BrazilCo accounts. The policy also mandates that the source account must retain at least 1,800,000 BRL post-transfer, and the destination must meet or exceed the 1,500,000 BRL minimum. After the proposed transfer, the reserve account would have 2,450,000 - 80,000 = 2,370,000 BRL (compliant), and the operating account would reach the required 1,500,000 BRL (compliant). Audit requirements are mandatory and must be observed.",
+    "Data Risks: All referenced balances are current as of the canonical time and within the 300-second data freshness window. No missing mandatory fields are detected. The dataset version is current and consistent. No data integrity or staleness risks are apparent for this action.",
+    "Other Risks: No cross-entity, cross-currency, or unapproved asset risks are present. The action is a straightforward internal transfer with no counterparty or jurisdictional complexity."
+  ]
+}

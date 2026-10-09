@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUiyoDvon28hAnuDX1b3rMMqtNtj",
+  "object": "chat.completion",
+  "created": 1790221668,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The supplied USCo supplier invoice requires settlement to BAD-BEN-001, who is not an approved beneficiary per treasury policy (approved_only: true) and is not listed in the authority envelope's permitted_counterparties.\",\n    \"There is sufficient liquidity in USCo's USD and USDC accounts to settle the invoice amount of 250,000 USD via either eligible asset (USD or USDC), and permitted rails (bank_wire_cross_border, stablecoin_transfer) are available.\",\n    \"Forecasts indicate no liquidity shortfall for USCo in USD over the relevant horizon; a surplus is projected.\",\n    \"Despite liquidity sufficiency and available rails, policy and authority envelope restrictions prohibit settlement to BAD-BEN-001. No compliant payment path exists for this beneficiary.\",\n    \"Settlement of this invoice to BAD-BEN-001 would not be policy compliant regardless of asset or rail selection.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4013,
+    "completion_tokens": 198,
+    "total_tokens": 4211,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

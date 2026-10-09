@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ata:design:v1.1:execution:authorized-instruction.schema.json",
+  "title": "Authorized Instruction",
+  "description": "Executable only after a successful governance workflow; adapters independently validate binding and expiry.",
+  "x-design-status": "proposed-not-validated-by-phase-a-engine",
+  "x-source-documents": [
+    "ATA Reference Architecture v1.2",
+    "Policy Schema & Authority Model v1.1"
+  ],
+  "x-original-source-documents": [
+    "ATA Reference Architecture v1.1",
+    "Policy Schema & Authority Model v1.0"
+  ],
+  "x-document-baseline": "Baseline Manifest v1.1 (2026-10-08); editorial alignment only",
+  "type": "object",
+  "properties": {
+    "instruction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "derived_from_action": {
+      "type": "object",
+      "properties": {
+        "action_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action_hash": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "action_id",
+        "action_hash"
+      ],
+      "additionalProperties": true
+    },
+    "entity": {
+      "type": "object",
+      "properties": {
+        "entity_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "entity_id"
+      ],
+      "additionalProperties": true
+    },
+    "action_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "account_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "destination": {
+      "type": "object",
+      "properties": {
+        "account_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "beneficiary_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "amount": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "value",
+        "currency"
+      ],
+      "additionalProperties": true
+    },
+    "rail": {
+      "type": "object",
+      "properties": {
+        "adapter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "adapter"
+      ],
+      "additionalProperties": true
+    },
+    "authorization": {
+      "type": "object",
+      "properties": {
+        "authority_envelope_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authority_envelope_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "policies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "policy_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "policy_id",
+              "version"
+            ],
+            "additionalProperties": true
+          }
+        },
+        "approval_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "decision_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "authority_envelope_id",
+        "authority_envelope_version",
+        "policies",
+        "decision_id"
+      ],
+      "additionalProperties": true
+    },
+    "controls": {
+      "type": "object",
+      "properties": {
+        "idempotency_key": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "idempotency_key"
+      ],
+      "additionalProperties": true
+    },
+    "validity": {
+      "type": "object",
+      "properties": {
+        "expires_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "expires_at"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "instruction_id",
+    "derived_from_action",
+    "entity",
+    "action_type",
+    "amount",
+    "rail",
+    "authorization",
+    "controls",
+    "validity"
+  ],
+  "additionalProperties": true
+}

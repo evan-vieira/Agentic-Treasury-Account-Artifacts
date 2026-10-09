@@ -1,0 +1,4 @@
+# Preserve original bytes in frozen evidence and exact source snapshots.
+phase-a/** -text
+phase-b/v1.3/** -text
+paper/source-snapshots/** -text

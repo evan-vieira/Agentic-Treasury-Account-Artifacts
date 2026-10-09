@@ -1,0 +1,16 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "ACT-USCO-INVEST-TMMF-002",
+    "principal_id": "yield-optimization-agent",
+    "entity": "USCo",
+    "action_type": "invest",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 175000,
+    "currency": "USD",
+    "asset": "TMMF-USD-01",
+    "proposed_rail": "tokenized_fund_subscription",
+    "treasury_state_ref": "ASTERIA-STG-v1.0"
+  },
+  "rationale": "USCo's USD operating account (ACC-US-OPER-01) has a current balance of 1,250,000 USD and a projected minimum cash need of 825,000 USD over the next 30 days, resulting in a surplus of 175,000 USD. Investing this surplus into the permitted, low-risk, daily-liquidity tokenized MMF (TMMF-USD-01) via the approved rail preserves the required liquidity floor (post-investment projected cash: 1,250,000 - 175,000 = 1,075,000 USD > 650,000 USD minimum). The investment amount is within both the instrument and policy limits, and the action is consistent with the authority envelope and treasury policy."
+}

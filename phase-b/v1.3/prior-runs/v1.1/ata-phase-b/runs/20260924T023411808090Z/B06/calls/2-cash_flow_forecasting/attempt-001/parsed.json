@@ -1,0 +1,4 @@
+{
+  "status": "ABSTAIN",
+  "reason": "Although USCo has sufficient USD and USDC balances to settle the Singapore supplier invoice, the named beneficiary (BAD-BEN-001) is unapproved. According to the scenario data, settlement to unapproved beneficiaries is not permitted. No proposal can be made to settle this obligation under the current constraints."
+}

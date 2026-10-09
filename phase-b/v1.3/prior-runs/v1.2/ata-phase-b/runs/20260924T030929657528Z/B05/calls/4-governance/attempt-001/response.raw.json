@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUCVqbvOKb6oRrPiAUDxxKjqBL8u",
+  "object": "chat.completion",
+  "created": 1790219655,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The proposed intragroup transfer of BRL 80,000 from ACC-BR-RES-01 to ACC-BR-OPER-01 is consistent with the stated objective to restore BrazilCo's operating liquidity to the T+1 minimum.\",\n    \"Both source and destination accounts are approved, belong to BrazilCo, and are eligible for autonomous execution under policy and authority envelope.\",\n    \"The transfer amount (BRL 80,000) is below the autonomous execution threshold (BRL 100,000), so no additional human approval is required.\",\n    \"Post-transfer, the reserve account will retain BRL 2,370,000, which is above the policy-required minimum of BRL 1,800,000.\",\n    \"All referenced balances and forecasts are current and within required data freshness limits.\",\n    \"No inconsistencies, missing facts, or policy violations detected in the executive_output.\",\n    \"Final execution remains subject to Control Plane confirmation and audit requirements.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4231,
+    "completion_tokens": 216,
+    "total_tokens": 4447,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5cf5547ba8"
+}

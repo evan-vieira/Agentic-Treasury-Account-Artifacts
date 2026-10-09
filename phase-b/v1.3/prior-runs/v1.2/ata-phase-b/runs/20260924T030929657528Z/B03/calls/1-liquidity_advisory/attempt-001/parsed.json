@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "USCo's operating USD account shows a current balance of $1,250,000, with a projected minimum cash requirement of $650,000 and a projected minimum post-investment cash of $825,000 over the next 30 days, indicating a surplus of $175,000.",
+    "Treasury policy and authority envelope permit partial investment of excess USD cash up to $250,000 in approved low-risk USD money market funds (MMF-USD-01 or TMMF-USD-01), provided post-investment liquidity remains at or above $650,000.",
+    "Any investment should not reduce projected cash below the $650,000 minimum threshold, and the maximum single investment is capped at $250,000.",
+    "USCo has an upcoming supplier obligation of $250,000 due in two days, which must be considered to avoid short-term liquidity risk.",
+    "Both permitted fund options offer daily liquidity and are classified as low risk, aligning with prudent cash management objectives.",
+    "No liquidity shortfalls are forecasted for USCo if a prudent partial allocation is made, provided the above constraints are respected."
+  ]
+}

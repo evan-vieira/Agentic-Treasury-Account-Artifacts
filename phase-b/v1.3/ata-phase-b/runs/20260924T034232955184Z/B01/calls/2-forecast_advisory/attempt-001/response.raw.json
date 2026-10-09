@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUe86drl7Ozq7BHV5Xa6pl1uVwWa",
+  "object": "chat.completion",
+  "created": 1790221368,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"BrazilCo's BRL operating account is forecasted to have a T+1 shortfall of 80,000 BRL relative to the required minimum, as indicated in the supplied forecast.\",\n    \"Eligible same-entity funds are available in BrazilCo's BRL reserve account, which has a sufficient current balance to cover the projected gap while maintaining the post-transfer minimum required by policy.\",\n    \"Both the operating and reserve accounts are approved, belong to BrazilCo, and are eligible for intragroup transfer under the authority envelope and treasury policy.\",\n    \"The authority envelope permits an intragroup transfer in BRL up to 1,000,000 BRL, with approval required for amounts above 100,000 BRL.\",\n    \"No cross-entity or cross-currency transfers are necessary to address the immediate T+1 BRL liquidity gap.\",\n    \"All relevant balances and forecasts are current and within the data age requirements specified by policy.\",\n    \"Restoring the BRL operating account to the required T+1 minimum using a same-entity intragroup transfer from the reserve account is consistent with policy and authority, subject to approval if the transfer exceeds 100,000 BRL.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3806,
+    "completion_tokens": 262,
+    "total_tokens": 4068,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The executive_output proposes a CROSS_BORDER_PAYMENT from USCo's USD operating account to the approved supplier (SUP-SG-001) for the correct invoice amount and asset, using a permitted rail and counterparty.",
+    "All asset, rail, and counterparty eligibility requirements are satisfied per the authority envelope and treasury policy.",
+    "The jurisdiction of the transaction is explicitly unknown and is correctly left null in the proposal, in accordance with policy and output contract requirements. No inference from identifiers or permission lists is permitted.",
+    "The transaction amount exceeds the approval threshold, so at least one eligible human approver is required before execution.",
+    "No executive_contract_errors are present and no calculation discrepancies are observed.",
+    "Jurisdictional compliance cannot be confirmed at this stage due to missing verified jurisdiction fact; the Control Plane must determine if additional information or abstention is required."
+  ]
+}

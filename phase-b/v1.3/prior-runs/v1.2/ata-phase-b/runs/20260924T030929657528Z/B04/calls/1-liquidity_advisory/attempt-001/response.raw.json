@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUAoZO7b8NN8MhZZaiPYlYiO0hgr",
+  "object": "chat.completion",
+  "created": 1790219550,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The USCo supplier invoice (INV-SG-001) requires settlement of 250,000 USD to an approved Singapore supplier (SUP-SG-001) via USD or USDC.\",\n    \"USCo has sufficient current balances to cover the obligation: 1,250,000 USD in ACC-US-OPER-01 (bank operating account) and 300,000 USDC in WAL-US-USDC-01 (institutional wallet).\",\n    \"Both eligible rails—bank_wire_cross_border (for USD) and stablecoin_transfer (for USDC)—are permitted by policy and authority envelope.\",\n    \"No liquidity gaps or forecasted shortfalls are present for USCo in USD over the relevant horizon; a surplus is projected.\",\n    \"The supplier and destination are approved, and the jurisdiction (SG) is verified and permitted.\",\n    \"No policy or authority conflicts are detected for this payment scenario.\",\n    \"No action is proposed at this stage; these are advisory liquidity observations only.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3746,
+    "completion_tokens": 220,
+    "total_tokens": 3966,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_0843d2ec50"
+}

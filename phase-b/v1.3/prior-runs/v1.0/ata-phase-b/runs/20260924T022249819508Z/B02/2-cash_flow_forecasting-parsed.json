@@ -1,0 +1,19 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "ACT-BR-BRL2USD-001",
+    "principal_id": "BrazilCo",
+    "entity": "BrazilCo",
+    "action_type": "convert_fx",
+    "source_account": "ACC-BR-OPER-01",
+    "amount": 1350000,
+    "currency": "BRL",
+    "asset": "BRL",
+    "proposed_rail": "bank_fx",
+    "treasury_state_ref": "MKT-20260923-1500Z",
+    "destination_account": "ACC-BR-USD-01",
+    "counterparty": "FX-PROV-01",
+    "jurisdiction": "BR"
+  },
+  "rationale": "BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a required obligation of 650,000 USD and a projected balance before obligation of 200,000 USD in its USD operating account. The current USD and USDC balances (220,000 USD and 180,000 USDC) total 400,000 USD-equivalent, leaving a 250,000 USD-equivalent shortfall. To address this, one eligible path is to convert BRL to USD via the bank FX rail using FX-PROV-01. At the quoted rate of 5.4 BRL/USD plus a 20 bps fee, converting 1,350,000 BRL will yield approximately 249,537 USD after fees, which covers the shortfall when added to existing balances. This proposal does not presume this is the optimal path, but it is an eligible and sufficient conversion to address the projected gap."
+}

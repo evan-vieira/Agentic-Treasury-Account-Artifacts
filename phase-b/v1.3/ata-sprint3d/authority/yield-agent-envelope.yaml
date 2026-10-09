@@ -1,0 +1,22 @@
+envelope_id: AE-YIELD-001
+version: '1.0'
+principal_id: yield-optimization-agent
+entity_scope:
+- USCo
+actions:
+- INVEST_EXCESS_CASH
+currencies:
+- USD
+max_amount_usd: 250000
+permitted_counterparties:
+- FUND-PROV-01
+permitted_assets:
+- MMF-USD-01
+- TMMF-USD-01
+permitted_rails:
+- tokenized_fund_subscription
+approval_requirement:
+  above_usd: 100000
+valid_from: '2026-09-01T00:00:00Z'
+valid_until: '2026-12-31T23:59:59Z'
+revocation_status: ACTIVE

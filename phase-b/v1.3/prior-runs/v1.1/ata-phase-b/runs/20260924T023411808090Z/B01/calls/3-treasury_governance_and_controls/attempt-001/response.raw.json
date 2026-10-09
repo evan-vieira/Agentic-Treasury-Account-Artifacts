@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTaEFzVpyTdZWnEttfRCpKaBmn3p",
+  "object": "chat.completion",
+  "created": 1790217282,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\":\"ADVISORY\",\"observations\":[\"Authority: The authority envelope (AE-LIQ-001) permits the liquidity-cash-position-agent to propose intragroup transfers in BRL for BrazilCo up to 1,000,000 BRL per transaction via bank_transfer, within the validity period and with approval required above 100,000 BRL. The proposed action (80,000 BRL) is within the autonomous threshold and permitted scope.\",\"Policy: Treasury policy POL-LIQ-001 requires use of approved accounts, same-entity transfers for autonomous execution, and post-transfer minimums: source account must retain at least 1,800,000 BRL, and the destination must meet or exceed the 1,500,000 BRL minimum. The proposed transfer would leave the reserve account with 2,450,000 - 80,000 = 2,370,000 BRL (above minimum), and the operating account would reach the required 1,500,000 BRL minimum.\",\"Data: Account and balance data are current (as of canonical time), and all referenced accounts are approved and belong to BrazilCo. The forecasted shortfall and required minimum are clearly stated. No data gaps or stale data are evident. The action aligns with the forecasted need and uses eligible same-entity funds.\",\"Risks: No authority, policy, or data risks are identified for the proposed internal transfer. The action is low risk, routine, and fully supported by available data and policy. Audit requirements are mandatory and should be observed.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3703,
+    "completion_tokens": 315,
+    "total_tokens": 4018,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

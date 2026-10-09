@@ -1,0 +1,10 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "USCo's USD and USDC accounts have sufficient liquidity to settle the $250,000 supplier invoice to BAD-BEN-001 via either bank_wire_cross_border or stablecoin_transfer rails.",
+    "Forecasts show no shortfall or liquidity risk in USCo's USD or USDC positions for this obligation.",
+    "The named beneficiary, BAD-BEN-001, is not approved per treasury policy (approved_only: true) and is not listed in the authority envelope's permitted counterparties.",
+    "Forecast analysis does not identify any cash flow or settlement risk for this payment, but policy restrictions on beneficiary approval remain binding.",
+    "No forecast-driven impediments exist for settlement, but payment to BAD-BEN-001 is not permitted under current policy regardless of liquidity sufficiency."
+  ]
+}

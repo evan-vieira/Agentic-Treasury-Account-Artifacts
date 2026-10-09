@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTbg7zP6b5X8fRbrSEBPhySda21E",
+  "object": "chat.completion",
+  "created": 1790217372,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"ACT-USCO-INVEST-TMMF-001\",\n    \"principal_id\": \"USCo\",\n    \"entity\": \"USCo\",\n    \"action_type\": \"invest\",\n    \"source_account\": \"ACC-US-OPER-01\",\n    \"amount\": 175000,\n    \"currency\": \"USD\",\n    \"asset\": \"TMMF-USD-01\",\n    \"proposed_rail\": \"tokenized_fund_subscription\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\"\n  },\n  \"rationale\": \"USCo's USD operating account has a surplus of 175,000 USD above the projected minimum cash requirement over the next 30 days. To prudently allocate excess cash while preserving liquidity, a partial investment of 175,000 USD into the low-risk, daily-liquidity tokenized money market fund (TMMF-USD-01) is proposed. This maintains sufficient liquidity for obligations and aligns with the objective of prudent partial allocation.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3351,
+    "completion_tokens": 227,
+    "total_tokens": 3578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_40629d06c8"
+}

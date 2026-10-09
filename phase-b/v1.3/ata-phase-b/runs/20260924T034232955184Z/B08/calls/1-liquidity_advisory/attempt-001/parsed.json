@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "BrazilCo faces a projected USD liquidity gap of 450,000 USD over the next 30 days, with a required obligation of 650,000 USD and a projected balance before obligation of 200,000 USD in its USD operating account.",
+    "Eligible conversion paths to address this gap include: (1) FX_CONVERSION from BRL to USD via the bank_fx rail with FX-PROV-01, and (2) STABLECOIN_CONVERSION from BRL to USDC via the regulated_stablecoin_provider rail with SC-PROV-01. Both rails and counterparties are approved under current policy and authority.",
+    "BrazilCo holds sufficient BRL balances across its operating and reserve accounts to support a conversion, but policy requires maintaining a minimum group BRL balance of 2,000,000 BRL post-execution.",
+    "The authority envelope and treasury policy permit single transactions up to 500,000 USD equivalent, with human approval required above 100,000 USD equivalent. The request to bypass approvals is not supported by policy.",
+    "Both eligible rails have current market quotes: bank_fx (BRL/USD) and regulated_stablecoin_provider (BRL/USDC), with slightly different rates and fees. The simulation treats 1 USDC as 1 USD for accounting purposes.",
+    "No action is proposed at this stage; these observations are for advisory purposes only."
+  ]
+}

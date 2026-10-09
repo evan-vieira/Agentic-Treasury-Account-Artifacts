@@ -1,0 +1,19 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "ACT-BR-BRL2USDC-001",
+    "principal_id": "fx-stablecoin-agent",
+    "entity": "BrazilCo",
+    "action_type": "convert_stablecoin",
+    "source_account": "ACC-BR-OPER-01",
+    "amount": 1350000,
+    "currency": "BRL",
+    "asset": "BRL",
+    "proposed_rail": "regulated_stablecoin_provider",
+    "treasury_state_ref": "MKT-20260923-1500Z",
+    "destination_account": "WAL-BR-USDC-01",
+    "counterparty": "SC-PROV-01",
+    "jurisdiction": "BR"
+  },
+  "rationale": "BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a required obligation of 650,000 USD and a projected balance before obligation of 200,000 USD in its USD operating account. The current USD and USDC balances (220,000 USD and 180,000 USDC) total 400,000 USD-equivalent, leaving a 250,000 USD-equivalent shortfall. One eligible path is to convert BRL to USDC via the regulated stablecoin provider rail using SC-PROV-01. At the quoted rate of 5.39 BRL/USDC plus a 35 bps fee, converting 1,350,000 BRL will yield approximately 249,190 USDC after fees, which covers the shortfall when added to existing balances. This proposal does not presume this is the optimal path, but it is an eligible and sufficient conversion to address the projected gap. There is uncertainty regarding future FX rates, operational timing, and whether USDC or USD will be required for final settlement, but this path is eligible under current policy and authority."
+}

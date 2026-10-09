@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUCkvQdAHnK6iOXXZxElxmPKitFA",
+  "object": "chat.completion",
+  "created": 1790219670,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The supplier invoice names BAD-BEN-001 as beneficiary, but this counterparty is not approved per treasury policy (approved_only: true).\",\n    \"USCo has sufficient USD and USDC liquidity to settle the $250,000 obligation via either bank_wire_cross_border or stablecoin_transfer rails.\",\n    \"All eligible payment rails and assets (USD, USDC) are available and permitted by policy for cross-border payments to Singapore.\",\n    \"Authority envelope and treasury policy both restrict payments to approved counterparties; BAD-BEN-001 is not listed as permitted.\",\n    \"No liquidity gaps or forecasted shortfalls are present in USCo's USD or USDC accounts for this payment.\",\n    \"Settlement to the named beneficiary is not permitted under current policy, regardless of liquidity sufficiency.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3767,
+    "completion_tokens": 179,
+    "total_tokens": 3946,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_485fc92485"
+}

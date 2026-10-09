@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTgWNzN3zkfuGwmG445fVwjBgn2M",
+  "object": "chat.completion",
+  "created": 1790217672,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"ACT-B08-S02-003\",\n    \"principal_id\": \"fx-stablecoin-agent\",\n    \"entity\": \"BrazilCo\",\n    \"action_type\": \"conversion\",\n    \"source_account\": \"ACC-BR-OPER-01\",\n    \"amount\": 2425500,\n    \"currency\": \"BRL\",\n    \"asset\": \"BRL\",\n    \"proposed_rail\": \"bank_fx\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": \"ACC-BR-USD-01\",\n    \"beneficiary\": \"BrazilCo\",\n    \"counterparty\": \"FX-PROV-01\",\n    \"jurisdiction\": \"BR\"\n  },\n  \"rationale\": \"BrazilCo faces a projected USD liquidity gap of 450,000 USD in 30 days, with a required obligation of 650,000 USD and only 200,000 USD projected available. One eligible conversion path is to convert BRL from the operating account to USD using the approved bank FX provider (FX-PROV-01) via the 'bank_fx' rail. At the quoted rate of 5.4 BRL/USD plus 20 bps fee, converting 2,425,500 BRL will yield approximately 449,907 USD, closely matching the gap. This proposal addresses the forecasted shortfall using an eligible, approved conversion path without presuming optimality. There is uncertainty regarding the optimality of this path, but it is eligible and policy-compliant.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4179,
+    "completion_tokens": 335,
+    "total_tokens": 4514,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_414f3d9796"
+}

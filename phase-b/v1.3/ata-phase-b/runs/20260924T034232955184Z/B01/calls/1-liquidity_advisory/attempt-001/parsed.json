@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "BrazilCo's BRL operating account is forecasted to fall below the required T+1 minimum by 80,000 BRL, resulting in a shortfall condition.",
+    "Eligible same-entity funds are available in BrazilCo's BRL reserve account, which has a sufficient current balance to cover the projected gap while maintaining the post-transfer minimum required by policy.",
+    "Both the operating and reserve accounts are approved and within the same legal entity, satisfying policy requirements for intragroup transfers.",
+    "The authority envelope and treasury policy permit an intragroup transfer in BRL up to 1,000,000 BRL, with approval required for amounts above 100,000 BRL.",
+    "No cross-entity or cross-currency transfers are necessary to address the immediate T+1 BRL liquidity gap.",
+    "All relevant balances and forecasts are current and within the data age requirements specified by policy."
+  ]
+}

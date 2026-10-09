@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUERJRPSaEJ7ZlltS5Jaopl5qiQY",
+  "object": "chat.completion",
+  "created": 1790219775,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The executive_output proposes a CROSS_BORDER_PAYMENT of 250,000 USD from USCo's operating account to the approved supplier (SUP-SG-001) via the permitted bank_wire_cross_border rail, using the correct beneficiary bank destination and rail provider.\",\n    \"The transaction amount exceeds the treasury policy and authority envelope approval threshold (50,000 USD), so at least one eligible human approver (e.g., treasury_manager) is required. No evidence of such approval is present.\",\n    \"Jurisdiction is explicitly unknown and not supplied in the action. This is correct per policy, as jurisdiction cannot be inferred from names, identifiers, or permission lists. Control Plane must determine if additional information is required before execution.\",\n    \"All referenced accounts, assets, rails, and counterparties are approved and permitted by both the authority envelope and treasury policy.\",\n    \"Segregation of duties and audit requirements are not independently verifiable from the proposal; Control Plane should confirm compliance before execution.\",\n    \"No inconsistencies or missing mandatory fields are observed in the executive_output, but human approval and jurisdictional review are required prior to execution.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4532,
+    "completion_tokens": 245,
+    "total_tokens": 4777,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_53841b3b18"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTctwtG97n5QXi3jfr2eTSphK9Oo",
+  "object": "chat.completion",
+  "created": 1790217447,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"PROP-SETTLE-INV-SG-001-USD\",\n    \"principal_id\": \"payments-settlement-agent\",\n    \"entity\": \"USCo\",\n    \"action_type\": \"payment\",\n    \"source_account\": \"ACC-US-OPER-01\",\n    \"amount\": 250000,\n    \"currency\": \"USD\",\n    \"asset\": \"USD\",\n    \"proposed_rail\": \"bank_wire_cross_border\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": \"SUP-SG-BANK-01\",\n    \"beneficiary\": \"SUP-SG-001\",\n    \"destination\": \"SG\",\n    \"counterparty\": \"SUP-SG-001\",\n    \"jurisdiction\": \"SG\"\n  },\n  \"rationale\": \"USCo's USD operating account has sufficient balance to settle the Singapore supplier invoice (INV-SG-001) for 250,000 USD. The obligation permits settlement in USD or USDC, and the authority envelope and treasury policy both allow use of the bank_wire_cross_border rail to an approved Singapore supplier. This path is straightforward, preserves USDC liquidity, and is fully compliant with policy and authority constraints.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3955,
+    "completion_tokens": 270,
+    "total_tokens": 4225,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

@@ -1,0 +1,30 @@
+envelope_id: AE-FX-001
+version: '1.0'
+principal_id: fx-stablecoin-agent
+entity_scope:
+- BrazilCo
+actions:
+- FX_CONVERSION
+- STABLECOIN_CONVERSION
+currencies:
+- BRL
+- USD
+- USDC
+max_amount_usd_equivalent: 500000
+permitted_counterparties:
+- FX-PROV-01
+- SC-PROV-01
+permitted_assets:
+- USD
+- USDC
+permitted_rails:
+- bank_fx
+- regulated_stablecoin_provider
+jurisdictions:
+- BR
+- US
+approval_requirement:
+  above_usd_equivalent: 100000
+valid_from: '2026-09-01T00:00:00Z'
+valid_until: '2026-12-31T23:59:59Z'
+revocation_status: ACTIVE

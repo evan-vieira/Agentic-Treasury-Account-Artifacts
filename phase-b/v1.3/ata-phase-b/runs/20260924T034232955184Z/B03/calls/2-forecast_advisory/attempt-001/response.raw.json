@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUg4A4qAHostuTHNTcqVQJ0fLrDa",
+  "object": "chat.completion",
+  "created": 1790221488,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"USCo's projected minimum USD cash before investment is $825,000, which is $175,000 above the required post-investment liquidity floor of $650,000.\",\n    \"A prudent partial allocation of excess USD cash is feasible, provided the invested amount does not reduce projected cash below the $650,000 minimum.\",\n    \"Both permitted investment assets (MMF-USD-01 and TMMF-USD-01) are low risk, daily liquidity instruments, supporting short-term access if needed.\",\n    \"The maximum single investment is capped at $250,000, but the actual investable amount may be less, depending on the desired liquidity buffer above the policy floor.\",\n    \"Upcoming obligations for USCo are moderate and do not appear to threaten liquidity if a partial investment is made within policy limits.\",\n    \"No adverse liquidity gaps are forecasted for USCo within the next 30 days, assuming the minimum cash floor is maintained post-investment.\",\n    \"Any investment action should ensure that the projected cash after investment is not less than $650,000, in accordance with policy and authority constraints.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3964,
+    "completion_tokens": 244,
+    "total_tokens": 4208,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

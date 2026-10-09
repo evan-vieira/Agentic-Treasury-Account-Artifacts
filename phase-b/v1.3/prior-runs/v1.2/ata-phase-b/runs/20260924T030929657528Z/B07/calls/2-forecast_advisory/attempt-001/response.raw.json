@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUDxirFUHQLcGdd2PTkkj0fyCuSl",
+  "object": "chat.completion",
+  "created": 1790219745,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The USCo supplier invoice (INV-SG-001) requires settlement of 250,000 USD via USD or USDC. The jurisdiction of this transaction remains unknown and cannot be inferred.\",\n    \"USCo holds sufficient balances to settle the invoice: 1,250,000 USD in ACC-US-OPER-01 and 300,000 USDC in WAL-US-USDC-01, both current as of the canonical time.\",\n    \"Permitted settlement rails are bank_wire_cross_border (for USD) and stablecoin_transfer (for USDC), both supported by the authority envelope and treasury policy.\",\n    \"Forecasts indicate a surplus for USCo in USD over the relevant horizon, with no projected shortfalls or liquidity gaps that would impact this payment.\",\n    \"The supplier (SUP-SG-001) is approved, and both bank and wallet destinations are available for settlement.\",\n    \"No independent forecasting is performed; all observations are based on supplied forecasts and obligations.\",\n    \"Jurisdiction remains unknown; this may affect compliance or execution, and the Control Plane should determine if additional information is required before proceeding.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4008,
+    "completion_tokens": 244,
+    "total_tokens": 4252,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_04f5221944"
+}

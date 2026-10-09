@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERU8dukk8sdryt7H1OPct5pKAvoIh",
+  "object": "chat.completion",
+  "created": 1790219415,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The proposed intragroup transfer of BRL 80,000 from ACC-BR-RES-01 to ACC-BR-OPER-01 is consistent with the stated objective, forecasted shortfall, and liquidity floor requirements.\",\n    \"Both source and destination accounts are approved, belong to BrazilCo, and are eligible for same-entity transfers under current policy.\",\n    \"The transfer amount (BRL 80,000) is below the autonomous execution threshold (BRL 100,000) and well within the maximum permitted by the authority envelope (BRL 1,000,000).\",\n    \"No additional human approval is required for this amount according to the authority envelope and treasury policy.\",\n    \"All referenced balances and data are current and within the required data freshness window.\",\n    \"No inconsistencies, missing facts, or policy conflicts are observed in the executive_output.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4258,
+    "completion_tokens": 198,
+    "total_tokens": 4456,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8808cca3cb"
+}

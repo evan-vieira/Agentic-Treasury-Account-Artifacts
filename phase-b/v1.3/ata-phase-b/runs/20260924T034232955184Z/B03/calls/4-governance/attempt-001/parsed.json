@@ -1,0 +1,17 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The proposed partial investment of $150,000 USD into TMMF-USD-01 is within the permitted asset, counterparty, and rail constraints set by both policy and authority.",
+    "The projected post-investment cash balance ($675,000) remains above the required minimum liquidity floor of $650,000, preserving operational liquidity.",
+    "The investment amount is below the maximum single investment limit ($250,000) but exceeds the autonomous threshold ($100,000), triggering a requirement for explicit human approval by an eligible treasury manager.",
+    "All counterparties, assets, and rails involved are approved and within scope; no unapproved entities or unsupported instruments are referenced.",
+    "No inconsistencies or missing mandatory facts are detected in the executive_output or supporting state.",
+    "Audit requirements are mandatory for this action per policy and must be observed.",
+    "This advisory does not constitute approval or execution; human approval is required before proceeding."
+  ],
+  "calculations": {
+    "projected_cash_before_usd": "825000.00",
+    "investment_usd": "150000.00",
+    "projected_cash_after_usd": "675000.00"
+  }
+}

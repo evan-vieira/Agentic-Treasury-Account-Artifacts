@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The executive_output proposes a CROSS_BORDER_PAYMENT of 250,000 USD from USCo's operating account to the approved supplier (SUP-SG-001) via the permitted bank_wire_cross_border rail, using the correct beneficiary bank destination and rail provider.",
+    "The transaction amount exceeds the treasury policy and authority envelope approval threshold (50,000 USD), so at least one eligible human approver (e.g., treasury_manager) is required. No evidence of such approval is present.",
+    "Jurisdiction is explicitly unknown and not supplied in the action. This is correct per policy, as jurisdiction cannot be inferred from names, identifiers, or permission lists. Control Plane must determine if additional information is required before execution.",
+    "All referenced accounts, assets, rails, and counterparties are approved and permitted by both the authority envelope and treasury policy.",
+    "Segregation of duties and audit requirements are not independently verifiable from the proposal; Control Plane should confirm compliance before execution.",
+    "No inconsistencies or missing mandatory fields are observed in the executive_output, but human approval and jurisdictional review are required prior to execution."
+  ]
+}

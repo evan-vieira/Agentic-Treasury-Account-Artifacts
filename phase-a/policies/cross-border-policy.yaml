@@ -1,0 +1,37 @@
+policy_id: POL-XB-001
+version: '1.0'
+status: ACTIVE
+scope:
+  entities:
+  - USCo
+  actions:
+  - CROSS_BORDER_PAYMENT
+beneficiaries:
+  approved_only: true
+jurisdictions:
+  permitted:
+  - SG
+  - US
+  - NL
+assets:
+  permitted:
+  - USD
+  - USDC
+rails:
+  permitted:
+  - bank_wire_cross_border
+  - stablecoin_transfer
+amount:
+  max_single_payment_usd: 500000
+approval:
+  required_above_usd: 50000
+  minimum_approvers: 1
+  eligible_roles:
+  - treasury_manager
+segregation_of_duties:
+  proposer_cannot_approve: true
+data_requirements:
+  treasury_state_max_age_seconds: 300
+audit:
+  mandatory: true
+conflict_behavior: DENY

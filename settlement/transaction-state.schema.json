@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ata:design:v1.1:settlement:transaction-state.schema.json",
+  "title": "Transaction State",
+  "description": "Lifecycle state; submission is not settlement or reconciliation.",
+  "x-design-status": "proposed-not-validated-by-phase-a-engine",
+  "x-source-documents": [
+    "ATA Reference Architecture v1.2",
+    "Policy Schema & Authority Model v1.1"
+  ],
+  "x-original-source-documents": [
+    "ATA Reference Architecture v1.1",
+    "Policy Schema & Authority Model v1.0"
+  ],
+  "x-document-baseline": "Baseline Manifest v1.1 (2026-10-08); editorial alignment only",
+  "type": "object",
+  "properties": {
+    "transaction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instruction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "enum": [
+        "REQUESTED",
+        "AUTHORIZED",
+        "SUBMITTED",
+        "ACCEPTED",
+        "SETTLED",
+        "RECONCILED",
+        "FAILED",
+        "REVERSED",
+        "EXCEPTION"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "transaction_id",
+    "state",
+    "observed_at"
+  ],
+  "additionalProperties": true
+}

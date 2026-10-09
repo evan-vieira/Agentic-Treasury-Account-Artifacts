@@ -1,0 +1,17 @@
+envelope_id: AE-LIQ-001
+version: '1.0'
+principal_id: liquidity-cash-position-agent
+entity_scope:
+- BrazilCo
+actions:
+- INTRAGROUP_TRANSFER
+currencies:
+- BRL
+max_amount_brl: 1000000
+permitted_rails:
+- bank_transfer
+approval_requirement:
+  above_brl: 100000
+valid_from: '2026-09-01T00:00:00Z'
+valid_until: '2026-12-31T23:59:59Z'
+revocation_status: ACTIVE

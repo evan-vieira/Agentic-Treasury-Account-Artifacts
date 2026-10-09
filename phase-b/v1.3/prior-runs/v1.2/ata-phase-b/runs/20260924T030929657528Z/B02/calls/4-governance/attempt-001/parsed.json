@@ -1,0 +1,12 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The executive_output proposes converting BRL to 450,000 USD via the bank_fx rail (FX_CONVERSION) with FX-PROV-01, using BrazilCo's approved BRL operating account as the source and USD operating account as the destination.",
+    "The proposed amount (450,000 USD) is within the 500,000 USD single transaction cap set by both the authority envelope and treasury policy.",
+    "The calculated BRL debit (450,000 * 5.4 * 1.002 = 2,433,300 BRL) leaves a combined post-conversion BRL balance above the 2,000,000 BRL policy minimum, satisfying liquidity constraints.",
+    "FX-PROV-01 is an approved counterparty, and the bank_fx rail is permitted for this action under both policy and authority.",
+    "The transaction exceeds the 100,000 USD threshold, so explicit human approval by an eligible treasury manager is required before execution.",
+    "No inconsistencies or missing mandatory facts are identified in the executive_output. All referenced accounts, assets, rails, and counterparties are approved and current.",
+    "This advisory does not constitute approval or execution; the Control Plane must confirm all requirements, including human approval, before proceeding."
+  ]
+}

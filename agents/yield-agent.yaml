@@ -1,0 +1,13 @@
+id: yield-agent
+name: Yield Optimization Agent
+status: proposed_contract_not_phase_a_executed
+purpose: Evaluate permitted placements of excess liquidity against cash forecasts and policy constraints.
+request_fields: [treasury_state, objective, constraints, context]
+response_fields: [observation, reasoning_summary, proposed_action, expected_effect, confidence, required_controls, evidence]
+candidate_action_types: [YIELD_ALLOCATION]
+required_evidence: [liquidity_forecast_ref, asset_eligibility_ref, instrument_terms_ref]
+guardrails:
+  - Investment eligibility and liquidity floor are independently checked by governance.
+  - A synthetic tokenized fund fixture does not establish investment suitability.
+  - Proposals are non-executable and cannot create a subscription directly.
+handoff: execution/proposed-action.schema.json

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUf6S96jTmTHR4D4WQXOLSQjpAVK",
+  "object": "chat.completion",
+  "created": 1790221428,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a required obligation of 650,000 USD and a projected balance of 200,000 USD in its USD operating account.\",\n    \"One eligible conversion path to address this gap is to purchase USDC using BRL via the regulated_stablecoin_provider rail (SC-PROV-01), as permitted by current treasury policy and authority envelope.\",\n    \"The BRL operating and reserve accounts have sufficient balances to support a USDC purchase up to the policy's maximum single transaction limit (500,000 USD equivalent), provided that the group BRL balance does not fall below the policy minimum of 2,000,000 BRL after execution.\",\n    \"The available BRL/USDC quote is current and approved, with a quoted rate of 5.39 BRL per USDC and a fee of 35 bps; settlement is same-day synthetic.\",\n    \"Any purchase above 100,000 USD equivalent requires human approval per policy.\",\n    \"This advisory does not assess optimality or recommend execution, and does not address alternative paths. All calculations and policy checks must be verified by the Control Plane before any action.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4277,
+    "completion_tokens": 268,
+    "total_tokens": 4545,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

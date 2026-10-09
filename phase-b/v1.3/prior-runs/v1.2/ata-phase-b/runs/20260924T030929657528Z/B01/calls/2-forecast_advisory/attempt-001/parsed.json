@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "BrazilCo's BRL operating account (ACC-BR-OPER-01) is forecasted to have a T+1 shortfall of BRL 80,000 against the required minimum of BRL 1,500,000.",
+    "The BrazilCo reserve account (ACC-BR-RES-01) holds BRL 2,450,000, which is sufficient to cover the shortfall while maintaining the post-transfer minimum reserve balance required by policy (BRL 1,800,000).",
+    "A same-entity intragroup transfer of BRL 80,000 from ACC-BR-RES-01 to ACC-BR-OPER-01 would restore the operating account to the required T+1 minimum.",
+    "Both accounts are approved, belong to BrazilCo, and are eligible for such a transfer under current treasury policy and authority envelope.",
+    "The proposed transfer amount is below the autonomous execution threshold (BRL 100,000) and within the maximum permitted (BRL 1,000,000).",
+    "No policy or data freshness conflicts are observed for this action."
+  ]
+}

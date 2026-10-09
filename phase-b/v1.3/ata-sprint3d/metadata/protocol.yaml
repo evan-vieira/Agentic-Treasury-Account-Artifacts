@@ -1,0 +1,28 @@
+artifact: Synthetic Treasury Dataset & Reproducible Simulation Scenarios v1.0
+dataset_version: ASTERIA-STG-v1.0
+canonical_timestamp: '2026-09-23T15:00:00Z'
+random_seed: 20260923
+core_evaluation:
+  phase_A_deterministic_replay:
+    llm_calls: false
+    description: Use frozen ProposedAction fixtures to evaluate the deterministic
+      Governance & Control Plane. This is the primary basis for governance reproducibility
+      claims.
+    repetitions_per_case: 10
+    expected: identical governance output and reason codes for identical versioned
+      inputs
+  phase_B_agent_assisted_demonstration:
+    llm_calls: true
+    description: Optional end-to-end demonstration in which canonical agents produce
+      ProposedAction objects from the synthetic state. Agent output may vary; exact
+      model, prompt, parameters and resulting ProposedAction must be archived.
+    claim_boundary: Demonstration of architecture integration only; not proof of deterministic
+      agent reasoning or economic superiority.
+metrics:
+- expected_decision_match_rate
+- unauthorized_execution_count
+- deterministic_replay_consistency
+- audit_record_completeness
+- duplicate_instruction_rejection
+- reconciliation_closure_rate
+- agent_output_schema_validity_phase_B

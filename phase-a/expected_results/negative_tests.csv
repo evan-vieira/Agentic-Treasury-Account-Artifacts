@@ -1,0 +1,16 @@
+test_id,condition,expected,scenario
+T01,stale bank balance,REQUIRE_ADDITIONAL_INFORMATION,S01
+T02,unauthorized beneficiary,DENY,S04
+T03,amount above autonomous threshold but within policy,REQUIRE_APPROVAL,S01
+T04,amount above maximum authority,DENY,S02
+T05,unsupported stablecoin,DENY,S02
+T06,liquidity reserve breach,DENY,S03
+T07,missing jurisdiction,REQUIRE_ADDITIONAL_INFORMATION,S04
+T08,proposer attempts self-approval,DENY,S04
+T09,duplicate AuthorizedInstruction,EXECUTION_REJECTED,S01
+T10,Authority Envelope revoked,DENY,S02
+T11,approved rail unavailable,RE_EVALUATION_REQUIRED,S04
+T12,transaction materially altered after approval,APPROVAL_INVALIDATED,S02
+T13,settlement mismatch,EXCEPTION,S04
+T14,conflicting mandatory policies,FAIL_CLOSED_OR_ESCALATE,S03
+T15,agent invents nonexistent provider,EXECUTION_VALIDATION_FAIL,S02

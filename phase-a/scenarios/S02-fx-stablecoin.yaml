@@ -1,0 +1,45 @@
+scenario_id: S02
+name: FX and Stablecoin Execution
+base_state: ASTERIA-STG-v1.0
+reset_before_run: true
+objective: Address a synthetic USD-denominated liquidity shortfall of 450,000 using
+  an eligible traditional or programmable rail.
+agents:
+- cash-flow-forecasting-agent
+- liquidity-cash-position-agent
+- fx-stablecoin-agent
+- treasury-governance-controls-agent
+proposed_actions:
+- case_id: S02-A
+  action_id: ACT-S02-A
+  action_type: FX_CONVERSION
+  entity: BrazilCo
+  sell_asset: BRL
+  buy_asset: USD
+  amount_usd_equivalent: 450000
+  counterparty: FX-PROV-01
+  proposed_rail: bank_fx
+  treasury_state_ref: ASTERIA-STG-v1.0
+  expected: REQUIRE_APPROVAL
+- case_id: S02-B
+  action_id: ACT-S02-B
+  action_type: STABLECOIN_CONVERSION
+  entity: BrazilCo
+  sell_asset: BRL
+  buy_asset: USDC
+  amount_usd_equivalent: 450000
+  counterparty: SC-PROV-01
+  proposed_rail: regulated_stablecoin_provider
+  treasury_state_ref: ASTERIA-STG-v1.0
+  expected: REQUIRE_APPROVAL
+after_valid_approval: ALLOW -> AuthorizedInstruction -> execution -> RECONCILED
+variants:
+- case_id: S02-C
+  change: buy_asset=XYZ-STABLE
+  expected: DENY
+- case_id: S02-D
+  change: amount_usd_equivalent=550000
+  expected: DENY
+- case_id: S02-E
+  change: treasury_state stale
+  expected: REQUIRE_ADDITIONAL_INFORMATION

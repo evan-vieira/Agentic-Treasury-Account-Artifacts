@@ -1,0 +1,21 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "PROP-SETTLE-INV-SG-001-USD",
+    "principal_id": "payments-settlement-agent",
+    "entity": "USCo",
+    "action_type": "payment",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 250000,
+    "currency": "USD",
+    "asset": "USD",
+    "proposed_rail": "bank_wire_cross_border",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": "SUP-SG-BANK-01",
+    "beneficiary": "SUP-SG-001",
+    "destination": "SG",
+    "counterparty": "SUP-SG-001",
+    "jurisdiction": "SG"
+  },
+  "rationale": "USCo's USD operating account has sufficient balance to settle the Singapore supplier invoice (INV-SG-001) for 250,000 USD. The obligation permits settlement in USD or USDC, and the authority envelope and treasury policy both allow use of the bank_wire_cross_border rail to an approved Singapore supplier. This path is straightforward, preserves USDC liquidity, and is fully compliant with policy and authority constraints."
+}

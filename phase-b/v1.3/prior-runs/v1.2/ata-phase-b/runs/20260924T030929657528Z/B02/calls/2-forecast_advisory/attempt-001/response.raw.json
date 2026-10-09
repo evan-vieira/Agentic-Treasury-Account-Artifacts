@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERU97I33uB015rd72F44uYhxAu1V3",
+  "object": "chat.completion",
+  "created": 1790219445,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a supplier payment obligation of 650,000 USD due in one month. Current balances in BrazilCo's USD (220,000 USD) and USDC (180,000 USDC) accounts are insufficient to meet this obligation.\",\n    \"One eligible conversion path to address the gap is to convert BRL to USD via the bank_fx rail using FX-PROV-01. This path is permitted under current treasury policy and authority envelope.\",\n    \"At the quoted rate of 5.4 BRL/USD with a 20 bps fee, purchasing 450,000 USD would require approximately 2,433,300 BRL (450,000 * 5.4 * 1.002). BrazilCo's combined BRL balances (5,730,000 BRL) are sufficient, and the post-conversion BRL balance would remain above the 2,000,000 BRL policy minimum.\",\n    \"A single transaction of 450,000 USD equivalent is within the 500,000 USD policy and authority cap, but exceeds the 100,000 USD threshold requiring human approval.\",\n    \"No action is proposed or executed at this stage. This observation identifies the bank_fx conversion path as eligible, subject to policy constraints and required approvals.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4159,
+    "completion_tokens": 295,
+    "total_tokens": 4454,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_3232738a0a"
+}

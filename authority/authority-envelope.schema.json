@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ata:design:v1.1:authority:authority-envelope.schema.json",
+  "title": "Authority Envelope",
+  "description": "Externally delegated maximum scope; transaction-specific Treasury Policy is evaluated separately.",
+  "x-design-status": "proposed-not-validated-by-phase-a-engine",
+  "x-source-documents": [
+    "ATA Reference Architecture v1.2",
+    "Policy Schema & Authority Model v1.1"
+  ],
+  "x-original-source-documents": [
+    "ATA Reference Architecture v1.1",
+    "Policy Schema & Authority Model v1.0"
+  ],
+  "x-document-baseline": "Baseline Manifest v1.1 (2026-10-08); editorial alignment only",
+  "type": "object",
+  "properties": {
+    "envelope_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "principal": {
+      "type": "object",
+      "properties": {
+        "principal_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "principal_id"
+      ],
+      "additionalProperties": true
+    },
+    "entity_scope": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "permitted"
+      ],
+      "additionalProperties": true
+    },
+    "actions": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "permitted"
+      ],
+      "additionalProperties": true
+    },
+    "currencies": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "permitted"
+      ],
+      "additionalProperties": true
+    },
+    "amount": {
+      "type": "object",
+      "properties": {
+        "max_single_transaction_usd_equivalent": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "counterparties": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": [
+            "APPROVED_ONLY",
+            "ALLOWLIST"
+          ]
+        },
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "rails": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "jurisdictions": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "approval": {
+      "type": "object",
+      "properties": {
+        "above_usd_equivalent": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        },
+        "required_role": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "validity": {
+      "type": "object",
+      "properties": {
+        "valid_from": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "valid_until": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "valid_from",
+        "valid_until"
+      ],
+      "additionalProperties": true
+    },
+    "revocation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "ACTIVE",
+            "REVOKED"
+          ]
+        },
+        "effective_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "envelope_id",
+    "version",
+    "principal",
+    "entity_scope",
+    "actions",
+    "currencies",
+    "validity",
+    "revocation"
+  ],
+  "additionalProperties": true
+}

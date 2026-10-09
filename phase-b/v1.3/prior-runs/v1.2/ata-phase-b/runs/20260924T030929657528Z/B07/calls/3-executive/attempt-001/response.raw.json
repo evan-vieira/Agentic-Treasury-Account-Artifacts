@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUECzDKhG9knC16bHB8gIciZULfE",
+  "object": "chat.completion",
+  "created": 1790219760,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"EXEC-B07-S04-001\",\n    \"principal_id\": \"payments-settlement-agent\",\n    \"entity\": \"USCo\",\n    \"action_type\": \"CROSS_BORDER_PAYMENT\",\n    \"source_account\": \"ACC-US-OPER-01\",\n    \"amount\": 250000,\n    \"currency\": \"USD\",\n    \"asset\": \"USD\",\n    \"proposed_rail\": \"bank_wire_cross_border\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": null,\n    \"beneficiary\": \"SUP-SG-001\",\n    \"destination\": \"SUP-SG-BANK-01\",\n    \"counterparty\": \"BANK-SIM\",\n    \"jurisdiction\": null,\n    \"sell_asset\": null\n  },\n  \"rationale\": \"USCo holds sufficient USD in its operating account to settle the supplier invoice (INV-SG-001) for 250,000 USD via the permitted bank_wire_cross_border rail to the approved beneficiary's bank destination. The authority envelope and treasury policy permit this action, but the transaction jurisdiction is unknown and cannot be inferred; Control Plane review is required for jurisdictional compliance and approval above the policy threshold.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4779,
+    "completion_tokens": 268,
+    "total_tokens": 5047,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_aee1eef1f0"
+}

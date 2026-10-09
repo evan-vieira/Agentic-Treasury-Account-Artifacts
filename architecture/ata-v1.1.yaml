@@ -1,0 +1,56 @@
+artifact: Agentic Treasury Account
+version: '1.1'
+status: proposed_reference_architecture
+source_documents:
+  - Agentic Treasury Account Reference Architecture v1.2
+  - Policy Schema & Authority Model v1.1
+  - Research Charter v1.5
+document_baseline: Baseline Manifest v1.1 (2026-10-08); editorial alignment only
+original_source_documents:
+  - Agentic Treasury Account Reference Architecture v1.1
+  - Policy Schema & Authority Model v1.0
+  - Research Charter v1.3
+layers:
+  - id: L1
+    name: Data and Financial Connectivity
+    function: Normalize financial inputs from banks, ERP, APIs, files, chains and markets.
+  - id: L2
+    name: Financial Intelligence
+    function: Derive cash position, forecast, exposure and treasury conditions.
+  - id: L3
+    name: Executive Agent Layer
+    function: Generate structured, non-executable financial intent.
+    canonical_agents:
+      - liquidity-agent
+      - forecast-agent
+      - payments-agent
+      - fx-stablecoin-agent
+      - yield-agent
+      - governance-agent
+    optional_orchestrator_authority: none
+  - id: L4
+    name: Governance and Authority Plane
+    deterministic_mechanism: Control Plane
+    function: Evaluate principal, action, envelope, policy, state, context and approvals deterministically.
+    decisions: [ALLOW, DENY, REQUIRE_APPROVAL, REQUIRE_ADDITIONAL_INFORMATION]
+  - id: L5
+    name: Execution Adapters
+    function: Validate and execute only Authorized Instructions against eligible rails.
+  - id: L6
+    name: Settlement, Reconciliation and Evidence
+    function: Verify observed outcome, reconcile and record audit evidence.
+closed_loop:
+  - Observe
+  - Interpret
+  - Propose
+  - Evaluate Authority and Policy
+  - Authorize
+  - Execute
+  - Verify
+  - Update State
+control_boundary:
+  input: ProposedAction
+  evaluated_with: [Principal, AuthorityEnvelope, TreasuryPolicy, TreasuryState, ApprovalState, Context]
+  executable_output: AuthorizedInstruction
+  rule: A ProposedAction is never directly executable.
+phase_a_coverage: Selected L4-L6 behaviors with fixed ProposedAction fixtures and simulated adapters; L3 model reasoning was not evaluated.

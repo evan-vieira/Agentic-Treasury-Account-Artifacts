@@ -1,0 +1,12 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The USCo supplier invoice (INV-SG-001) requires settlement of 250,000 USD to approved Singapore supplier SUP-SG-001, via either USD or USDC.",
+    "USCo holds sufficient balances for settlement: 1,250,000 USD in ACC-US-OPER-01 (bank operating) and 300,000 USDC in WAL-US-USDC-01 (institutional wallet).",
+    "Both eligible rails—bank_wire_cross_border (USD) and stablecoin_transfer (USDC)—are permitted by policy and authority envelope for this transaction.",
+    "No forecasted USD or USDC liquidity shortfalls are present for USCo over the relevant horizon; a surplus is projected.",
+    "The supplier, destination, and jurisdiction (SG) are all approved and verified for this payment.",
+    "No policy, authority, or segregation of duties conflicts are detected for this obligation.",
+    "These are advisory observations only; no action is proposed or executed at this stage."
+  ]
+}

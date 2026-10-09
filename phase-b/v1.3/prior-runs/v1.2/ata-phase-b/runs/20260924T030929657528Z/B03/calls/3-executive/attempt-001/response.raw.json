@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUAKN9GgkI5v6eCw7ascopnPIIJa",
+  "object": "chat.completion",
+  "created": 1790219520,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"EXEC-B03-S03-001\",\n    \"principal_id\": \"yield-optimization-agent\",\n    \"entity\": \"USCo\",\n    \"action_type\": \"INVEST_EXCESS_CASH\",\n    \"source_account\": \"ACC-US-OPER-01\",\n    \"amount\": 175000,\n    \"currency\": \"USD\",\n    \"asset\": \"TMMF-USD-01\",\n    \"proposed_rail\": \"tokenized_fund_subscription\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": null,\n    \"beneficiary\": null,\n    \"destination\": null,\n    \"counterparty\": \"FUND-PROV-01\",\n    \"jurisdiction\": null,\n    \"sell_asset\": null\n  },\n  \"rationale\": \"A $175,000 investment of USCo's excess USD cash into the approved low-risk tokenized money market fund (TMMF-USD-01) via the permitted rail and counterparty preserves projected post-investment liquidity at $825,000, well above the $650,000 minimum and after reserving for the imminent $250,000 supplier obligation. This amount is within the $250,000 policy and authority cap. As the proposed amount exceeds the autonomous threshold, treasury manager approval is required before execution.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4669,
+    "completion_tokens": 293,
+    "total_tokens": 4962,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_af356e7548"
+}

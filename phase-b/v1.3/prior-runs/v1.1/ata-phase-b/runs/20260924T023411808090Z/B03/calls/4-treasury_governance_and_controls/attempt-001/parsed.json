@@ -1,0 +1,9 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "Authority: The authority envelope (AE-YIELD-001) grants the principal 'yield-optimization-agent' the right to propose investments of excess USD cash for USCo, up to $250,000 per transaction, in approved assets (MMF-USD-01, TMMF-USD-01) via the 'tokenized_fund_subscription' rail, with counterparties restricted to FUND-PROV-01. The envelope is active and valid for the current date. Investments above $100,000 require approval by an eligible treasury manager role.",
+    "Policy: Treasury policy (POL-YIELD-001) is active and aligns with the authority envelope. It requires that post-investment projected cash for USCo remains at or above $650,000, restricts investments to approved assets and counterparties, and mandates audit and approval for investments above $100,000. The proposed $175,000 investment is within the permitted asset, amount, and counterparty limits, and would leave USCo with $1,075,000 in operating and reserve accounts, exceeding the liquidity minimum.",
+    "Data Risks: The treasury state data is current as of '2026-09-23T15:00:00Z', within the 300-second freshness requirement. All required fields for accounts, balances, forecasts, obligations, and counterparties are present and complete. However, the scenario is synthetic and does not reflect real market or operational risks. There is a dependency on the accuracy of projected cash needs and the assumption that the tokenized MMF instrument maintains daily liquidity and low risk as described. Any changes in obligations, unexpected outflows, or errors in forecast could impact liquidity preservation.",
+    "Other Considerations: The scenario (S03) objective is to consider, not execute, a prudent partial allocation. No approval or execution is permitted in this advisory role. The prior advice and proposal are consistent with policy and authority, but actual investment would require formal approval and audit per policy."
+  ]
+}

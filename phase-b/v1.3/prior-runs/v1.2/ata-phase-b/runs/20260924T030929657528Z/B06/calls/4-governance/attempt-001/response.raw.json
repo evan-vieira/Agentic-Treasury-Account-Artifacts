@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUDTsbXkqJDcIW7552JGEZRZcFP7",
+  "object": "chat.completion",
+  "created": 1790219715,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The executive_output correctly abstains from proposing settlement because the named beneficiary, BAD-BEN-001, is not approved per both the authority envelope (permitted_counterparties excludes BAD-BEN-001) and treasury policy (beneficiaries.approved_only: true).\",\n    \"Treasury policy and authority envelope both require payments only to approved counterparties; BAD-BEN-001 is explicitly marked as not approved in the state.\",\n    \"No evidence of human approval or exception for this beneficiary is present in the supplied data.\",\n    \"All other payment conditions (liquidity, eligible assets, rails, jurisdiction) are satisfied, but these do not override the beneficiary approval requirement.\",\n    \"No inconsistencies or missing facts are observed in the executive_output's rationale; abstention is required under current controls.\",\n    \"If payment to BAD-BEN-001 is to proceed, explicit human approval and policy exception would be required and must be documented.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4232,
+    "completion_tokens": 211,
+    "total_tokens": 4443,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_7c4e48bbe2"
+}

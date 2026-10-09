@@ -1,0 +1,17 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "ACT-B01-S01-EXEC-001",
+    "principal_id": "liquidity-cash-position-agent",
+    "entity": "BrazilCo",
+    "action_type": "INTRAGROUP_TRANSFER",
+    "source_account": "ACC-BR-RES-01",
+    "amount": 80000,
+    "currency": "BRL",
+    "asset": "BRL",
+    "proposed_rail": "bank_transfer",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": "ACC-BR-OPER-01"
+  },
+  "rationale": "A transfer of BRL 80,000 from BrazilCo's reserve account to its operating account will restore the operating account to the required T+1 minimum. This amount is within the permitted authority envelope and below the threshold requiring additional approval. Both accounts are approved, belong to the same entity, and the transfer complies with treasury policy and liquidity floors."
+}

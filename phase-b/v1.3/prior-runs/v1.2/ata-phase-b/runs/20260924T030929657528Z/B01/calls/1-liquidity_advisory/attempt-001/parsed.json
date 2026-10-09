@@ -1,0 +1,10 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "BrazilCo's BRL operating account (ACC-BR-OPER-01) is forecasted to fall below the T+1 minimum required balance by BRL 80,000, resulting in a projected shortfall.",
+    "BrazilCo's reserve account (ACC-BR-RES-01) holds a current balance of BRL 2,450,000, which is sufficient to cover the shortfall while maintaining the post-transfer minimum required by policy.",
+    "Both the source (reserve) and destination (operating) accounts are approved, belong to the same legal entity, and are eligible for intragroup transfer under current policy and authority.",
+    "The authority envelope and treasury policy permit an intragroup transfer up to BRL 1,000,000 via bank transfer, with approval required for amounts above BRL 100,000.",
+    "All relevant balances and data are current and within the required data freshness window."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTbvz0PW0g0vEYNUbUt6HGTYqC0U",
+  "object": "chat.completion",
+  "created": 1790217387,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"ACT-USCO-INVEST-TMMF-001\",\n    \"principal_id\": \"yield-optimization-agent\",\n    \"entity\": \"USCo\",\n    \"action_type\": \"invest\",\n    \"source_account\": \"ACC-US-OPER-01\",\n    \"amount\": 175000,\n    \"currency\": \"USD\",\n    \"asset\": \"TMMF-USD-01\",\n    \"proposed_rail\": \"tokenized_fund_subscription\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": null,\n    \"beneficiary\": \"FUND-PROV-01\",\n    \"counterparty\": \"FUND-PROV-01\",\n    \"jurisdiction\": \"US\"\n  },\n  \"rationale\": \"USCo's USD operating account has a surplus of 175,000 USD above the projected minimum cash requirement of 825,000 USD over the next 30 days. To prudently allocate excess cash while preserving liquidity, a partial investment of 175,000 USD into the low-risk, daily-liquidity tokenized money market fund (TMMF-USD-01) is proposed via the permitted tokenized_fund_subscription rail. This maintains compliance with treasury policy, preserves the liquidity floor, and aligns with the authority envelope and scenario objective.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3999,
+    "completion_tokens": 293,
+    "total_tokens": 4292,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_3232738a0a"
+}

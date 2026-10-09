@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUeccfTobb28SUcNsQPl8n0ZpKhD",
+  "object": "chat.completion",
+  "created": 1790221398,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The proposed intragroup transfer of 80,000 BRL from BrazilCo's reserve to operating account is consistent with the stated objective to restore operating liquidity to the T+1 minimum.\",\n    \"The action type, principal, source and destination accounts, currency, and rail align with the authority envelope and treasury policy requirements.\",\n    \"The proposed amount is below the threshold requiring additional human approval (100,000 BRL), so autonomous execution is permitted under policy.\",\n    \"Both accounts are approved, belong to the same legal entity, and the transfer rail is permitted.\",\n    \"No inconsistencies or missing facts are identified in the executive_output relative to the source state, authority, or policy.\",\n    \"No executive_contract_errors are present.\",\n    \"Audit requirements are noted as mandatory and must be observed in subsequent stages.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4382,
+    "completion_tokens": 185,
+    "total_tokens": 4567,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d7d51132d"
+}

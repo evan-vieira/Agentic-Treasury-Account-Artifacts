@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTd8Ss6249gwZTa3QshXiToJcUYg",
+  "object": "chat.completion",
+  "created": 1790217462,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\":\"ADVISORY\",\"observations\":[\"Authority: The authority envelope (AE-PAY-001) grants the payments-settlement-agent for USCo the right to initiate cross-border payments up to 500,000 USD per transaction, in USD or USDC, to approved counterparties (including SUP-SG-001) via permitted rails (bank_wire_cross_border, stablecoin_transfer) in permitted jurisdictions (SG). The invoice amount (250,000 USD) is within the authorized limit and scope. Approval is required for payments above 50,000 USD, and segregation of duties must be observed.\",\"Policy: Treasury policy (POL-XB-001) and common policy (POL-DATA-001) are both active and align with the authority envelope. Only approved beneficiaries, assets (USD, USDC), and rails (bank_wire_cross_border, stablecoin_transfer) are permitted. The Singapore supplier (SUP-SG-001) is approved. The payment amount is within the policy's single payment maximum. Data recency and audit requirements are met.\",\"Data Risks: The treasury state is current (as of 2026-09-23T15:00:00Z), and all required fields for the payment proposal are present. No data integrity or recency issues are observed. However, as with any cross-border payment, there is operational risk related to settlement timing and potential for beneficiary account mismatches. No evidence of conflicting obligations or liquidity shortfall for USCo. All counterparties and accounts involved are approved and in good standing.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3964,
+    "completion_tokens": 313,
+    "total_tokens": 4277,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

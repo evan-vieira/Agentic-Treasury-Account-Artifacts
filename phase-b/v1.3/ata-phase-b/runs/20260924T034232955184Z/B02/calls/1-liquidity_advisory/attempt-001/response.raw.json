@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUerZ1n4BFvWYwZ3J8U9zzmKWvna",
+  "object": "chat.completion",
+  "created": 1790221413,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a required obligation of 650,000 USD and a projected balance of 200,000 USD in its USD operating account.\",\n    \"Eligible conversion paths to address this gap include FX conversion from BRL to USD via the bank_fx rail, or BRL to USDC via the regulated_stablecoin_provider rail, both permitted by current treasury policy and authority envelope.\",\n    \"Both BRL operating and reserve accounts have sufficient balances to support a conversion within the policy's maximum single transaction limit (500,000 USD equivalent), subject to minimum post-execution BRL liquidity requirements.\",\n    \"The available FX and stablecoin provider quotes are current and approved, with clearly defined fees and settlement profiles.\",\n    \"Any conversion path selected must ensure that the group BRL balance does not fall below the policy minimum of 2,000,000 BRL after execution.\",\n    \"If the proposed USD or USDC purchase exceeds 100,000 USD equivalent, human approval is required per policy.\",\n    \"No action is proposed at this stage; these observations are for advisory purposes only.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4021,
+    "completion_tokens": 256,
+    "total_tokens": 4277,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_7337edc6bd"
+}

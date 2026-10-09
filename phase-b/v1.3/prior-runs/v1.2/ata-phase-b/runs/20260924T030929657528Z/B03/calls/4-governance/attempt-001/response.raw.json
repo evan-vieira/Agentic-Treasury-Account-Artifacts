@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUAZcvW3TmY4SUxPfO1LnZFfNXLw",
+  "object": "chat.completion",
+  "created": 1790219535,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"The proposed $175,000 investment of USCo's excess USD cash into TMMF-USD-01 via tokenized_fund_subscription and FUND-PROV-01 is consistent with both treasury policy and authority envelope: the amount is below the $250,000 cap, uses an approved asset, rail, and counterparty, and preserves projected post-investment liquidity at $825,000 (above the $650,000 minimum).\",\n    \"The executive_output correctly reserves for the imminent $250,000 supplier obligation, ensuring no short-term liquidity risk.\",\n    \"As the proposed investment amount exceeds the $100,000 autonomous threshold, explicit treasury manager approval is required prior to execution per policy and authority.\",\n    \"No inconsistencies or missing facts are detected in the executive_output relative to the supplied state, policy, and authority.\",\n    \"Audit requirements are triggered and must be fulfilled as per policy.\",\n    \"This is an advisory review only; no approval or execution is implied.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4446,
+    "completion_tokens": 219,
+    "total_tokens": 4665,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_83092f6678"
+}

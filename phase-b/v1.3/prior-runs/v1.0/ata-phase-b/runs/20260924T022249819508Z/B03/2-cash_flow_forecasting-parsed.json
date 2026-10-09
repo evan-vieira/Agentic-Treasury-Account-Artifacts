@@ -1,0 +1,16 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "ACT-USCO-INVEST-TMMF-001",
+    "principal_id": "USCo",
+    "entity": "USCo",
+    "action_type": "invest",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 175000,
+    "currency": "USD",
+    "asset": "TMMF-USD-01",
+    "proposed_rail": "tokenized_fund_subscription",
+    "treasury_state_ref": "ASTERIA-STG-v1.0"
+  },
+  "rationale": "USCo's USD operating account has a projected 30-day surplus of 175,000 USD above the required minimum cash (825,000 USD). To prudently allocate excess cash while preserving projected liquidity, a partial investment of 175,000 USD into the low-risk, daily-liquidity tokenized MMF (TMMF-USD-01) is proposed. This amount does not exceed the instrument's max position and maintains sufficient liquidity for all forecasted obligations."
+}

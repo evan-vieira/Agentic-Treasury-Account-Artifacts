@@ -1,0 +1,38 @@
+policy_id: POL-FX-001
+version: '1.0'
+status: ACTIVE
+scope:
+  entities:
+  - BrazilCo
+  actions:
+  - FX_CONVERSION
+  - STABLECOIN_CONVERSION
+currencies:
+  sell:
+  - BRL
+  buy:
+  - USD
+  - USDC
+assets:
+  permitted:
+  - USD
+  - USDC
+counterparties:
+  approved_only: true
+rails:
+  permitted:
+  - bank_fx
+  - regulated_stablecoin_provider
+amount:
+  max_single_transaction_usd_equivalent: 500000
+liquidity:
+  min_group_brl_post_execution: 2000000
+approval:
+  required_above_usd_equivalent: 100000
+  eligible_roles:
+  - treasury_manager
+data_requirements:
+  treasury_state_max_age_seconds: 300
+audit:
+  mandatory: true
+conflict_behavior: DENY

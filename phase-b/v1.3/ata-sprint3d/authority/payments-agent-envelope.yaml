@@ -1,0 +1,26 @@
+envelope_id: AE-PAY-001
+version: '1.0'
+principal_id: payments-settlement-agent
+entity_scope:
+- USCo
+actions:
+- CROSS_BORDER_PAYMENT
+currencies:
+- USD
+- USDC
+max_amount_usd: 500000
+permitted_counterparties:
+- SUP-SG-001
+permitted_assets:
+- USD
+- USDC
+permitted_rails:
+- bank_wire_cross_border
+- stablecoin_transfer
+jurisdictions:
+- SG
+approval_requirement:
+  above_usd: 50000
+valid_from: '2026-09-01T00:00:00Z'
+valid_until: '2026-12-31T23:59:59Z'
+revocation_status: ACTIVE

@@ -1,0 +1,17 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "ACT-B05-S01-001",
+    "principal_id": "BrazilCo",
+    "entity": "BrazilCo",
+    "action_type": "transfer",
+    "source_account": "ACC-BR-RES-01",
+    "destination_account": "ACC-BR-OPER-01",
+    "amount": 80000,
+    "currency": "BRL",
+    "asset": "BRL",
+    "proposed_rail": "bank_transfer",
+    "treasury_state_ref": "ASTERIA-STG-v1.0"
+  },
+  "rationale": "BrazilCo's BRL operating account is forecasted to fall short of the T+1 minimum liquidity requirement by 80,000 BRL. A same-entity, same-currency transfer from the BrazilCo BRL reserve account to the operating account will restore the required minimum. Both accounts are eligible and approved, and the transfer can be executed via the traditional bank transfer rail."
+}

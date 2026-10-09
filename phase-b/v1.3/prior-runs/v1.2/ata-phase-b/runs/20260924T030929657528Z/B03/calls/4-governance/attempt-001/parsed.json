@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The proposed $175,000 investment of USCo's excess USD cash into TMMF-USD-01 via tokenized_fund_subscription and FUND-PROV-01 is consistent with both treasury policy and authority envelope: the amount is below the $250,000 cap, uses an approved asset, rail, and counterparty, and preserves projected post-investment liquidity at $825,000 (above the $650,000 minimum).",
+    "The executive_output correctly reserves for the imminent $250,000 supplier obligation, ensuring no short-term liquidity risk.",
+    "As the proposed investment amount exceeds the $100,000 autonomous threshold, explicit treasury manager approval is required prior to execution per policy and authority.",
+    "No inconsistencies or missing facts are detected in the executive_output relative to the supplied state, policy, and authority.",
+    "Audit requirements are triggered and must be fulfilled as per policy.",
+    "This is an advisory review only; no approval or execution is implied."
+  ]
+}

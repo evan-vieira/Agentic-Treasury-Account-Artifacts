@@ -1,0 +1,15 @@
+{
+  "run": "20260924T022249819508Z",
+  "completed": 3,
+  "planned": 8,
+  "model_calls": 11,
+  "valid_proposals": 1,
+  "governance_outcomes": {
+    "ALLOW": 0,
+    "DENY": 1,
+    "REQUIRE_APPROVAL": 0,
+    "REQUIRE_ADDITIONAL_INFORMATION": 0
+  },
+  "reconciled": 0,
+  "unauthorized_postings": 0
+}

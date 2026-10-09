@@ -1,0 +1,17 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "TRF-BR-RES-TO-OPER-20260923-01",
+    "principal_id": "BrazilCo",
+    "entity": "BrazilCo",
+    "action_type": "transfer",
+    "source_account": "ACC-BR-RES-01",
+    "destination_account": "ACC-BR-OPER-01",
+    "amount": 80000,
+    "currency": "BRL",
+    "asset": "BRL",
+    "proposed_rail": "bank_transfer",
+    "treasury_state_ref": "ASTERIA-STG-v1.0"
+  },
+  "rationale": "BrazilCo's BRL operating account is forecasted to fall short of the T+1 minimum by 80,000 BRL. A same-entity, same-currency transfer from the BrazilCo BRL reserve account (which has sufficient funds) to the operating account will restore the required minimum liquidity. This action uses eligible internal funds and the traditional bank transfer rail."
+}

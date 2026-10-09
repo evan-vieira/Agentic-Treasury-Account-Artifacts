@@ -1,0 +1,4 @@
+forecast_id,entity_id,account_id,horizon,projected_balance_before_action,currency,required_minimum,condition,gap,projected_balance_before_obligation,required_obligation,projected_min_cash_before_investment
+FC-BR-BRL-001,BrazilCo,ACC-BR-OPER-01,T+1D,1420000,BRL,1500000,shortfall,80000,,,
+FC-BR-USD-001,BrazilCo,ACC-BR-USD-01,T+30D,,USD,,shortfall,450000,200000,650000,
+FC-US-USD-001,USCo,ACC-US-OPER-01,T+30D,,USD,650000,surplus,175000,,,825000

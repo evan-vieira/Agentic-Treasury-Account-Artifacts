@@ -1,0 +1,4 @@
+obligation_id,entity_id,due_at,amount,currency,beneficiary_id,settlement_assets,purpose
+OBL-BR-BRL-001,BrazilCo,2026-09-24T15:00:00Z,1860000,BRL,TAX-PAYROLL-BR,BRL,payroll_and_tax
+OBL-BR-USD-001,BrazilCo,2026-10-23T15:00:00Z,650000,USD,SUP-US-001,USD|USDC,supplier_payment
+INV-SG-001,USCo,2026-09-25T15:00:00Z,250000,USD,SUP-SG-001,USD|USDC,supplier_invoice

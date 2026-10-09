@@ -1,0 +1,225 @@
+{
+  "artifact": "ATA-Sprint3D-v1.0",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 26,
+      "sha256": "4cad133d4f0a6cf4bba15f1b8bbae48d6a55f20b94f75487c51a93cc6a5af59f"
+    },
+    {
+      "path": "ASSUMPTIONS.md",
+      "bytes": 4336,
+      "sha256": "e6983156ab67f9f0d34cc9a0da2ec8b8401d6ad70aeb313ef1d61b7ae25c3d6e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1307,
+      "sha256": "61d8661ee4ea6cd37b1b5aba41bda3d066532abd355a58bc2e1a8b94134e80d4"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 6210,
+      "sha256": "821f2f59004065a3aefdd363cd6a98dc06dce0644c7e6eb890013e28cf410ca8"
+    },
+    {
+      "path": "RUN_SPRINT3D.md",
+      "bytes": 2866,
+      "sha256": "22642d3931f40fc2ca0dcf1fcd000a959a79c3e036086c942c9e7e90d03b54a5"
+    },
+    {
+      "path": "authority/fx-agent-envelope.yaml",
+      "bytes": 528,
+      "sha256": "f621d93826cc87d022994076e73f226aa216692bb89e79b5ee3217e229a0422c"
+    },
+    {
+      "path": "authority/liquidity-agent-envelope.yaml",
+      "bytes": 353,
+      "sha256": "f6546bce40e954a7253bfc2714c4694b1393147bd5f3396d61ab0d0c2b68c1fe"
+    },
+    {
+      "path": "authority/payments-agent-envelope.yaml",
+      "bytes": 472,
+      "sha256": "9feb6271a7fc627384a39c3d39b3e95a16eb93384ba013b5d29a0092e28d6c19"
+    },
+    {
+      "path": "authority/yield-agent-envelope.yaml",
+      "bytes": 444,
+      "sha256": "a1b566005c3746e0355150f2c5f3da56714d4c52d3f201077cc4262d0a0a7313"
+    },
+    {
+      "path": "dataset/accounts.csv",
+      "bytes": 592,
+      "sha256": "e339ddde9cb852edc40b4cab4a8a2a01f0c3f5aa8bbd0f6a57942e865a822282"
+    },
+    {
+      "path": "dataset/assets.csv",
+      "bytes": 519,
+      "sha256": "b9d7704a92bc9473a8a7570c6062d3c7ffa9c4a6e9af2d9fda8e8250e1bc8ed8"
+    },
+    {
+      "path": "dataset/balances.csv",
+      "bytes": 628,
+      "sha256": "164a5fe9fb9b60410caf11b9cacd9362085f0ec31b36931dac5b2daeb99e3fdb"
+    },
+    {
+      "path": "dataset/counterparties.csv",
+      "bytes": 386,
+      "sha256": "514d4c7aa7267203056d5f6b5cb864da145deaf82e1f948d659f5b9389ff7127"
+    },
+    {
+      "path": "dataset/entities.csv",
+      "bytes": 173,
+      "sha256": "47f0a172c5dc9ebc45bad9f3b28c34cee79c384344b1fb8a90a5857b0e2cd20e"
+    },
+    {
+      "path": "dataset/forecast.csv",
+      "bytes": 449,
+      "sha256": "e9542735cfea5ff33b14eeeec65424f22405f7e67c45b84dfb3db89ee5b01c35"
+    },
+    {
+      "path": "dataset/market_snapshot.yaml",
+      "bytes": 615,
+      "sha256": "5e330fbea1697f174a1b274be971c718a788f324e835cfe2dd5c7c4387853494"
+    },
+    {
+      "path": "dataset/obligations.csv",
+      "bytes": 362,
+      "sha256": "1d31b3c1504d750c76a7aa7cabe8295424d6f75be451ee2caf52f5629d940eac"
+    },
+    {
+      "path": "dataset/rails.yaml",
+      "bytes": 832,
+      "sha256": "acffab9fe875d75be1b58a1e538c542ea1e4f65fabf15495cb527839be1f4a39"
+    },
+    {
+      "path": "expected_results/negative_tests.csv",
+      "bytes": 849,
+      "sha256": "178cf27d779d84f6e98368c71095b48eabf14cce32915378f653eeadb21eb8b3"
+    },
+    {
+      "path": "expected_results/primary_cases.csv",
+      "bytes": 371,
+      "sha256": "028d9fc8a5f0064da22a4c98d3ff0e9432fc80d6b76c5953c832fbab33a577fc"
+    },
+    {
+      "path": "metadata/protocol.yaml",
+      "bytes": 1247,
+      "sha256": "e99d61bd8fefdffafba198148a8007f8ad92754a75938cf4b10d85d993408606"
+    },
+    {
+      "path": "metadata/sprint3c-manifest.json",
+      "bytes": 4287,
+      "sha256": "a7307078fb2b7dbdad8d031333a0d1b5911f8fba3f6374e9376bef71ef857be8"
+    },
+    {
+      "path": "policies/common-data-policy.yaml",
+      "bytes": 202,
+      "sha256": "3b96aeeb5c05ee6b377a47e22db1375ed29068951861f896099d053ae4622c66"
+    },
+    {
+      "path": "policies/cross-border-policy.yaml",
+      "bytes": 613,
+      "sha256": "9c959dd21a07fd24e1d554088279afc80248040ea2785760be58d8b361c24cce"
+    },
+    {
+      "path": "policies/fx-policy.yaml",
+      "bytes": 635,
+      "sha256": "24d0681b6b98b1ff891b36b44a464466ec0f1febabced3e594f0e540f7dbbd91"
+    },
+    {
+      "path": "policies/liquidity-policy.yaml",
+      "bytes": 553,
+      "sha256": "7c924adae61b5c608d3a6d2faf0cdb81c95c9a8e2f6b54b0c3f0a5e6556d95df"
+    },
+    {
+      "path": "policies/yield-policy.yaml",
+      "bytes": 473,
+      "sha256": "0edbd772ae98f5129b842b40fa237dd995148ba79cb67139627912ac9340ae03"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 14,
+      "sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a"
+    },
+    {
+      "path": "resolved/cases.json",
+      "bytes": 27617,
+      "sha256": "76c346e2ddfbcc9629728eeb232915be52c515dad05b06a6620b921caf8b9b42"
+    },
+    {
+      "path": "resolved/expectations.json",
+      "bytes": 1324,
+      "sha256": "6ffd9097d72fe755181bf158111305dc55d6798cc47a89acd1db8fd3a4dcc3d6"
+    },
+    {
+      "path": "resolved/freeze.json",
+      "bytes": 304,
+      "sha256": "36d92a76754ed23da2e4c07b19b61c3a56b5e585ecaec345c5c21d1b0c10fe12"
+    },
+    {
+      "path": "results/case_summary.csv",
+      "bytes": 5716,
+      "sha256": "cdf1ae2fbd77cc2e22a67fc71d2ca9d70184e08df028620d098f152815a78fe1"
+    },
+    {
+      "path": "results/input_integrity.json",
+      "bytes": 6132,
+      "sha256": "0a75f1a332e2580a33b60e8f1deb23a72e79fb6cc184b1ad650260f90196513a"
+    },
+    {
+      "path": "results/runs.jsonl",
+      "bytes": 8085530,
+      "sha256": "5df3aab863fdedb7f649bb2120ab7741cac2687275d6d45499f9f9b79a4a5f43"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 1637,
+      "sha256": "3cc71d2ee86cf42b6d6d251f0415a6d4dd5af301a162a91f4b259760d9195501"
+    },
+    {
+      "path": "results/verification.txt",
+      "bytes": 1307,
+      "sha256": "b753e530636a78c9d4a0518e45faf03c34b97f26733a9125fe7bc382bf6f2f3b"
+    },
+    {
+      "path": "scenarios/S01-liquidity.yaml",
+      "bytes": 966,
+      "sha256": "33cf9d9f76bbff2d607512c9e5bde3f634df825b2469e438ce43871e73a877cf"
+    },
+    {
+      "path": "scenarios/S02-fx-stablecoin.yaml",
+      "bytes": 1282,
+      "sha256": "38c0987d1ed2d354b9d8031838ebbe144550604c9083b371e3da14c7570c707b"
+    },
+    {
+      "path": "scenarios/S03-yield.yaml",
+      "bytes": 1071,
+      "sha256": "714c707b97a958916e935619b0e8c3bac0a939f6a66118830c6a953e632d5275"
+    },
+    {
+      "path": "scenarios/S04-cross-border.yaml",
+      "bytes": 1207,
+      "sha256": "a5a69e84fb073bc4837f78b2d7abef9ee571765471eac1fd62793fe4f7530e85"
+    },
+    {
+      "path": "src/engine.py",
+      "bytes": 16518,
+      "sha256": "057af4ce3ceb73a1b0b41c4031fe5709ee3c93a0fe3ba5a15ce9f83c7fe413e5"
+    },
+    {
+      "path": "src/prepare_cases.py",
+      "bytes": 4605,
+      "sha256": "14e45a840f9d4b25215fe429c14d1acb5b1558c5aa4370ed3d64979bdf0b2dd8"
+    },
+    {
+      "path": "src/run.py",
+      "bytes": 7660,
+      "sha256": "ab7d5207dd7e65158f80a69e83e8a3395938e7febffb5fa944b292592903bbb9"
+    },
+    {
+      "path": "tests/test_controls.py",
+      "bytes": 4562,
+      "sha256": "53c25552bb1b62765448b597c6b990a329abcd7e5b2983b3259527f092616c8f"
+    }
+  ]
+}

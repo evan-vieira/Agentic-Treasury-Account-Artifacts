@@ -1,0 +1,9 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "Authority: The authority envelope AE-FX-001 is active, covers BrazilCo, and permits both FX and stablecoin conversions (BRL→USD or BRL→USDC) up to 500,000 USD-equivalent per transaction, with a requirement for approval above 100,000 USD-equivalent. Only approved counterparties (FX-PROV-01, SC-PROV-01) and rails (bank_fx, regulated_stablecoin_provider) are permitted. The envelope is valid for the current date and scenario.",
+    "Policy: Treasury policy POL-FX-001 is active and aligns with the authority envelope. It restricts conversions to approved assets (USD, USDC), counterparties, and rails, and enforces a post-execution minimum BRL liquidity of 2,000,000. The policy also requires audit and mandates approval for transactions above 100,000 USD-equivalent. Data requirements specify that treasury state data must be no older than 300 seconds; the provided snapshot is current as of canonical time.",
+    "Data Risks: The scenario uses synthetic, fixed simulation data. FX and stablecoin quotes are not market observations and should not be relied upon for real-world pricing or risk assessment. All accounts, balances, and counterparties referenced are approved and current as of the provided snapshot. No missing mandatory fields are detected, and the data age is within policy limits.",
+    "Other Risks: The scenario does not presume optimality of any path. Both eligible conversion paths (BRL→USD via bank FX, BRL→USDC via stablecoin provider) are policy- and authority-compliant for the stated objective. However, any action above 100,000 USD-equivalent requires explicit approval per policy and authority. Execution should ensure post-conversion BRL balances do not fall below the 2,000,000 minimum. All actions must be auditable and comply with data retention requirements."
+  ]
+}

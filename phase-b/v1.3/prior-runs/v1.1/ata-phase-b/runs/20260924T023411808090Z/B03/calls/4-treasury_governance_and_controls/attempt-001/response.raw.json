@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTcApOBUMHRxeg2JPMucltJdyHik",
+  "object": "chat.completion",
+  "created": 1790217402,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\":\"ADVISORY\",\"observations\":[\"Authority: The authority envelope (AE-YIELD-001) grants the principal 'yield-optimization-agent' the right to propose investments of excess USD cash for USCo, up to $250,000 per transaction, in approved assets (MMF-USD-01, TMMF-USD-01) via the 'tokenized_fund_subscription' rail, with counterparties restricted to FUND-PROV-01. The envelope is active and valid for the current date. Investments above $100,000 require approval by an eligible treasury manager role.\",\"Policy: Treasury policy (POL-YIELD-001) is active and aligns with the authority envelope. It requires that post-investment projected cash for USCo remains at or above $650,000, restricts investments to approved assets and counterparties, and mandates audit and approval for investments above $100,000. The proposed $175,000 investment is within the permitted asset, amount, and counterparty limits, and would leave USCo with $1,075,000 in operating and reserve accounts, exceeding the liquidity minimum.\",\"Data Risks: The treasury state data is current as of '2026-09-23T15:00:00Z', within the 300-second freshness requirement. All required fields for accounts, balances, forecasts, obligations, and counterparties are present and complete. However, the scenario is synthetic and does not reflect real market or operational risks. There is a dependency on the accuracy of projected cash needs and the assumption that the tokenized MMF instrument maintains daily liquidity and low risk as described. Any changes in obligations, unexpected outflows, or errors in forecast could impact liquidity preservation.\",\"Other Considerations: The scenario (S03) objective is to consider, not execute, a prudent partial allocation. No approval or execution is permitted in this advisory role. The prior advice and proposal are consistent with policy and authority, but actual investment would require formal approval and audit per policy.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4004,
+    "completion_tokens": 405,
+    "total_tokens": 4409,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

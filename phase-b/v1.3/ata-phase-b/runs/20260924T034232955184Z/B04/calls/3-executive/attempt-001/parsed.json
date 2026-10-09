@@ -1,0 +1,22 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "EXEC-B04-S04-001",
+    "principal_id": "payments-settlement-agent",
+    "entity": "USCo",
+    "action_type": "CROSS_BORDER_PAYMENT",
+    "source_account": "WAL-US-USDC-01",
+    "amount": 250000,
+    "currency": "USD",
+    "asset": "USDC",
+    "proposed_rail": "stablecoin_transfer",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": null,
+    "beneficiary": "SUP-SG-001",
+    "destination": "SUP-SG-WALLET-01",
+    "counterparty": "CHAIN-SIM",
+    "jurisdiction": "SG",
+    "sell_asset": null
+  },
+  "rationale": "USCo can fully settle the SG supplier invoice using available USDC via the stablecoin_transfer rail to the approved supplier's wallet. This route is eligible under both authority and treasury policy, and the amount exceeds the approval threshold, so required approval must be obtained before execution."
+}

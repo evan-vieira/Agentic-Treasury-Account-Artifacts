@@ -1,0 +1,191 @@
+{
+  "case_id": "B02",
+  "scenario": "S02",
+  "probe": "base",
+  "calls": [
+    {
+      "role": "Liquidity and Cash Position",
+      "response_model": "gpt-4.1-2025-04-14",
+      "usage": {
+        "prompt_tokens": 3066,
+        "completion_tokens": 302,
+        "total_tokens": 3368,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "attempt": "attempt-001",
+      "started_at": "2026-09-24T02:34:56.844493+00:00",
+      "finished_at": "2026-09-24T02:34:59.061311+00:00",
+      "started_epoch": 1790217296.84455,
+      "http_status": 200,
+      "response_headers": {
+        "date": "Thu, 24 Sep 2026 02:34:59 GMT",
+        "content-type": "application/json",
+        "x-ratelimit-limit-requests": "500",
+        "x-ratelimit-limit-tokens": "30000",
+        "x-ratelimit-remaining-requests": "499",
+        "x-ratelimit-remaining-tokens": "27603",
+        "x-ratelimit-reset-requests": "120ms",
+        "x-ratelimit-reset-tokens": "4.794s",
+        "x-request-id": "req_c3efc350e9c64d1ba8b8d94d202654f0"
+      },
+      "retryable": false,
+      "raw_response_sha256": "5fd06f07bd37e4573f95ba6735f137b30b22095e54c2cd5c1a8239d9f654fca7",
+      "retry_not_before_epoch": 1790217299.061298,
+      "transport_response_is_synthetic_error_record": false
+    },
+    {
+      "role": "Cash Flow Forecasting",
+      "response_model": "gpt-4.1-2025-04-14",
+      "usage": {
+        "prompt_tokens": 3384,
+        "completion_tokens": 298,
+        "total_tokens": 3682,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "attempt": "attempt-001",
+      "started_at": "2026-09-24T02:35:11.851759+00:00",
+      "finished_at": "2026-09-24T02:35:14.373623+00:00",
+      "started_epoch": 1790217311.851825,
+      "http_status": 200,
+      "response_headers": {
+        "date": "Thu, 24 Sep 2026 02:35:14 GMT",
+        "content-type": "application/json",
+        "x-ratelimit-limit-requests": "500",
+        "x-ratelimit-limit-tokens": "30000",
+        "x-ratelimit-remaining-requests": "499",
+        "x-ratelimit-remaining-tokens": "27275",
+        "x-ratelimit-reset-requests": "120ms",
+        "x-ratelimit-reset-tokens": "5.45s",
+        "x-request-id": "req_bacef9bfd857418baaf21bac81b1eddf"
+      },
+      "retryable": false,
+      "raw_response_sha256": "f15fd0102744d9fdf21b12c666ba9d917dc08085003af5e3250ff29a77d4e5de",
+      "retry_not_before_epoch": 1790217314.373587,
+      "transport_response_is_synthetic_error_record": false
+    },
+    {
+      "role": "FX and Stablecoin Execution",
+      "response_model": "gpt-4.1-2025-04-14",
+      "usage": {
+        "prompt_tokens": 4223,
+        "completion_tokens": 360,
+        "total_tokens": 4583,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "attempt": "attempt-001",
+      "started_at": "2026-09-24T02:35:26.858330+00:00",
+      "finished_at": "2026-09-24T02:35:29.508766+00:00",
+      "started_epoch": 1790217326.8584042,
+      "http_status": 200,
+      "response_headers": {
+        "date": "Thu, 24 Sep 2026 02:35:29 GMT",
+        "content-type": "application/json",
+        "x-ratelimit-limit-requests": "500",
+        "x-ratelimit-limit-tokens": "30000",
+        "x-ratelimit-remaining-requests": "499",
+        "x-ratelimit-remaining-tokens": "26598",
+        "x-ratelimit-reset-requests": "120ms",
+        "x-ratelimit-reset-tokens": "6.804s",
+        "x-request-id": "req_d25ca0c29c8644e2989255118cb1399e"
+      },
+      "retryable": false,
+      "raw_response_sha256": "51591148f915b53774a5ee82562ac269fd62d36a11fc6c8368ac8b9aa801dad7",
+      "retry_not_before_epoch": 1790217329.508704,
+      "transport_response_is_synthetic_error_record": false
+    },
+    {
+      "role": "Treasury Governance and Controls",
+      "response_model": "gpt-4.1-2025-04-14",
+      "usage": {
+        "prompt_tokens": 4226,
+        "completion_tokens": 395,
+        "total_tokens": 4621,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "attempt": "attempt-001",
+      "started_at": "2026-09-24T02:35:41.868144+00:00",
+      "finished_at": "2026-09-24T02:35:45.077191+00:00",
+      "started_epoch": 1790217341.868206,
+      "http_status": 200,
+      "response_headers": {
+        "date": "Thu, 24 Sep 2026 02:35:45 GMT",
+        "content-type": "application/json",
+        "x-ratelimit-limit-requests": "500",
+        "x-ratelimit-limit-tokens": "30000",
+        "x-ratelimit-remaining-requests": "499",
+        "x-ratelimit-remaining-tokens": "26592",
+        "x-ratelimit-reset-requests": "120ms",
+        "x-ratelimit-reset-tokens": "6.816s",
+        "x-request-id": "req_7769f257418d4b9c8963503462e08dc3"
+      },
+      "retryable": false,
+      "raw_response_sha256": "9269bd32cb0c0adc78c0bee5079bbb9f6a1e706938e9e1f570675272320d3b03",
+      "retry_not_before_epoch": 1790217345.077163,
+      "transport_response_is_synthetic_error_record": false
+    }
+  ],
+  "agent_output": {
+    "status": "PROPOSE",
+    "action": {
+      "action_id": "ACT-BR-BRL2USDC-001",
+      "principal_id": "fx-stablecoin-agent",
+      "entity": "BrazilCo",
+      "action_type": "convert_stablecoin",
+      "source_account": "ACC-BR-OPER-01",
+      "amount": 1347500,
+      "currency": "BRL",
+      "asset": "BRL",
+      "proposed_rail": "regulated_stablecoin_provider",
+      "treasury_state_ref": "MKT-20260923-1500Z",
+      "destination_account": "WAL-BR-USDC-01",
+      "beneficiary": "BrazilCo",
+      "counterparty": "SC-PROV-01",
+      "jurisdiction": "BR"
+    },
+    "rationale": "To address BrazilCo's projected USD liquidity gap of 450,000 USD at T+30D, one eligible path is to convert BRL to USDC via the regulated stablecoin provider rail (SC-PROV-01). At the quoted rate of 5.39 BRL/USDC plus a 35 bps fee, converting 1,347,500 BRL yields approximately 249,537 USDC (1,347,500 / 5.39 * 0.9965), closely matching the USD-equivalent gap. This path is eligible under policy and authority, does not presume optimality, and leverages the supplier's acceptance of USDC. There is uncertainty regarding future FX rates, operational timing, and whether this path is superior to direct USD conversion, but it is compliant and addresses the forecasted shortfall."
+  },
+  "schema_errors": [
+    "INVALID_STATE_REFERENCE"
+  ],
+  "governance": null,
+  "instruction": null,
+  "execution": null,
+  "audit": [],
+  "unauthorized_postings": 0
+}

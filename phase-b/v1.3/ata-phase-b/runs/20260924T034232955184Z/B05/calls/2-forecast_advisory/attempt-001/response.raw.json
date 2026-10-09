@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUi0DHYOmdSqviJ3N8PmPKwULOtB",
+  "object": "chat.completion",
+  "created": 1790221608,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ADVISORY\",\n  \"observations\": [\n    \"BrazilCo's BRL operating account is forecasted to have a T+1 shortfall of 80,000 BRL relative to the required minimum of 1,500,000 BRL.\",\n    \"Eligible same-entity funds are available in BrazilCo's BRL reserve account, which is approved and has a sufficient current balance to cover the shortfall while maintaining the post-transfer minimum required by policy.\",\n    \"An intragroup transfer from the BRL reserve to the BRL operating account is permitted under the authority envelope and treasury policy, provided the post-transfer reserve balance remains at or above 1,800,000 BRL.\",\n    \"The required transfer amount to restore the operating account to the minimum is 80,000 BRL, which is below the autonomous execution threshold of 100,000 BRL and does not require additional approval.\",\n    \"No cross-entity or cross-currency actions are necessary to resolve the immediate BRL liquidity gap.\",\n    \"All relevant data (balances, account approvals, authority envelope, and policy) are current and satisfy data age and governance requirements.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3805,
+    "completion_tokens": 242,
+    "total_tokens": 4047,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

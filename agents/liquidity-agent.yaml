@@ -1,0 +1,13 @@
+id: liquidity-agent
+name: Liquidity and Cash Position Agent
+status: proposed_contract_not_phase_a_executed
+purpose: Observe account balances, entities, currencies, near-term shortfalls and excess liquidity.
+request_fields: [treasury_state, objective, constraints, context]
+response_fields: [observation, reasoning_summary, proposed_action, expected_effect, confidence, required_controls, evidence]
+candidate_action_types: [INTRAGROUP_TRANSFER]
+required_evidence: [balance_timestamp, account_ownership, liquidity_forecast_ref]
+guardrails:
+  - Missing or stale mandatory balances must be disclosed rather than guessed.
+  - Produce non-executable intent only; do not initiate transfers.
+  - Authority, policy, approvals and rail selection are independently evaluated downstream.
+handoff: execution/proposed-action.schema.json

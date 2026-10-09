@@ -1,0 +1,10 @@
+account_id,entity_id,account_type,currency,rail_family,approved
+ACC-BR-OPER-01,BrazilCo,bank_operating,BRL,traditional,True
+ACC-BR-RES-01,BrazilCo,bank_reserve,BRL,traditional,True
+ACC-BR-USD-01,BrazilCo,bank_operating,USD,traditional,True
+WAL-BR-USDC-01,BrazilCo,institutional_wallet,USDC,onchain,True
+ACC-US-OPER-01,USCo,bank_operating,USD,traditional,True
+ACC-US-RES-01,USCo,bank_reserve,USD,traditional,True
+WAL-US-USDC-01,USCo,institutional_wallet,USDC,onchain,True
+ACC-EU-OPER-01,EUCo,bank_operating,EUR,traditional,True
+ACC-EU-USD-01,EUCo,bank_operating,USD,traditional,True

@@ -1,0 +1,164 @@
+{
+  "manifest_files": 26,
+  "manifest_matches": 26,
+  "cases_freeze_match": true,
+  "expectations_freeze_match": true,
+  "details": [
+    {
+      "path": "README.md",
+      "expected": "61d8661ee4ea6cd37b1b5aba41bda3d066532abd355a58bc2e1a8b94134e80d4",
+      "actual": "61d8661ee4ea6cd37b1b5aba41bda3d066532abd355a58bc2e1a8b94134e80d4",
+      "match": true
+    },
+    {
+      "path": "authority/fx-agent-envelope.yaml",
+      "expected": "f621d93826cc87d022994076e73f226aa216692bb89e79b5ee3217e229a0422c",
+      "actual": "f621d93826cc87d022994076e73f226aa216692bb89e79b5ee3217e229a0422c",
+      "match": true
+    },
+    {
+      "path": "authority/liquidity-agent-envelope.yaml",
+      "expected": "f6546bce40e954a7253bfc2714c4694b1393147bd5f3396d61ab0d0c2b68c1fe",
+      "actual": "f6546bce40e954a7253bfc2714c4694b1393147bd5f3396d61ab0d0c2b68c1fe",
+      "match": true
+    },
+    {
+      "path": "authority/payments-agent-envelope.yaml",
+      "expected": "9feb6271a7fc627384a39c3d39b3e95a16eb93384ba013b5d29a0092e28d6c19",
+      "actual": "9feb6271a7fc627384a39c3d39b3e95a16eb93384ba013b5d29a0092e28d6c19",
+      "match": true
+    },
+    {
+      "path": "authority/yield-agent-envelope.yaml",
+      "expected": "a1b566005c3746e0355150f2c5f3da56714d4c52d3f201077cc4262d0a0a7313",
+      "actual": "a1b566005c3746e0355150f2c5f3da56714d4c52d3f201077cc4262d0a0a7313",
+      "match": true
+    },
+    {
+      "path": "dataset/accounts.csv",
+      "expected": "e339ddde9cb852edc40b4cab4a8a2a01f0c3f5aa8bbd0f6a57942e865a822282",
+      "actual": "e339ddde9cb852edc40b4cab4a8a2a01f0c3f5aa8bbd0f6a57942e865a822282",
+      "match": true
+    },
+    {
+      "path": "dataset/assets.csv",
+      "expected": "b9d7704a92bc9473a8a7570c6062d3c7ffa9c4a6e9af2d9fda8e8250e1bc8ed8",
+      "actual": "b9d7704a92bc9473a8a7570c6062d3c7ffa9c4a6e9af2d9fda8e8250e1bc8ed8",
+      "match": true
+    },
+    {
+      "path": "dataset/balances.csv",
+      "expected": "164a5fe9fb9b60410caf11b9cacd9362085f0ec31b36931dac5b2daeb99e3fdb",
+      "actual": "164a5fe9fb9b60410caf11b9cacd9362085f0ec31b36931dac5b2daeb99e3fdb",
+      "match": true
+    },
+    {
+      "path": "dataset/counterparties.csv",
+      "expected": "514d4c7aa7267203056d5f6b5cb864da145deaf82e1f948d659f5b9389ff7127",
+      "actual": "514d4c7aa7267203056d5f6b5cb864da145deaf82e1f948d659f5b9389ff7127",
+      "match": true
+    },
+    {
+      "path": "dataset/entities.csv",
+      "expected": "47f0a172c5dc9ebc45bad9f3b28c34cee79c384344b1fb8a90a5857b0e2cd20e",
+      "actual": "47f0a172c5dc9ebc45bad9f3b28c34cee79c384344b1fb8a90a5857b0e2cd20e",
+      "match": true
+    },
+    {
+      "path": "dataset/forecast.csv",
+      "expected": "e9542735cfea5ff33b14eeeec65424f22405f7e67c45b84dfb3db89ee5b01c35",
+      "actual": "e9542735cfea5ff33b14eeeec65424f22405f7e67c45b84dfb3db89ee5b01c35",
+      "match": true
+    },
+    {
+      "path": "dataset/market_snapshot.yaml",
+      "expected": "5e330fbea1697f174a1b274be971c718a788f324e835cfe2dd5c7c4387853494",
+      "actual": "5e330fbea1697f174a1b274be971c718a788f324e835cfe2dd5c7c4387853494",
+      "match": true
+    },
+    {
+      "path": "dataset/obligations.csv",
+      "expected": "1d31b3c1504d750c76a7aa7cabe8295424d6f75be451ee2caf52f5629d940eac",
+      "actual": "1d31b3c1504d750c76a7aa7cabe8295424d6f75be451ee2caf52f5629d940eac",
+      "match": true
+    },
+    {
+      "path": "dataset/rails.yaml",
+      "expected": "acffab9fe875d75be1b58a1e538c542ea1e4f65fabf15495cb527839be1f4a39",
+      "actual": "acffab9fe875d75be1b58a1e538c542ea1e4f65fabf15495cb527839be1f4a39",
+      "match": true
+    },
+    {
+      "path": "expected_results/negative_tests.csv",
+      "expected": "178cf27d779d84f6e98368c71095b48eabf14cce32915378f653eeadb21eb8b3",
+      "actual": "178cf27d779d84f6e98368c71095b48eabf14cce32915378f653eeadb21eb8b3",
+      "match": true
+    },
+    {
+      "path": "expected_results/primary_cases.csv",
+      "expected": "028d9fc8a5f0064da22a4c98d3ff0e9432fc80d6b76c5953c832fbab33a577fc",
+      "actual": "028d9fc8a5f0064da22a4c98d3ff0e9432fc80d6b76c5953c832fbab33a577fc",
+      "match": true
+    },
+    {
+      "path": "metadata/protocol.yaml",
+      "expected": "e99d61bd8fefdffafba198148a8007f8ad92754a75938cf4b10d85d993408606",
+      "actual": "e99d61bd8fefdffafba198148a8007f8ad92754a75938cf4b10d85d993408606",
+      "match": true
+    },
+    {
+      "path": "policies/common-data-policy.yaml",
+      "expected": "3b96aeeb5c05ee6b377a47e22db1375ed29068951861f896099d053ae4622c66",
+      "actual": "3b96aeeb5c05ee6b377a47e22db1375ed29068951861f896099d053ae4622c66",
+      "match": true
+    },
+    {
+      "path": "policies/cross-border-policy.yaml",
+      "expected": "9c959dd21a07fd24e1d554088279afc80248040ea2785760be58d8b361c24cce",
+      "actual": "9c959dd21a07fd24e1d554088279afc80248040ea2785760be58d8b361c24cce",
+      "match": true
+    },
+    {
+      "path": "policies/fx-policy.yaml",
+      "expected": "24d0681b6b98b1ff891b36b44a464466ec0f1febabced3e594f0e540f7dbbd91",
+      "actual": "24d0681b6b98b1ff891b36b44a464466ec0f1febabced3e594f0e540f7dbbd91",
+      "match": true
+    },
+    {
+      "path": "policies/liquidity-policy.yaml",
+      "expected": "7c924adae61b5c608d3a6d2faf0cdb81c95c9a8e2f6b54b0c3f0a5e6556d95df",
+      "actual": "7c924adae61b5c608d3a6d2faf0cdb81c95c9a8e2f6b54b0c3f0a5e6556d95df",
+      "match": true
+    },
+    {
+      "path": "policies/yield-policy.yaml",
+      "expected": "0edbd772ae98f5129b842b40fa237dd995148ba79cb67139627912ac9340ae03",
+      "actual": "0edbd772ae98f5129b842b40fa237dd995148ba79cb67139627912ac9340ae03",
+      "match": true
+    },
+    {
+      "path": "scenarios/S01-liquidity.yaml",
+      "expected": "33cf9d9f76bbff2d607512c9e5bde3f634df825b2469e438ce43871e73a877cf",
+      "actual": "33cf9d9f76bbff2d607512c9e5bde3f634df825b2469e438ce43871e73a877cf",
+      "match": true
+    },
+    {
+      "path": "scenarios/S02-fx-stablecoin.yaml",
+      "expected": "38c0987d1ed2d354b9d8031838ebbe144550604c9083b371e3da14c7570c707b",
+      "actual": "38c0987d1ed2d354b9d8031838ebbe144550604c9083b371e3da14c7570c707b",
+      "match": true
+    },
+    {
+      "path": "scenarios/S03-yield.yaml",
+      "expected": "714c707b97a958916e935619b0e8c3bac0a939f6a66118830c6a953e632d5275",
+      "actual": "714c707b97a958916e935619b0e8c3bac0a939f6a66118830c6a953e632d5275",
+      "match": true
+    },
+    {
+      "path": "scenarios/S04-cross-border.yaml",
+      "expected": "a5a69e84fb073bc4837f78b2d7abef9ee571765471eac1fd62793fe4f7530e85",
+      "actual": "a5a69e84fb073bc4837f78b2d7abef9ee571765471eac1fd62793fe4f7530e85",
+      "match": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The proposed intragroup transfer of BRL 80,000 from ACC-BR-RES-01 to ACC-BR-OPER-01 is consistent with the stated objective, forecasted shortfall, and liquidity floor requirements.",
+    "Both source and destination accounts are approved, belong to BrazilCo, and are eligible for same-entity transfers under current policy.",
+    "The transfer amount (BRL 80,000) is below the autonomous execution threshold (BRL 100,000) and well within the maximum permitted by the authority envelope (BRL 1,000,000).",
+    "No additional human approval is required for this amount according to the authority envelope and treasury policy.",
+    "All referenced balances and data are current and within the required data freshness window.",
+    "No inconsistencies, missing facts, or policy conflicts are observed in the executive_output."
+  ]
+}

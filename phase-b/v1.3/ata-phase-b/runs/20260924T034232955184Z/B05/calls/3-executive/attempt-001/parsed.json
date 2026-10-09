@@ -1,0 +1,17 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "EXEC-B05-S01-T1",
+    "principal_id": "liquidity-cash-position-agent",
+    "entity": "BrazilCo",
+    "action_type": "INTRAGROUP_TRANSFER",
+    "source_account": "ACC-BR-RES-01",
+    "amount": 80000,
+    "currency": "BRL",
+    "asset": "BRL",
+    "proposed_rail": "bank_transfer",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": "ACC-BR-OPER-01"
+  },
+  "rationale": "This action proposes transferring 80,000 BRL from BrazilCo's BRL reserve to its BRL operating account to resolve the forecasted T+1 shortfall and restore the required minimum. The transfer is within the autonomous execution threshold and complies with policy and authority envelope constraints. No approval is required for this amount."
+}

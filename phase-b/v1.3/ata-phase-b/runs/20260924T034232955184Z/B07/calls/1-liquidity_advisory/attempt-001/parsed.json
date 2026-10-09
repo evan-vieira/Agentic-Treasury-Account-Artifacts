@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The USCo supplier invoice (INV-SG-001) requires settlement in USD or USDC, with both bank_wire_cross_border and stablecoin_transfer rails permitted by policy and authority envelope.",
+    "USCo holds sufficient current balances in both USD (ACC-US-OPER-01) and USDC (WAL-US-USDC-01) to cover the invoice amount of 250,000 USD.",
+    "The jurisdiction of the transaction is explicitly unknown and cannot be inferred from any supplied data, in accordance with policy and output contract requirements.",
+    "The beneficiary (SUP-SG-001) is approved, and both permitted assets (USD, USDC) and rails (bank_wire_cross_border, stablecoin_transfer) are available for use.",
+    "No liquidity gaps or shortfalls are forecasted for USCo in USD over the relevant horizon; a surplus is projected.",
+    "All required treasury and authority policy conditions for asset, rail, and counterparty eligibility are met, but jurisdictional compliance cannot be confirmed at this stage due to missing verified jurisdiction fact."
+  ]
+}

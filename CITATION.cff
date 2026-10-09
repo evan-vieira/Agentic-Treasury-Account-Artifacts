@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: >-
+  Cite this research artifact and identify the exact commit used.
+  Cite the separately supplied manuscript when discussing its claims.
+  The manuscript is not included in this repository.
+type: software
+title: "Agentic Treasury Account: code, synthetic data and D01-D03 evaluation artifacts"
+authors:
+  - family-names: Vieira
+    given-names: Evandro Camilo
+version: "1.0"

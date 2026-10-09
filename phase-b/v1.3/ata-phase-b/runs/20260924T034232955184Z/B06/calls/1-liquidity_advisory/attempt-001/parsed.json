@@ -1,0 +1,11 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The supplied USCo supplier invoice names BAD-BEN-001 as beneficiary, but this counterparty is not approved per treasury policy, which requires approved_only beneficiaries.",
+    "There is sufficient liquidity in USCo's USD and USDC accounts to settle the invoice amount of 250,000 USD via either eligible asset (USD or USDC).",
+    "Permitted rails for settlement (bank_wire_cross_border and stablecoin_transfer) are available and supported for the required assets.",
+    "Treasury policy and authority envelope both restrict payments to approved counterparties; BAD-BEN-001 is not included in the permitted_counterparties list.",
+    "No liquidity shortfall is forecasted for USCo in USD over the relevant horizon; projected balances indicate a surplus.",
+    "Settlement of this invoice to BAD-BEN-001 would not be policy compliant due to beneficiary approval status, regardless of liquidity sufficiency."
+  ]
+}

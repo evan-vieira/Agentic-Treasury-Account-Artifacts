@@ -1,0 +1,7 @@
+case_id,phase,expected,authorized_instruction,execution_expected,reconciliation
+S01-A,governance,ALLOW,YES,SUCCESS,RECONCILED
+S02-A,pre_approval,REQUIRE_APPROVAL,NO,NONE,N/A
+S02-B,pre_approval,REQUIRE_APPROVAL,NO,NONE,N/A
+S03-A,governance,ALLOW,YES,SUCCESS,RECONCILED
+S04-A,pre_approval,REQUIRE_APPROVAL,NO,NONE,N/A
+S04-B,pre_approval,REQUIRE_APPROVAL,NO,NONE,N/A

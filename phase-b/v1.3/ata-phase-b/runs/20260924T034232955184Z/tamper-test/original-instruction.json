@@ -1,0 +1,49 @@
+{
+  "instruction_id": "INS-e4fe532bcd0fa625c9c2",
+  "action": {
+    "action_id": "PB-v1.3-B02-EXEC-B02-S02-001",
+    "principal_id": "fx-stablecoin-agent",
+    "entity": "BrazilCo",
+    "action_type": "STABLECOIN_CONVERSION",
+    "source_account": "ACC-BR-OPER-01",
+    "amount": 450000,
+    "currency": "USDC",
+    "asset": "USDC",
+    "proposed_rail": "regulated_stablecoin_provider",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": "WAL-BR-USDC-01",
+    "counterparty": "SC-PROV-01",
+    "sell_asset": "BRL",
+    "jurisdiction": "BR"
+  },
+  "sid": "S02",
+  "approval": {
+    "approval_id": "APR-e4fe532bcd0fa625",
+    "version": "1.0",
+    "action_hash": "e4fe532bcd0fa625c9c2634e2824ec5a6cb805eda46f320c8355b7857c3ccff5",
+    "action_id": "PB-v1.3-B02-EXEC-B02-S02-001",
+    "approver_id": "USER-TREASURY-01",
+    "decision": "APPROVE",
+    "issued_at": "2026-09-23T15:00:00Z",
+    "expires_at": "2026-09-23T16:00:00Z",
+    "max_amount": 450000,
+    "currency": "USDC"
+  },
+  "action_hash": "e4fe532bcd0fa625c9c2634e2824ec5a6cb805eda46f320c8355b7857c3ccff5",
+  "decision": {
+    "outcome": "ALLOW",
+    "reason_codes": [
+      "ALL_REQUIRED_CONTROLS_SATISFIED"
+    ],
+    "action_hash": "e4fe532bcd0fa625c9c2634e2824ec5a6cb805eda46f320c8355b7857c3ccff5",
+    "authority_envelope_id": "AE-FX-001",
+    "authority_version": "1.0",
+    "policy_versions": {
+      "POL-FX-001": "1.0",
+      "POL-DATA-001": "1.0"
+    },
+    "context_hash": "8b7287d20d374fd278536e9bfc0b26dc36ded9b61a62a11622a82c8df5e94c7b"
+  },
+  "expires_at": "2026-09-23T16:00:00Z",
+  "idempotency_key": "e4fe532bcd0fa625c9c2634e2824ec5a6cb805eda46f320c8355b7857c3ccff5"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERUhHK3HmfMQNKQbeEXr3tb3Mjh3y",
+  "object": "chat.completion",
+  "created": 1790221563,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"EXEC-B04-S04-001\",\n    \"principal_id\": \"payments-settlement-agent\",\n    \"entity\": \"USCo\",\n    \"action_type\": \"CROSS_BORDER_PAYMENT\",\n    \"source_account\": \"WAL-US-USDC-01\",\n    \"amount\": 250000,\n    \"currency\": \"USD\",\n    \"asset\": \"USDC\",\n    \"proposed_rail\": \"stablecoin_transfer\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": null,\n    \"beneficiary\": \"SUP-SG-001\",\n    \"destination\": \"SUP-SG-WALLET-01\",\n    \"counterparty\": \"CHAIN-SIM\",\n    \"jurisdiction\": \"SG\",\n    \"sell_asset\": null\n  },\n  \"rationale\": \"USCo can fully settle the SG supplier invoice using available USDC via the stablecoin_transfer rail to the approved supplier's wallet. This route is eligible under both authority and treasury policy, and the amount exceeds the approval threshold, so required approval must be obtained before execution.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4723,
+    "completion_tokens": 245,
+    "total_tokens": 4968,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_85887b527c"
+}

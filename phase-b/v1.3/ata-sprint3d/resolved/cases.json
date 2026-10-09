@@ -1,0 +1,1013 @@
+[
+  {
+    "case_id": "S01-A",
+    "scenario": "S01",
+    "group": "primary",
+    "action": {
+      "action_id": "ACT-S01-A",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S01-B",
+    "scenario": "S01",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S01-B",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 350000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S01-C",
+    "scenario": "S01",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S01-C",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 700000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S01-D",
+    "scenario": "S01",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S01-D",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "stale_balance": true
+    }
+  },
+  {
+    "case_id": "S02-A",
+    "scenario": "S02",
+    "group": "primary",
+    "action": {
+      "action_id": "ACT-S02-A",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S02-B",
+    "scenario": "S02",
+    "group": "primary",
+    "action": {
+      "action_id": "ACT-S02-B",
+      "action_type": "STABLECOIN_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "SC-PROV-01",
+      "proposed_rail": "regulated_stablecoin_provider",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USDC",
+      "currency": "USDC",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "WAL-BR-USDC-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S02-C",
+    "scenario": "S02",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S02-C",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "XYZ-STABLE",
+      "currency": "XYZ-STABLE",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S02-D",
+    "scenario": "S02",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S02-D",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 550000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S02-E",
+    "scenario": "S02",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S02-E",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {
+      "stale_state": true
+    }
+  },
+  {
+    "case_id": "S03-A",
+    "scenario": "S03",
+    "group": "primary",
+    "action": {
+      "action_id": "ACT-S03-A",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "TMMF-USD-01",
+      "counterparty": "FUND-PROV-01",
+      "amount": 75000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S03-B",
+    "scenario": "S03",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S03-B",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "TMMF-USD-01",
+      "counterparty": "FUND-PROV-01",
+      "amount": 150000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S03-C",
+    "scenario": "S03",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S03-C",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "TMMF-USD-01",
+      "counterparty": "FUND-PROV-01",
+      "amount": 250000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S03-D",
+    "scenario": "S03",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S03-D",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "UNAPPROVED-TMMF",
+      "counterparty": "FUND-PROV-01",
+      "amount": 75000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S04-A",
+    "scenario": "S04",
+    "group": "primary",
+    "action": {
+      "action_id": "ACT-S04-A",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S04-B",
+    "scenario": "S04",
+    "group": "primary",
+    "action": {
+      "action_id": "ACT-S04-B",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USDC",
+      "destination": "SUP-SG-WALLET-01",
+      "proposed_rail": "stablecoin_transfer",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USDC",
+      "jurisdiction": "SG",
+      "source_account": "WAL-US-USDC-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S04-C",
+    "scenario": "S04",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S04-C",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "BAD-BEN-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "S04-D",
+    "scenario": "S04",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S04-D",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {
+      "self_approval": true
+    }
+  },
+  {
+    "case_id": "S04-E",
+    "scenario": "S04",
+    "group": "variant",
+    "action": {
+      "action_id": "ACT-S04-E",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "T01",
+    "scenario": "S01",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T01",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "stale_balance": true
+    }
+  },
+  {
+    "case_id": "T02",
+    "scenario": "S04",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T02",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "BAD-BEN-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "T03",
+    "scenario": "S01",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T03",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 350000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "T04",
+    "scenario": "S02",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T04",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 550000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "T05",
+    "scenario": "S02",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T05",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "XYZ-STABLE",
+      "currency": "XYZ-STABLE",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "T06",
+    "scenario": "S03",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T06",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "TMMF-USD-01",
+      "counterparty": "FUND-PROV-01",
+      "amount": 250000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "T07",
+    "scenario": "S04",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T07",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {}
+  },
+  {
+    "case_id": "T08",
+    "scenario": "S04",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T08",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {
+      "self_approval": true
+    }
+  },
+  {
+    "case_id": "T09",
+    "scenario": "S01",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T09",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "duplicate": true
+    }
+  },
+  {
+    "case_id": "T10",
+    "scenario": "S02",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T10",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {
+      "revoke": true
+    }
+  },
+  {
+    "case_id": "T11",
+    "scenario": "S04",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T11",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {
+      "unavailable": true
+    }
+  },
+  {
+    "case_id": "T12",
+    "scenario": "S02",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T12",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {
+      "alter_after_approval": true
+    }
+  },
+  {
+    "case_id": "T13",
+    "scenario": "S04",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T13",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {
+      "settlement_mismatch": true
+    }
+  },
+  {
+    "case_id": "T14",
+    "scenario": "S03",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T14",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "TMMF-USD-01",
+      "counterparty": "FUND-PROV-01",
+      "amount": 75000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {
+      "policy_conflict": true
+    }
+  },
+  {
+    "case_id": "T15",
+    "scenario": "S02",
+    "group": "negative",
+    "action": {
+      "action_id": "ACT-T15",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {
+      "invent_provider": true
+    }
+  },
+  {
+    "case_id": "S01-B-APPROVED",
+    "scenario": "S01",
+    "group": "approved_lifecycle",
+    "action": {
+      "action_id": "ACT-S01-B",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 350000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "valid_approval": true
+    }
+  },
+  {
+    "case_id": "S02-A-APPROVED",
+    "scenario": "S02",
+    "group": "approved_lifecycle",
+    "action": {
+      "action_id": "ACT-S02-A",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {
+      "valid_approval": true
+    }
+  },
+  {
+    "case_id": "S02-B-APPROVED",
+    "scenario": "S02",
+    "group": "approved_lifecycle",
+    "action": {
+      "action_id": "ACT-S02-B",
+      "action_type": "STABLECOIN_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "SC-PROV-01",
+      "proposed_rail": "regulated_stablecoin_provider",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USDC",
+      "currency": "USDC",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "WAL-BR-USDC-01"
+    },
+    "mutation": {
+      "valid_approval": true
+    }
+  },
+  {
+    "case_id": "S03-B-APPROVED",
+    "scenario": "S03",
+    "group": "approved_lifecycle",
+    "action": {
+      "action_id": "ACT-S03-B",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "TMMF-USD-01",
+      "counterparty": "FUND-PROV-01",
+      "amount": 150000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {
+      "valid_approval": true
+    }
+  },
+  {
+    "case_id": "S04-A-APPROVED",
+    "scenario": "S04",
+    "group": "approved_lifecycle",
+    "action": {
+      "action_id": "ACT-S04-A",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {
+      "valid_approval": true
+    }
+  },
+  {
+    "case_id": "S04-B-APPROVED",
+    "scenario": "S04",
+    "group": "approved_lifecycle",
+    "action": {
+      "action_id": "ACT-S04-B",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USDC",
+      "destination": "SUP-SG-WALLET-01",
+      "proposed_rail": "stablecoin_transfer",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USDC",
+      "jurisdiction": "SG",
+      "source_account": "WAL-US-USDC-01"
+    },
+    "mutation": {
+      "valid_approval": true
+    }
+  },
+  {
+    "case_id": "X01",
+    "scenario": "S02",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X01",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {
+      "revoke_after_authorization": true
+    }
+  },
+  {
+    "case_id": "X02",
+    "scenario": "S04",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X02",
+      "action_type": "CROSS_BORDER_PAYMENT",
+      "entity": "USCo",
+      "beneficiary": "SUP-SG-001",
+      "amount": 250000,
+      "asset": "USD",
+      "destination": "SUP-SG-BANK-01",
+      "proposed_rail": "bank_wire_cross_border",
+      "principal_id": "payments-settlement-agent",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "currency": "USD",
+      "jurisdiction": "SG",
+      "source_account": "ACC-US-OPER-01"
+    },
+    "mutation": {
+      "expired_approval": true
+    }
+  },
+  {
+    "case_id": "X03",
+    "scenario": "S01",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X03",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "tamper_instruction": true
+    }
+  },
+  {
+    "case_id": "X04",
+    "scenario": "S01",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X04",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "expired_instruction": true
+    }
+  },
+  {
+    "case_id": "X05",
+    "scenario": "S01",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X05",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "raw_action_execution": true
+    }
+  },
+  {
+    "case_id": "X06",
+    "scenario": "S02",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X06",
+      "action_type": "FX_CONVERSION",
+      "entity": "BrazilCo",
+      "sell_asset": "BRL",
+      "counterparty": "FX-PROV-01",
+      "proposed_rail": "bank_fx",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "fx-stablecoin-agent",
+      "amount": 450000,
+      "asset": "USD",
+      "currency": "USD",
+      "jurisdiction": "BR",
+      "source_account": "ACC-BR-OPER-01",
+      "destination_account": "ACC-BR-USD-01"
+    },
+    "mutation": {
+      "wrong_approver_role": true
+    }
+  },
+  {
+    "case_id": "X07",
+    "scenario": "S01",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X07",
+      "action_type": "INTRAGROUP_TRANSFER",
+      "entity": "BrazilCo",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "liquidity-cash-position-agent",
+      "asset": "BRL"
+    },
+    "mutation": {
+      "principal_mismatch": true
+    }
+  },
+  {
+    "case_id": "X08",
+    "scenario": "S03",
+    "group": "additional_safeguard",
+    "action": {
+      "action_id": "ACT-X08",
+      "action_type": "INVEST_EXCESS_CASH",
+      "entity": "USCo",
+      "source_account": "ACC-US-OPER-01",
+      "asset": "TMMF-USD-01",
+      "counterparty": "FUND-PROV-01",
+      "amount": 75000,
+      "currency": "USD",
+      "proposed_rail": "tokenized_fund_subscription",
+      "treasury_state_ref": "ASTERIA-STG-v1.0",
+      "principal_id": "yield-optimization-agent"
+    },
+    "mutation": {
+      "negative_amount": true
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERU9MM7AmyL5c70L6PYGZ0iwMjEGQ",
+  "object": "chat.completion",
+  "created": 1790219460,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"PROPOSE\",\n  \"action\": {\n    \"action_id\": \"EXEC-B02-S02-001\",\n    \"principal_id\": \"fx-stablecoin-agent\",\n    \"entity\": \"BrazilCo\",\n    \"action_type\": \"FX_CONVERSION\",\n    \"source_account\": \"ACC-BR-OPER-01\",\n    \"amount\": 450000,\n    \"currency\": \"USD\",\n    \"asset\": \"USD\",\n    \"proposed_rail\": \"bank_fx\",\n    \"treasury_state_ref\": \"ASTERIA-STG-v1.0\",\n    \"destination_account\": \"ACC-BR-USD-01\",\n    \"counterparty\": \"FX-PROV-01\",\n    \"sell_asset\": \"BRL\"\n  },\n  \"rationale\": \"Proposes converting BRL to 450,000 USD via the approved bank_fx rail with FX-PROV-01 to address BrazilCo's projected USD liquidity gap. This amount is within the 500,000 USD policy cap and leaves more than 2,000,000 BRL in BrazilCo's BRL accounts post-conversion. Human approval is required as the transaction exceeds the 100,000 USD threshold.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4995,
+    "completion_tokens": 252,
+    "total_tokens": 5247,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_de7cb6aabe"
+}

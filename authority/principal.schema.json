@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ata:design:v1.1:authority:principal.schema.json",
+  "title": "Principal",
+  "description": "Identity of a workflow actor, not a grant of financial authority.",
+  "x-design-status": "proposed-not-validated-by-phase-a-engine",
+  "x-source-documents": [
+    "ATA Reference Architecture v1.2",
+    "Policy Schema & Authority Model v1.1"
+  ],
+  "x-original-source-documents": [
+    "ATA Reference Architecture v1.1",
+    "Policy Schema & Authority Model v1.0"
+  ],
+  "x-document-baseline": "Baseline Manifest v1.1 (2026-10-08); editorial alignment only",
+  "type": "object",
+  "properties": {
+    "principal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "enum": [
+        "agent",
+        "human",
+        "system_service",
+        "organizational_role"
+      ]
+    },
+    "acting_for": {
+      "type": "object",
+      "properties": {
+        "entity": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "entity"
+      ],
+      "additionalProperties": true
+    },
+    "delegated_by": {
+      "type": "object",
+      "properties": {
+        "role": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "principal_id",
+    "type",
+    "acting_for"
+  ],
+  "additionalProperties": true
+}

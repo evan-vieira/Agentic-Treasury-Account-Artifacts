@@ -1,0 +1,22 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "EXEC-B07-S04-001",
+    "principal_id": "payments-settlement-agent",
+    "entity": "USCo",
+    "action_type": "CROSS_BORDER_PAYMENT",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 250000,
+    "currency": "USD",
+    "asset": "USD",
+    "proposed_rail": "bank_wire_cross_border",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": null,
+    "beneficiary": "SUP-SG-001",
+    "destination": "SUP-SG-BANK-01",
+    "counterparty": "BANK-SIM",
+    "jurisdiction": null,
+    "sell_asset": null
+  },
+  "rationale": "All policy and authority envelope requirements for asset, rail, and counterparty eligibility are met, and sufficient USD balance is available. The jurisdiction of the transaction remains unknown and cannot be supplied; approval is required due to the amount exceeding the threshold."
+}

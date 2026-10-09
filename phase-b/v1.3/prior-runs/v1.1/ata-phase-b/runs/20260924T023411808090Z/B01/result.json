@@ -1,0 +1,149 @@
+{
+  "case_id": "B01",
+  "scenario": "S01",
+  "probe": "base",
+  "calls": [
+    {
+      "role": "Liquidity and Cash Position",
+      "response_model": "gpt-4.1-2025-04-14",
+      "usage": {
+        "prompt_tokens": 3064,
+        "completion_tokens": 225,
+        "total_tokens": 3289,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "attempt": "attempt-001",
+      "started_at": "2026-09-24T02:34:11.822238+00:00",
+      "finished_at": "2026-09-24T02:34:15.002707+00:00",
+      "started_epoch": 1790217251.8222458,
+      "http_status": 200,
+      "response_headers": {
+        "date": "Thu, 24 Sep 2026 02:34:15 GMT",
+        "content-type": "application/json",
+        "x-ratelimit-limit-requests": "500",
+        "x-ratelimit-limit-tokens": "30000",
+        "x-ratelimit-remaining-requests": "499",
+        "x-ratelimit-remaining-tokens": "27607",
+        "x-ratelimit-reset-requests": "120ms",
+        "x-ratelimit-reset-tokens": "4.786s",
+        "x-request-id": "req_e0cae1e3dffc4279a490f4eb1dea4ceb"
+      },
+      "retryable": false,
+      "raw_response_sha256": "ceb4402ef35f5ed2b53fb6fc565f0472fb95238d2874233002f43159adad2cc6",
+      "retry_not_before_epoch": 1790217255.002638,
+      "transport_response_is_synthetic_error_record": false
+    },
+    {
+      "role": "Cash Flow Forecasting",
+      "response_model": "gpt-4.1-2025-04-14",
+      "usage": {
+        "prompt_tokens": 3061,
+        "completion_tokens": 249,
+        "total_tokens": 3310,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "attempt": "attempt-001",
+      "started_at": "2026-09-24T02:34:26.829256+00:00",
+      "finished_at": "2026-09-24T02:34:28.752401+00:00",
+      "started_epoch": 1790217266.829304,
+      "http_status": 200,
+      "response_headers": {
+        "date": "Thu, 24 Sep 2026 02:34:28 GMT",
+        "content-type": "application/json",
+        "x-ratelimit-limit-requests": "500",
+        "x-ratelimit-limit-tokens": "30000",
+        "x-ratelimit-remaining-requests": "499",
+        "x-ratelimit-remaining-tokens": "27606",
+        "x-ratelimit-reset-requests": "120ms",
+        "x-ratelimit-reset-tokens": "4.788s",
+        "x-request-id": "req_46e79abab297454096833d3ccc2e17cc"
+      },
+      "retryable": false,
+      "raw_response_sha256": "4621b4e8ff9f8c04a28bb8a1bfdbed3362ceea5bd01814a37e54c72b2ead893a",
+      "retry_not_before_epoch": 1790217268.752376,
+      "transport_response_is_synthetic_error_record": false
+    },
+    {
+      "role": "Treasury Governance and Controls",
+      "response_model": "gpt-4.1-2025-04-14",
+      "usage": {
+        "prompt_tokens": 3703,
+        "completion_tokens": 315,
+        "total_tokens": 4018,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "attempt": "attempt-001",
+      "started_at": "2026-09-24T02:34:41.837094+00:00",
+      "finished_at": "2026-09-24T02:34:44.125700+00:00",
+      "started_epoch": 1790217281.8371499,
+      "http_status": 200,
+      "response_headers": {
+        "date": "Thu, 24 Sep 2026 02:34:44 GMT",
+        "content-type": "application/json",
+        "x-ratelimit-limit-requests": "500",
+        "x-ratelimit-limit-tokens": "30000",
+        "x-ratelimit-remaining-requests": "499",
+        "x-ratelimit-remaining-tokens": "27068",
+        "x-ratelimit-reset-requests": "120ms",
+        "x-ratelimit-reset-tokens": "5.864s",
+        "x-request-id": "req_68f8509436494ad6be75d5e327dffcb9"
+      },
+      "retryable": false,
+      "raw_response_sha256": "645a1f8757e4dec1cffc5e341efb9b1d3563bd7c0b2444fdeee02136cd4e5554",
+      "retry_not_before_epoch": 1790217284.1256802,
+      "transport_response_is_synthetic_error_record": false
+    }
+  ],
+  "agent_output": {
+    "status": "PROPOSE",
+    "action": {
+      "action_id": "TRF-BR-RES-TO-OPER-20260923-01",
+      "principal_id": "BrazilCo",
+      "entity": "BrazilCo",
+      "action_type": "transfer",
+      "source_account": "ACC-BR-RES-01",
+      "destination_account": "ACC-BR-OPER-01",
+      "amount": 80000,
+      "currency": "BRL",
+      "asset": "BRL",
+      "proposed_rail": "bank_transfer",
+      "treasury_state_ref": "ASTERIA-STG-v1.0"
+    },
+    "rationale": "BrazilCo's BRL operating account is forecasted to fall short of the T+1 minimum by 80,000 BRL. A same-entity, same-currency transfer from the BrazilCo BRL reserve account (which has sufficient funds) to the operating account will restore the required minimum liquidity. This action uses eligible internal funds and the traditional bank transfer rail."
+  },
+  "schema_errors": [
+    "INCORRECT_PRINCIPAL"
+  ],
+  "governance": null,
+  "instruction": null,
+  "execution": null,
+  "audit": [],
+  "unauthorized_postings": 0
+}

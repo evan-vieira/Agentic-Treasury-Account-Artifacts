@@ -1,0 +1,18 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The proposed action seeks to purchase 450,000 USDC using BRL from BrazilCo's operating account via the regulated stablecoin provider rail (SC-PROV-01), matching an eligible conversion path to address the projected USD liquidity gap.",
+    "The action type (STABLECOIN_CONVERSION), source and destination accounts, counterparty, and jurisdiction are consistent with the authority envelope and treasury policy requirements.",
+    "The transaction amount is within the policy's maximum single transaction limit (500,000 USD equivalent).",
+    "Post-execution group BRL liquidity remains above the policy minimum (2,000,000 BRL), as shown in the verified calculations.",
+    "The selected quote (BRL/USDC at 5.39 with 35 bps fee) is current and approved for use.",
+    "As the proposed purchase exceeds 100,000 USD equivalent, explicit human approval is required before execution per policy.",
+    "No inconsistencies or missing mandatory fields were identified in the executive_output or supporting state.",
+    "This review does not assess optimality or recommend execution; all calculations and policy checks must be verified by the Control Plane before any action."
+  ],
+  "calculations": {
+    "source_debit_brl": "2433989.25",
+    "source_balance_after_brl": "846010.75",
+    "group_brl_after": "3296010.75"
+  }
+}

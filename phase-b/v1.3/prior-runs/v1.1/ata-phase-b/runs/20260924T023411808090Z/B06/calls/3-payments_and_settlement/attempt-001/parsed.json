@@ -1,0 +1,4 @@
+{
+  "status": "ABSTAIN",
+  "reason": "No payment proposal can be made because the named beneficiary (BAD-BEN-001) is unapproved. Both the treasury policy and the authority envelope require settlement only to approved beneficiaries. The scenario data and prior advisory responses confirm that settlement to unapproved beneficiaries is not permitted, regardless of available balances or eligible rails."
+}

@@ -1,0 +1,42 @@
+{
+  "supplementary_version": "ATA-SUPP-GOV-v1.0",
+  "generated_at": "2026-09-24T00:48:58.655198+00:00",
+  "original_harness_unchanged": true,
+  "files": [
+    {
+      "path": "supplementary/run_supplementary.py",
+      "sha256": "972d4946375da081ca0f6de974e6000be00e6966533b0130b74956ba58f549b5",
+      "bytes": 11987
+    },
+    {
+      "path": "supplementary/README.md",
+      "sha256": "22c82c123202e0283d90ec15b3d427536b4e9821874cd43210165bd738b6ab33",
+      "bytes": 186
+    },
+    {
+      "path": "results-supplementary/protocol.json",
+      "sha256": "5409037a8b89a5839ed709cd03eb5404e6eddf26d357340b8a431f1b838038ff",
+      "bytes": 615
+    },
+    {
+      "path": "results-supplementary/integrity.json",
+      "sha256": "50c19f41a71a4b02fdd5cabd89498aa0e7d6f11515f1166ae60dcc600706d0da",
+      "bytes": 6580
+    },
+    {
+      "path": "results-supplementary/runs.jsonl",
+      "sha256": "86d1358beaf1215a82b7d9f16316a51e22c84fc3c6446e4e77f0eecb2c47e6c8",
+      "bytes": 42100
+    },
+    {
+      "path": "results-supplementary/summary.json",
+      "sha256": "df434e2891115fe4836eeeae112023fce387fae64e86c7b8b68ec082a67b122f",
+      "bytes": 3058
+    },
+    {
+      "path": "SUPPLEMENTARY_REPORT.md",
+      "sha256": "28c488bf67d22fd14c273124bf94a3695d76223532cf5e149bd220dcbac17a4a",
+      "bytes": 2117
+    }
+  ]
+}

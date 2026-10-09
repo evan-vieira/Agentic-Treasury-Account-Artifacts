@@ -1,0 +1,38 @@
+scenario_id: S03
+name: Yield Optimization
+base_state: ASTERIA-STG-v1.0
+reset_before_run: true
+objective: Allocate a portion of synthetic USCo excess USD cash to an eligible tokenized
+  money-market fund without breaching liquidity policy.
+agents:
+- liquidity-cash-position-agent
+- cash-flow-forecasting-agent
+- yield-optimization-agent
+- treasury-governance-controls-agent
+proposed_action:
+  action_id: ACT-S03-A
+  action_type: INVEST_EXCESS_CASH
+  entity: USCo
+  source_account: ACC-US-OPER-01
+  asset: TMMF-USD-01
+  counterparty: FUND-PROV-01
+  amount: 75000
+  currency: USD
+  proposed_rail: tokenized_fund_subscription
+  treasury_state_ref: ASTERIA-STG-v1.0
+expected_governance:
+  initial_outcome: ALLOW
+expected_post_execution:
+  projected_min_cash_after_investment: 750000
+  required_minimum: 650000
+  reconciliation: RECONCILED
+variants:
+- case_id: S03-B
+  change: amount=150000
+  expected: REQUIRE_APPROVAL
+- case_id: S03-C
+  change: amount=250000 causing projected minimum 575000
+  expected: DENY
+- case_id: S03-D
+  change: asset=UNAPPROVED-TMMF
+  expected: DENY

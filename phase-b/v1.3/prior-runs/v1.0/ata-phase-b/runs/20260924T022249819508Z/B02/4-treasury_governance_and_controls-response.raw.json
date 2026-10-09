@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTP2RkURdLXx1vCTEpCTDkRJmlF7",
+  "object": "chat.completion",
+  "created": 1790216588,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\":\"ADVISORY\",\"observations\":[\"Authority: The authority envelope AE-FX-001 is active and grants the principal (fx-stablecoin-agent) the ability to propose FX and stablecoin conversions for BrazilCo, within a 500,000 USD-equivalent limit per transaction, using approved rails (bank_fx, regulated_stablecoin_provider), assets (USD, USDC), and counterparties (FX-PROV-01, SC-PROV-01) in BR and US jurisdictions. Approval is required for transactions above 100,000 USD-equivalent.\",\"Policy: Treasury policy POL-FX-001 is active and aligns with the authority envelope. It restricts conversions to approved assets, rails, and counterparties, and sets a minimum post-execution BRL liquidity of 2,000,000 in group accounts. The policy also requires audit and mandates data recency (treasury state max age 300 seconds).\",\"Data Risks: The treasury state data is current as of 2026-09-23T15:00:00Z, within the required recency window. All referenced accounts, assets, and counterparties are approved and present. However, any proposal must ensure that after BRL-to-USD/USDC conversion, the combined BRL balances in BrazilCo's operating and reserve accounts do not fall below 2,000,000 BRL, or the action would violate policy. Fee calculations and FX rates must be carefully applied to avoid under- or over-conversion. The simulation treats 1 USDC as 1 USD for accounting, but this is a synthetic assumption and not a market claim.\",\"Other Risks: No evidence of conflicting or revoked authority. All required fields for a compliant proposal are present in the data. Any action must be proposed, not executed or approved, per scenario instructions.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4197,
+    "completion_tokens": 374,
+    "total_tokens": 4571,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ata:design:v1.1:policies:policy.schema.json",
+  "title": "Treasury Policy",
+  "description": "Conditions for an action in the current treasury context; distinct from delegated authority.",
+  "x-design-status": "proposed-not-validated-by-phase-a-engine",
+  "x-source-documents": [
+    "ATA Reference Architecture v1.2",
+    "Policy Schema & Authority Model v1.1"
+  ],
+  "x-original-source-documents": [
+    "ATA Reference Architecture v1.1",
+    "Policy Schema & Authority Model v1.0"
+  ],
+  "x-document-baseline": "Baseline Manifest v1.1 (2026-10-08); editorial alignment only",
+  "type": "object",
+  "properties": {
+    "policy_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "INACTIVE"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "entities",
+        "actions"
+      ],
+      "additionalProperties": true
+    },
+    "principals": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "currencies": {
+      "type": "object",
+      "properties": {
+        "sell": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "buy": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "amount": {
+      "type": "object",
+      "properties": {
+        "max_single_transaction_usd_equivalent": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "liquidity": {
+      "type": "object",
+      "properties": {
+        "min_post_execution_buffer": {
+          "type": "object",
+          "properties": {
+            "currency": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                },
+                {
+                  "type": "number",
+                  "minimum": 0
+                }
+              ]
+            }
+          },
+          "required": [
+            "currency",
+            "value"
+          ],
+          "additionalProperties": true
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "counterparties": {
+      "type": "object",
+      "properties": {
+        "approved_only": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "jurisdictions": {
+      "type": "object",
+      "properties": {
+        "permitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "execution": {
+      "type": "object",
+      "properties": {
+        "permitted_rails": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "approval": {
+      "type": "object",
+      "properties": {
+        "required_above_usd_equivalent": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        },
+        "eligible_roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "segregation_of_duties": {
+      "type": "object",
+      "properties": {
+        "proposer_cannot_approve": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "data_requirements": {
+      "type": "object",
+      "properties": {
+        "treasury_state_max_age_seconds": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "audit": {
+      "type": "object",
+      "properties": {
+        "mandatory": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": true
+    },
+    "conflict_behavior": {
+      "type": "object",
+      "properties": {
+        "default": {
+          "const": "DENY"
+        }
+      },
+      "required": [
+        "default"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "policy_id",
+    "version",
+    "status",
+    "scope",
+    "conflict_behavior"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "PROP-SETTLE-INV-SG-001-USDC",
+    "principal_id": "payments-settlement-agent",
+    "entity": "USCo",
+    "action_type": "payment",
+    "source_account": "WAL-US-USDC-01",
+    "amount": 250000,
+    "currency": "USDC",
+    "asset": "USDC",
+    "proposed_rail": "stablecoin_transfer",
+    "treasury_state_ref": "MKT-20260923-1500Z",
+    "destination_account": null,
+    "beneficiary": "SUP-SG-001",
+    "destination": "SUP-SG-WALLET-01",
+    "counterparty": "SUP-SG-001",
+    "jurisdiction": null
+  },
+  "rationale": "USCo's USDC wallet (WAL-US-USDC-01) has a sufficient balance (300,000 USDC) to settle the Singapore supplier invoice (INV-SG-001) for 250,000 USDC. The obligation permits settlement in USD or USDC, and the stablecoin_transfer rail is eligible under both authority and policy. The beneficiary (SUP-SG-001) is approved, and the destination wallet (SUP-SG-WALLET-01) is specified. This path provides a compliant, efficient alternative to the USD bank wire, and does not require inferring jurisdiction from the supplier address."
+}

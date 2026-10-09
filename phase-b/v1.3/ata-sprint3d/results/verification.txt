@@ -1,0 +1,18 @@
+test_approval_binds_destination (test_controls.Controls.test_approval_binds_destination) ... ok
+test_audit_snapshots_and_hash_chain (test_controls.Controls.test_audit_snapshots_and_hash_chain) ... ok
+test_cross_border_two_rails (test_controls.Controls.test_cross_border_two_rails) ... ok
+test_deny_overrides_missing_information (test_controls.Controls.test_deny_overrides_missing_information) ... ok
+test_envelope_expiry (test_controls.Controls.test_envelope_expiry) ... ok
+test_fx_accounting (test_controls.Controls.test_fx_accounting) ... ok
+test_liquidity_accounting_and_duplicate (test_controls.Controls.test_liquidity_accounting_and_duplicate) ... ok
+test_policy_and_envelope_are_intersected (test_controls.Controls.test_policy_and_envelope_are_intersected) ... ok
+test_revocation_after_issue (test_controls.Controls.test_revocation_after_issue) ... ok
+test_settlement_exception (test_controls.Controls.test_settlement_exception) ... ok
+test_threshold_boundary (test_controls.Controls.test_threshold_boundary) ... ok
+test_unissued_and_tampered_instruction (test_controls.Controls.test_unissued_and_tampered_instruction) ... ok
+test_yield_accounting (test_controls.Controls.test_yield_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.198s
+
+OK

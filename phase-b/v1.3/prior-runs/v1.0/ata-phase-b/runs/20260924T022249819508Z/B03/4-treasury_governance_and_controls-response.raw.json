@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTPABxyU0AjJfE71eEmb5Mdrkh1E",
+  "object": "chat.completion",
+  "created": 1790216596,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\":\"ADVISORY\",\"observations\":[\"Authority: The authority envelope (AE-YIELD-001) grants the principal (yield-optimization-agent) the right to propose investments of excess USD cash for USCo, up to $250,000 per transaction, in approved assets (MMF-USD-01, TMMF-USD-01) via the tokenized_fund_subscription rail, with a requirement for approval above $100,000. The envelope is active and valid for the scenario date.\",\"Policy: Treasury policy (POL-YIELD-001) aligns with the authority envelope, permitting investments in the specified assets, with a maximum single investment of $250,000 and a minimum projected post-investment cash of $650,000. Only approved counterparties and assets are allowed. Approval is required for investments above $100,000, and audit is mandatory. Data policy (POL-DATA-001) requires state data to be current (max age 300 seconds) and all mandatory fields present.\",\"Data Risks: The treasury state appears current and complete as of the scenario timestamp. However, reliance on forecasted cash flows introduces inherent uncertainty; unexpected obligations or errors in projections could impact liquidity. The simulation treats tokenized MMF as daily-liquidity, low-risk, but real-world risks (e.g., operational, settlement, or market) are abstracted. The accounting assumption that 1 USDC = 1 USD is a simulation simplification and may not reflect real-world settlement or counterparty risk.\",\"Other Risks: The proposed investment (per prior advice) does not exceed policy or authority limits and preserves required liquidity. However, any change in obligations, delays in MMF redemption, or errors in forecast could create liquidity stress. Counterparty (FUND-PROV-01) is approved, but ongoing due diligence is assumed. No unauthorized assets, rails, or counterparties are involved in the proposal.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3938,
+    "completion_tokens": 389,
+    "total_tokens": 4327,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

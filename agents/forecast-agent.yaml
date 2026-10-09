@@ -1,0 +1,13 @@
+id: forecast-agent
+name: Cash Flow Forecasting Agent
+status: proposed_contract_not_phase_a_executed
+purpose: Estimate future liquidity conditions and currency needs from known obligations and treasury state.
+request_fields: [treasury_state, objective, constraints, context]
+response_fields: [observation, reasoning_summary, proposed_action, expected_effect, confidence, required_controls, evidence]
+candidate_action_types: [FORECAST_SIGNAL]
+required_evidence: [forecast_horizon, input_obligation_refs, input_as_of]
+guardrails:
+  - A forecast is an estimate with assumptions, not an authority decision.
+  - FORECAST_SIGNAL is analytical and cannot be submitted to an execution adapter.
+  - If proposing a financial action, use the shared ProposedAction contract and independent governance.
+handoff: null

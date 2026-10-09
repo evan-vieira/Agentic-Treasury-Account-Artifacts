@@ -1,0 +1,74 @@
+[
+  {
+    "case": "B02",
+    "verified": {
+      "source_debit_brl": "2433989.25",
+      "source_balance_after_brl": "846010.75",
+      "group_brl_after": "3296010.75"
+    },
+    "governance_check": {
+      "applicable": true,
+      "expected": {
+        "source_debit_brl": "2433989.25",
+        "source_balance_after_brl": "846010.75",
+        "group_brl_after": "3296010.75"
+      },
+      "claimed": {
+        "source_debit_brl": "2433989.25",
+        "source_balance_after_brl": "846010.75",
+        "group_brl_after": "3296010.75"
+      },
+      "errors": [],
+      "matched": true,
+      "scope": "structured calculation fields only; not an exhaustive verification of free text"
+    }
+  },
+  {
+    "case": "B03",
+    "verified": {
+      "projected_cash_before_usd": "825000.00",
+      "investment_usd": "150000.00",
+      "projected_cash_after_usd": "675000.00"
+    },
+    "governance_check": {
+      "applicable": true,
+      "expected": {
+        "projected_cash_before_usd": "825000.00",
+        "investment_usd": "150000.00",
+        "projected_cash_after_usd": "675000.00"
+      },
+      "claimed": {
+        "projected_cash_before_usd": "825000.00",
+        "investment_usd": "150000.00",
+        "projected_cash_after_usd": "675000.00"
+      },
+      "errors": [],
+      "matched": true,
+      "scope": "structured calculation fields only; not an exhaustive verification of free text"
+    }
+  },
+  {
+    "case": "B08",
+    "verified": {
+      "source_debit_brl": "2433989.25",
+      "source_balance_after_brl": "846010.75",
+      "group_brl_after": "3296010.75"
+    },
+    "governance_check": {
+      "applicable": true,
+      "expected": {
+        "source_debit_brl": "2433989.25",
+        "source_balance_after_brl": "846010.75",
+        "group_brl_after": "3296010.75"
+      },
+      "claimed": {
+        "source_debit_brl": "2433989.25",
+        "source_balance_after_brl": "846010.75",
+        "group_brl_after": "3296010.75"
+      },
+      "errors": [],
+      "matched": true,
+      "scope": "structured calculation fields only; not an exhaustive verification of free text"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a required obligation of 650,000 USD and a projected balance before obligation of 200,000 USD in its USD operating account.",
+    "Current USD and USDC balances for BrazilCo: 220,000 USD (bank operating), 180,000 USDC (institutional wallet). Combined, this totals 400,000 USD-equivalent, still leaving a 250,000 USD-equivalent shortfall versus the obligation.",
+    "Eligible conversion paths to address the gap include: (1) FX conversion from BRL to USD via the bank FX rail (using FX-PROV-01), or (2) conversion from BRL to USDC via the regulated stablecoin provider rail (using SC-PROV-01), then potentially transferring USDC to a counterparty or converting to USD if needed.",
+    "Both BRL accounts (operating and reserve) have sufficient balances to cover the shortfall if converted (3,280,000 BRL and 2,450,000 BRL, respectively).",
+    "No proposal is made at this time as the scenario is S02 and the instruction is to analyze and not presume a path is optimal."
+  ]
+}

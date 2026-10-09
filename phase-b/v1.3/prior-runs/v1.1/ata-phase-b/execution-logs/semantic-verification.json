@@ -1,0 +1,6 @@
+{
+  "same_prompt_dataset_context_validation": true,
+  "same_run_case_except_checkpoint_loading": true,
+  "all_sprint3d_files_unchanged": true,
+  "offline_tests_passed": 11
+}

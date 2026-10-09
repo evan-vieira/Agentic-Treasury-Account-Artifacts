@@ -1,0 +1,8 @@
+asset_id,asset_type,currency,approved_for_treasury,synthetic_attributes
+BRL,fiat,BRL,True,
+USD,fiat,USD,True,
+EUR,fiat,EUR,True,
+USDC,stablecoin,USD,True,simulation treats 1 USDC as 1 USD accounting unit; not a market claim
+TMMF-USD-01,tokenized_mmf,USD,True,daily_liquidity=true; risk_class=LOW; max_position=250000; fictional instrument
+MMF-USD-01,conventional_mmf,USD,True,daily_liquidity=true; risk_class=LOW; max_position=250000; fictional instrument
+XYZ-STABLE,stablecoin,USD,False,unsupported test asset

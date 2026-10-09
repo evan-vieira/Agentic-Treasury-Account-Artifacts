@@ -1,0 +1,26 @@
+policy_id: POL-LIQ-001
+version: '1.0'
+status: ACTIVE
+scope:
+  entities:
+  - BrazilCo
+  actions:
+  - INTRAGROUP_TRANSFER
+accounts:
+  approved_only: true
+  same_legal_entity_for_autonomous_execution: true
+amount:
+  max_single_transaction_brl: 1000000
+  autonomous_threshold_brl: 100000
+liquidity:
+  source_min_post_execution_brl: 1800000
+  destination_min_required_brl: 1500000
+approval:
+  required_above_brl: 100000
+  eligible_roles:
+  - treasury_manager
+data_requirements:
+  balance_max_age_seconds: 300
+audit:
+  mandatory: true
+conflict_behavior: DENY

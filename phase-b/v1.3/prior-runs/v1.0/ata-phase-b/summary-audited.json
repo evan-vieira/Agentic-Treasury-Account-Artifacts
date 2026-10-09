@@ -1,0 +1,44 @@
+{
+  "run_id": "20260924T022249819508Z",
+  "status": "PARTIAL_STOPPED_ON_HTTP_429",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "models_returned": [
+    "gpt-4.1-2025-04-14"
+  ],
+  "parameters": {
+    "temperature": 0,
+    "max_completion_tokens": 1400
+  },
+  "planned_cases": 8,
+  "started_cases": 4,
+  "completed_cases": 3,
+  "primary_completed": 3,
+  "primary_planned": 4,
+  "stress_completed": 0,
+  "stress_planned": 4,
+  "planned_model_calls_actual_runner": 30,
+  "attempted_model_calls": 12,
+  "raw_http_response_records": 12,
+  "http_200": 11,
+  "http_429": 1,
+  "parsed_model_outputs": 11,
+  "executive_outputs": 3,
+  "proposals": 3,
+  "valid_proposals": 1,
+  "invalid_proposals": 2,
+  "executive_abstentions": 0,
+  "governance_evaluations": 1,
+  "governance_denials": 1,
+  "authorized_instructions": 0,
+  "adapter_executions": 0,
+  "reconciled": 0,
+  "unauthorized_postings_reported": 0,
+  "usage_successful_responses": {
+    "prompt_tokens": 38828,
+    "completion_tokens": 3243,
+    "total_tokens": 42071
+  },
+  "freeze_precedes_first_call": true,
+  "frozen_hashes_verified": true,
+  "secret_scan_passed": true
+}

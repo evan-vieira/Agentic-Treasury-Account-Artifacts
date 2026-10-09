@@ -1,0 +1,7 @@
+counterparty_id,country,type,approved,bank_destination,wallet_destination
+SUP-US-001,US,supplier,True,SUP-US-BANK-01,SUP-US-WALLET-01
+SUP-SG-001,SG,supplier,True,SUP-SG-BANK-01,SUP-SG-WALLET-01
+FX-PROV-01,BR,fx_provider,True,N/A,N/A
+SC-PROV-01,BR,stablecoin_provider,True,N/A,N/A
+FUND-PROV-01,US,fund_provider,True,N/A,N/A
+BAD-BEN-001,XX,supplier,False,BAD-BANK-01,BAD-WALLET-01

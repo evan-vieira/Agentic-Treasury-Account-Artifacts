@@ -1,0 +1,42 @@
+scenario_id: S04
+name: Cross-Border Settlement
+base_state: ASTERIA-STG-v1.0
+reset_before_run: true
+objective: Settle a synthetic USD 250,000 invoice from USCo to an approved Singapore
+  supplier through either a traditional bank wire or an approved USDC rail under the
+  same governance abstraction.
+agents:
+- payments-settlement-agent
+- treasury-governance-controls-agent
+proposed_actions:
+- case_id: S04-A
+  action_id: ACT-S04-A
+  action_type: CROSS_BORDER_PAYMENT
+  entity: USCo
+  beneficiary: SUP-SG-001
+  amount: 250000
+  asset: USD
+  destination: SUP-SG-BANK-01
+  proposed_rail: bank_wire_cross_border
+  expected: REQUIRE_APPROVAL
+- case_id: S04-B
+  action_id: ACT-S04-B
+  action_type: CROSS_BORDER_PAYMENT
+  entity: USCo
+  beneficiary: SUP-SG-001
+  amount: 250000
+  asset: USDC
+  destination: SUP-SG-WALLET-01
+  proposed_rail: stablecoin_transfer
+  expected: REQUIRE_APPROVAL
+after_valid_approval: ALLOW -> AuthorizedInstruction -> execution -> RECONCILED
+variants:
+- case_id: S04-C
+  change: beneficiary=BAD-BEN-001
+  expected: DENY
+- case_id: S04-D
+  change: proposer attempts own approval
+  expected: DENY
+- case_id: S04-E
+  change: jurisdiction missing
+  expected: REQUIRE_ADDITIONAL_INFORMATION

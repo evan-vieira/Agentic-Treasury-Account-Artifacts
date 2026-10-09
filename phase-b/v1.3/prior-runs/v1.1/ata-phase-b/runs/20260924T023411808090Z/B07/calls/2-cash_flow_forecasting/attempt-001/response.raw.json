@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTfJufGhbeXfrlZkJtSJEWN3peK5",
+  "object": "chat.completion",
+  "created": 1790217597,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\":\"PROPOSE\",\"action\":{\"action_id\":\"PROP-SETTLE-INV-SG-001-USD\",\"principal_id\":\"USCo\",\"entity\":\"USCo\",\"action_type\":\"payment\",\"source_account\":\"ACC-US-OPER-01\",\"amount\":250000,\"currency\":\"USD\",\"asset\":\"USD\",\"proposed_rail\":\"bank_wire_cross_border\",\"treasury_state_ref\":\"MKT-20260923-1500Z\",\"destination_account\":null,\"beneficiary\":\"SUP-SG-001\",\"destination\":\"SUP-SG-BANK-01\",\"counterparty\":\"SUP-SG-001\",\"jurisdiction\":null},\"rationale\":\"USCo's USD operating account has sufficient funds to settle the Singapore supplier invoice (INV-SG-001) for 250,000 USD. The obligation allows settlement in USD or USDC; using the USD bank account via a cross-border wire is a straightforward, eligible path. No liquidity or forecast constraints exist for this payment.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3247,
+    "completion_tokens": 198,
+    "total_tokens": 3445,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_40629d06c8"
+}

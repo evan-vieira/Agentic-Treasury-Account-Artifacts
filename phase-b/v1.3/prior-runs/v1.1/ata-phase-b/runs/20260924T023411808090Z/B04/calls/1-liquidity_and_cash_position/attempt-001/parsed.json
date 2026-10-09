@@ -1,0 +1,9 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "USCo has an upcoming supplier invoice obligation (INV-SG-001) due 2026-09-25 for 250,000 USD to SUP-SG-001, which can be settled in USD or USDC.",
+    "USCo's USD bank operating account (ACC-US-OPER-01) has a current balance of 1,250,000 USD, and its USDC wallet (WAL-US-USDC-01) has 300,000 USDC (treated as 1:1 USD equivalent).",
+    "There is no liquidity gap or shortfall for USCo in either USD or USDC; both balances are sufficient to cover the obligation.",
+    "No transfer or liquidity action is required to meet this obligation at this time."
+  ]
+}

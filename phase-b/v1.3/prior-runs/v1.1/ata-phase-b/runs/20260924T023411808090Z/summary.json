@@ -1,0 +1,28 @@
+{
+  "run": "20260924T023411808090Z",
+  "completed": 8,
+  "planned": 8,
+  "terminal_content_failures": 0,
+  "started_cases": 8,
+  "planned_logical_calls": 30,
+  "logical_calls_started": 30,
+  "model_calls": 30,
+  "http_attempts_started": 30,
+  "raw_response_records": 30,
+  "http_200": 30,
+  "http_errors": 0,
+  "transport_errors": 0,
+  "parsed_outputs": 30,
+  "valid_proposals": 3,
+  "abstentions": 1,
+  "governance_outcomes": {
+    "ALLOW": 0,
+    "DENY": 3,
+    "REQUIRE_APPROVAL": 0,
+    "REQUIRE_ADDITIONAL_INFORMATION": 0
+  },
+  "authorized_instructions": 0,
+  "adapter_executions": 0,
+  "reconciled": 0,
+  "unauthorized_postings": 0
+}

@@ -1,0 +1,13 @@
+id: payments-agent
+name: Payments and Settlement Agent
+status: proposed_contract_not_phase_a_executed
+purpose: Evaluate permitted ways to satisfy payment obligations and related settlement requirements.
+request_fields: [treasury_state, objective, constraints, context]
+response_fields: [observation, reasoning_summary, proposed_action, expected_effect, confidence, required_controls, evidence]
+candidate_action_types: [PAYMENT, CROSS_BORDER_PAYMENT]
+required_evidence: [obligation_ref, beneficiary_ref, destination_ref, settlement_requirement]
+guardrails:
+  - Proposing a beneficiary or rail never authorizes payment.
+  - Missing jurisdiction or beneficiary verification must be disclosed.
+  - Adapters receive only Authorized Instructions after independent evaluation.
+handoff: execution/proposed-action.schema.json

@@ -1,0 +1,22 @@
+{
+  "status": "PROPOSE",
+  "action": {
+    "action_id": "EXEC-B07-S04-001",
+    "principal_id": "payments-settlement-agent",
+    "entity": "USCo",
+    "action_type": "CROSS_BORDER_PAYMENT",
+    "source_account": "ACC-US-OPER-01",
+    "amount": 250000,
+    "currency": "USD",
+    "asset": "USD",
+    "proposed_rail": "bank_wire_cross_border",
+    "treasury_state_ref": "ASTERIA-STG-v1.0",
+    "destination_account": null,
+    "beneficiary": "SUP-SG-001",
+    "destination": "SUP-SG-BANK-01",
+    "counterparty": "BANK-SIM",
+    "jurisdiction": null,
+    "sell_asset": null
+  },
+  "rationale": "USCo holds sufficient USD in its operating account to settle the supplier invoice (INV-SG-001) for 250,000 USD via the permitted bank_wire_cross_border rail to the approved beneficiary's bank destination. The authority envelope and treasury policy permit this action, but the transaction jurisdiction is unknown and cannot be inferred; Control Plane review is required for jurisdictional compliance and approval above the policy threshold."
+}

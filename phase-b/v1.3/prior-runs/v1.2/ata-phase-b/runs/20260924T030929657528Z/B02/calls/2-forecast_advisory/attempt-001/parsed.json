@@ -1,0 +1,10 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "BrazilCo faces a projected USD liquidity gap of 450,000 USD at T+30D, with a supplier payment obligation of 650,000 USD due in one month. Current balances in BrazilCo's USD (220,000 USD) and USDC (180,000 USDC) accounts are insufficient to meet this obligation.",
+    "One eligible conversion path to address the gap is to convert BRL to USD via the bank_fx rail using FX-PROV-01. This path is permitted under current treasury policy and authority envelope.",
+    "At the quoted rate of 5.4 BRL/USD with a 20 bps fee, purchasing 450,000 USD would require approximately 2,433,300 BRL (450,000 * 5.4 * 1.002). BrazilCo's combined BRL balances (5,730,000 BRL) are sufficient, and the post-conversion BRL balance would remain above the 2,000,000 BRL policy minimum.",
+    "A single transaction of 450,000 USD equivalent is within the 500,000 USD policy and authority cap, but exceeds the 100,000 USD threshold requiring human approval.",
+    "No action is proposed or executed at this stage. This observation identifies the bank_fx conversion path as eligible, subject to policy constraints and required approvals."
+  ]
+}

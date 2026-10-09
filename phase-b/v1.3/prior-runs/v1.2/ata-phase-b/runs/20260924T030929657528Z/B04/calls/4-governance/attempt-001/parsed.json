@@ -1,0 +1,14 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "The executive_output proposes a CROSS_BORDER_PAYMENT of 250,000 USD from USCo's bank operating account (ACC-US-OPER-01) to approved Singapore supplier SUP-SG-001 via the bank_wire_cross_border rail (BANK-SIM).",
+    "The proposed amount (250,000 USD) exceeds the approval threshold (50,000 USD) set by both authority_envelope and treasury_policy. At least one eligible human approver (treasury_manager) is required before execution.",
+    "All key fields are present and consistent: action_type, amount, currency, asset, beneficiary, destination, counterparty, and jurisdiction align with the output_contract field semantics and scenario facts.",
+    "The beneficiary (SUP-SG-001), destination (SUP-SG-BANK-01), and jurisdiction (SG) are all approved and verified.",
+    "The source account holds sufficient funds, and no liquidity or forecast shortfalls are present for USCo in USD.",
+    "No inconsistencies, missing facts, or policy/authority conflicts are detected.",
+    "Segregation of duties must be enforced: the proposer cannot approve the payment.",
+    "Mandatory audit requirements apply per policy.",
+    "Human approval is required prior to execution; no approval or execution has occurred at this stage."
+  ]
+}

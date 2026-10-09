@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ERTfnZaNbbgM2yjrC9DQSQMwMm2Q4",
+  "object": "chat.completion",
+  "created": 1790217627,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"status\":\"ADVISORY\",\"observations\":[\"Authority: The authority envelope (AE-PAY-001) grants the payments-settlement-agent for USCo the ability to propose cross-border payments up to 500,000 USD in USD or USDC, to approved counterparties (including SUP-SG-001), using permitted rails (bank_wire_cross_border, stablecoin_transfer), and within permitted jurisdictions (SG, US, NL). The envelope is active and valid for the current date. Approval is required for payments above 50,000 USD, and segregation of duties prohibits the proposer from approving.\",\"Policy: Treasury policy (POL-XB-001) and common policy (POL-DATA-001) both require that only approved beneficiaries are paid, permitted assets and rails are used, and the jurisdiction is within the allowed list. The payment to SUP-SG-001 (approved) in USD or USDC, via either permitted rail, is policy-compliant if the jurisdiction is permitted. However, the scenario explicitly states the jurisdiction of the payment is unknown and should not be inferred from the supplier address. This creates a policy risk, as jurisdictional compliance cannot be confirmed.\",\"Data Risks: The lack of explicit jurisdiction data for the payment destination is a material risk. Both the authority envelope and treasury policy require jurisdictional checks, but the scenario prohibits inferring jurisdiction from the supplier address. This means the payment cannot be fully validated for jurisdictional compliance, and proceeding without this data would violate policy and data requirements. Additionally, all other required data fields (amount, beneficiary, asset, rail, etc.) appear present and current, and the treasury state is within the required age window.\",\"Summary: The main risk is the inability to confirm jurisdictional compliance due to missing explicit jurisdiction data for the payment. This is a blocking data and policy risk. No other material authority or policy risks are present for the proposed payment path.\"]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3958,
+    "completion_tokens": 385,
+    "total_tokens": 4343,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_cf94e8683e"
+}

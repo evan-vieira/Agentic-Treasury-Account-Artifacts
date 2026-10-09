@@ -1,0 +1,9 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "USCo has a supplier invoice obligation (INV-SG-001) due 2026-09-25 for 250,000 USD (USD or USDC) to SUP-SG-001.",
+    "USCo's USD operating account (ACC-US-OPER-01) has a current balance of 1,250,000 USD, and its USDC wallet (WAL-US-USDC-01) has 300,000 USDC. Both are sufficient to cover the obligation.",
+    "No liquidity gap or shortfall is forecasted for USCo's USD position; a surplus is projected for the next 30 days.",
+    "No transfer is justified or required at this time to meet the Singapore supplier invoice obligation."
+  ]
+}

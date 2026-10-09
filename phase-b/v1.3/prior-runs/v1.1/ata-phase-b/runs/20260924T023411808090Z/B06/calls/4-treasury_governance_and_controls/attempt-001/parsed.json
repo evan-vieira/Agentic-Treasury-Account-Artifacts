@@ -1,0 +1,10 @@
+{
+  "status": "ADVISORY",
+  "observations": [
+    "Authority envelope AE-PAY-001 restricts permitted counterparties to SUP-SG-001, but the invoice names BAD-BEN-001, who is not approved and not listed as a permitted counterparty. This is a direct authority violation.",
+    "Treasury policy POL-XB-001 explicitly requires beneficiaries to be approved (beneficiaries.approved_only=true). BAD-BEN-001 is marked as approved: False, so any payment to this beneficiary is a policy violation.",
+    "The scenario data confirms BAD-BEN-001 is not an approved counterparty and is not permitted for cross-border payments under current authority or policy.",
+    "Data quality is sufficient for decision-making: all required fields are present, and treasury state is current (within max age). No data risk is present, but the action is blocked by authority and policy.",
+    "Attempting to settle this invoice would violate both authority and policy, and would be denied under conflict_behavior: DENY. No payment proposal should be made until the beneficiary is approved and authority is updated if needed."
+  ]
+}
