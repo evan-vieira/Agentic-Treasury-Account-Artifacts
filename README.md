@@ -16,13 +16,18 @@ The complete D03 package retains earlier v1.0–v1.2 development runs, including
 
 ## Distribution revision and reuse
 
-This is the **G12 distribution revision of v1.0, dated 9 October 2026**.
-It retains G3 licensing, citation metadata and reproduction instructions, removes
-depositor workflow notes, and makes one disclosed editorial correction to a
-historical report. Experimental inputs, code, raw outputs, results and version
-labels remain unchanged; see [DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). The earlier `v1.0` tag remains at
-`514d0fedccfc146ccb775eb2d4dda1729a60e43c`; use the exact new snapshot/commit
-identified with the G12 archive for deposit and citation.
+This is the **G1-verified distribution of v1.0, dated 9 October 2026**, fixed by
+release tag `v1.0-dataverse.1`. It retains G3 licensing and citation metadata and
+the G12 exclusion of depositor workflow notes. The historical Phase B v1.0
+report and original D03 manifest have been restored to preserve exact evidence
+identity with commit `1760109544f4420cfa21a06994ea38f1e2382c86`.
+See [G1-VERIFICATION.json](G1-VERIFICATION.json) and
+[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json).
+
+The earlier `v1.0` tag remains at `514d0fedccfc146ccb775eb2d4dda1729a60e43c`.
+The new tag identifies a distribution revision; it does not change any
+experimental version. The deposited archive must be generated directly from
+`v1.0-dataverse.1`, without the Git history or any extra files.
 
 - **Software: MIT. Data and documentation: CC BY 4.0.** See [LICENSE.md](LICENSE.md)
   and the complete [file license map](LICENSE-MAP.json).
@@ -35,8 +40,8 @@ identified with the G12 archive for deposit and citation.
 Use Python 3.12 and PyYAML 6.0.3, the recorded D01/Phase B environment.
 D02 originally ran under Python 3.13.5. Extract the deposited archive and open
 its root directory, or clone this repository and record `git rev-parse HEAD`.
-A clone of `main` retrieves its current state; use the deposit's exact commit
-when reproducing that snapshot. Git and `.git` are unnecessary for the archive.
+A clone of `main` retrieves its current state; check out tag `v1.0-dataverse.1`
+when reproducing this release snapshot. Git and `.git` are unnecessary for the archive.
 
 Create and activate a virtual environment as shown in
 [REPRODUCIBILITY.md](REPRODUCIBILITY.md). From the repository/archive root:
@@ -59,7 +64,7 @@ The [architecture](architecture/README.md), [six proposed agent contracts](agent
 
 The experimental evidence originated at commit `1760109544f4420cfa21a06994ea38f1e2382c86`; the selected source snapshot was `6fcd42d057317a6b815fd6513316e0213416a440`. These are provenance identifiers, not commits to check out in this independent repository. [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json) records the original blob IDs and exported checksums. [MANIFEST-SHA256.json](MANIFEST-SHA256.json) covers the distributed files.
 
-Historical technical reports retain their original language, including Portuguese Phase B reports and historical publication-status statements. One credential-provenance sentence in the v1.0 report has a disclosed editorial correction; its old/new hashes and the regenerated manifest are recorded in [DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). The current English [reviewer guide](REVIEWER_GUIDE.md) and [Phase B README](phase-b/README.md) provide navigation and interpretation; historical statements do not describe the present repository status.
+Historical technical reports retain their original language and wording, including Portuguese Phase B reports and historical publication-status statements. The historical credential-provenance sentence is retained as a disclosed exception to the G12 editorial cleanup so the frozen D03 record and manifest remain identical to the evidence reference. The restoration hashes are recorded in [DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). The current English [reviewer guide](REVIEWER_GUIDE.md) and [Phase B README](phase-b/README.md) provide navigation and interpretation; historical statements do not describe the present repository status.
 
 All treasury entities, balances, providers, approvals, rails and settlement receipts are fictional or simulated. The evidence does not establish live financial integration, production security, economic superiority, general agent competence or independent external reproduction. D01's T14/T15 discrepancies remain visible. D03 observed no DENY among seven evaluated proposals; the eighth case was an abstention without a Control Plane decision.
 

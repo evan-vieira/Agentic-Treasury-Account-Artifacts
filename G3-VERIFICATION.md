@@ -2,7 +2,7 @@
 
 **Historical checkpoint:** G3 at public commit
 `24487fc846df08bf5d882dc929a51b33698c3a11`, dated 9 October 2026. The results below
-describe that snapshot. Subsequent G12 editorial changes are recorded in
+describe that snapshot. Subsequent G12 changes and the G1 restoration are recorded in
 [DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). G3 was based on public release `v1.0`
 at commit `514d0fedccfc146ccb775eb2d4dda1729a60e43c`.
 

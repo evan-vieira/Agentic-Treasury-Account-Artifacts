@@ -37,10 +37,10 @@ does not transfer ownership or state how ownership is allocated between the
 author, contributors and a funding organization.
 
 The earlier `v1.0` tag at commit `514d0fedccfc146ccb775eb2d4dda1729a60e43c` remains
-an unchanged historical distribution. G3 introduced the license grant and metadata. G12 retains those grants and
-records its distribution-only editorial changes in
-[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json), preserving experimental
-inputs, raw outputs, results and version labels. Use this revised
+an unchanged historical distribution. G3 introduced the license grant and metadata.
+Release tag `v1.0-dataverse.1` retains those grants and restores exact frozen
+evidence identity after the G12 editorial revision; see
+[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). Use this tagged
 snapshot for the Dataverse deposit; do not describe the old archive as containing
 these license files. Historical statements that a license was pending describe
 the state when those records were written.

@@ -1,8 +1,10 @@
 {
   "distribution_version": "1.0",
-  "revision": "G12-2026-10-09",
-  "base_public_commit": "24487fc846df08bf5d882dc929a51b33698c3a11",
-  "scope": "Distribution-only editorial cleanup. Experimental inputs, code, raw model outputs, run results and version labels are unchanged.",
+  "revision": "G1-2026-10-09",
+  "release_tag": "v1.0-dataverse.1",
+  "base_public_commit": "1cd54beb41fd4cb5317a8cb926a9a04ff8006013",
+  "reference_evidence_commit": "1760109544f4420cfa21a06994ea38f1e2382c86",
+  "scope": "Distribution metadata and restoration of the original frozen report and manifest. Experimental versions and results are unchanged.",
   "excluded_from_distribution": [
     {
       "path": "DATAVERSE-DEPOSIT.md",
@@ -10,25 +12,27 @@
       "reason": "Depositor workflow instructions; not a research or licensing artifact."
     }
   ],
-  "edited_historical_reports": [
+  "restored_frozen_files": [
     {
       "path": "phase-b/v1.3/prior-runs/v1.0/ata-phase-b/RELATORIO.md",
-      "previous_sha256": "00c49515eb78bb32f0e127d3b2c96d07473601e252763130a1662819d2b6a62e",
-      "current_sha256": "25f6264dc7d4c78198b932ce2c07b9eb310f615bc114447bf669f47270879f5f",
-      "change": "Replaced an interaction-specific credential-authorization sentence with an impersonal credential-source statement. No numerical or experimental result changed."
-    }
-  ],
-  "regenerated_nested_manifests": [
+      "g12_sha256": "25f6264dc7d4c78198b932ce2c07b9eb310f615bc114447bf669f47270879f5f",
+      "restored_sha256": "00c49515eb78bb32f0e127d3b2c96d07473601e252763130a1662819d2b6a62e",
+      "reference_sha256": "00c49515eb78bb32f0e127d3b2c96d07473601e252763130a1662819d2b6a62e",
+      "byte_identical_to_reference": true
+    },
     {
       "path": "phase-b/v1.3/MANIFEST-SHA256.json",
-      "previous_sha256": "e4bb9b48c3fea07346f97264d5b0fda49215dabff9f695a53d358167dee85d58",
-      "current_sha256": "50a2047bade608d004379c35a59b63ad6910015acb6e4e2d227aa82684c0e5dd",
-      "entries": 837,
-      "changed_entry_paths": [
-        "prior-runs/v1.0/ata-phase-b/RELATORIO.md"
-      ]
+      "g12_sha256": "50a2047bade608d004379c35a59b63ad6910015acb6e4e2d227aa82684c0e5dd",
+      "restored_sha256": "e4bb9b48c3fea07346f97264d5b0fda49215dabff9f695a53d358167dee85d58",
+      "reference_sha256": "e4bb9b48c3fea07346f97264d5b0fda49215dabff9f695a53d358167dee85d58",
+      "byte_identical_to_reference": true
     }
   ],
-  "retained_evidence": "All other 836 files covered by the Phase B manifest retain their base-commit bytes. Phase A files, model request/response records, prospectively frozen inputs and test results are unchanged.",
-  "historical_source": "The base public commit and the earlier v1.0 tag retain the original report and manifest for comparison."
+  "editorial_exception": {
+    "path": "phase-b/v1.3/prior-runs/v1.0/ata-phase-b/RELATORIO.md",
+    "reason": "The original credential-provenance wording is retained as historical evidence to preserve strict baseline identity. It contains no credential value.",
+    "other_g12_cleanup_retained": true
+  },
+  "retained_evidence": "All 837 Phase B manifest entries and the original manifest are byte-identical to the evidence reference. D01 and D02 hashes also match.",
+  "verification_record": "G1-VERIFICATION.json"
 }

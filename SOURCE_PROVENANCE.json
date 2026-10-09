@@ -489,14 +489,14 @@
     {
       "path": "phase-b/README.md",
       "source_git_blob_sha1": "82917a12b79b978cff8003844e4c0641df03a7ca",
-      "export_sha256": "cc28764287bfb620521359c8168a1861bce809b539159f56a337c6614be90e35",
+      "export_sha256": "6fe07e0960b795206c111ba2194b80e5080aee3b9add37dc7dcdafe3a899f88b",
       "byte_identical_to_source": false
     },
     {
       "path": "phase-b/v1.3/MANIFEST-SHA256.json",
       "source_git_blob_sha1": "85cca0b8b0da3b36a65a998246eeeb9c76c46a98",
-      "export_sha256": "50a2047bade608d004379c35a59b63ad6910015acb6e4e2d227aa82684c0e5dd",
-      "byte_identical_to_source": false
+      "export_sha256": "e4bb9b48c3fea07346f97264d5b0fda49215dabff9f695a53d358167dee85d58",
+      "byte_identical_to_source": true
     },
     {
       "path": "phase-b/v1.3/ata-phase-b/PROTOCOL.md",
@@ -2265,8 +2265,8 @@
     {
       "path": "phase-b/v1.3/prior-runs/v1.0/ata-phase-b/RELATORIO.md",
       "source_git_blob_sha1": "f9dc57ce3ab20a24a5df8a913e402edd7000c7ce",
-      "export_sha256": "25f6264dc7d4c78198b932ce2c07b9eb310f615bc114447bf669f47270879f5f",
-      "byte_identical_to_source": false
+      "export_sha256": "00c49515eb78bb32f0e127d3b2c96d07473601e252763130a1662819d2b6a62e",
+      "byte_identical_to_source": true
     },
     {
       "path": "phase-b/v1.3/prior-runs/v1.0/ata-phase-b/execution-logs/freeze.stderr.txt",
@@ -5585,6 +5585,7 @@
     "CITATION.cff",
     "DATAVERSE-TERMS.txt",
     "DISTRIBUTION-CHANGES.json",
+    "G1-VERIFICATION.json",
     "G3-VERIFICATION.md",
     "LICENSE-MAP.json",
     "LICENSE.md",
@@ -5610,21 +5611,21 @@
     "phase-b/README.md"
   ],
   "adapted_distribution_metadata_files": [
-    ".gitattributes",
-    "phase-b/v1.3/MANIFEST-SHA256.json",
-    "phase-b/v1.3/prior-runs/v1.0/ata-phase-b/RELATORIO.md"
+    ".gitattributes"
   ],
   "metadata_revision": {
-    "id": "G12-2026-10-09",
-    "base_public_commit": "24487fc846df08bf5d882dc929a51b33698c3a11",
+    "id": "G1-2026-10-09",
+    "base_public_commit": "1cd54beb41fd4cb5317a8cb926a9a04ff8006013",
+    "release_tag": "v1.0-dataverse.1",
     "changes": [
-      "Excluded depositor workflow instructions",
-      "Impersonal credential-source wording in one historical report",
-      "Regenerated one Phase B manifest entry; preserved experiment inputs and outputs"
+      "Restored the original historical report and D03 manifest from the evidence commit",
+      "Verified all frozen evidence against directly retrieved baseline manifests",
+      "Retained licensing and other editorial exclusions"
     ],
     "experimental_inputs_and_outputs_changed": false,
-    "historical_report_edited": true,
-    "change_ledger": "DISTRIBUTION-CHANGES.json"
+    "historical_report_edited_relative_to_evidence_reference": false,
+    "change_ledger": "DISTRIBUTION-CHANGES.json",
+    "verification_record": "G1-VERIFICATION.json"
   },
   "previous_metadata_revisions": [
     {
@@ -5636,6 +5637,18 @@
         "Reproduction and Dataverse instructions"
       ],
       "frozen_experimental_files_changed": false
+    },
+    {
+      "id": "G12-2026-10-09",
+      "base_public_commit": "24487fc846df08bf5d882dc929a51b33698c3a11",
+      "changes": [
+        "Excluded depositor workflow instructions",
+        "Impersonal credential-source wording in one historical report",
+        "Regenerated one Phase B manifest entry; preserved experiment inputs and outputs"
+      ],
+      "experimental_inputs_and_outputs_changed": false,
+      "historical_report_edited": true,
+      "change_ledger": "DISTRIBUTION-CHANGES.json"
     }
   ]
 }

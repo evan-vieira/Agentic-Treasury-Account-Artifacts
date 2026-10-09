@@ -34,7 +34,7 @@ The distribution preserves the following metadata in the original experimental f
 | v1.2 | [run.stdout.txt](phase-b/v1.3/prior-runs/v1.2/ata-phase-b/execution-logs/run.stdout.txt), [resume-verification.stdout.txt](phase-b/v1.3/prior-runs/v1.2/ata-phase-b/execution-logs/resume-verification.stdout.txt) |
 | v1.3 (D03) | [run.stdout.txt](phase-b/v1.3/ata-phase-b/execution-logs/run.stdout.txt), [resume-verification.stdout.txt](phase-b/v1.3/ata-phase-b/execution-logs/resume-verification.stdout.txt) |
 
-The preservation decision is to **retain and disclose** these identifiers. The raw response, all seven logs and the D01/D02 records remain byte-identical to the initial public artifact snapshot `83c935936ac57791c8ad5cb73b435e84d40679cd`. The Phase B manifest remained identical through G3; G12 regenerated its one corrected report entry as disclosed below. No metadata redaction, experimental rerun or change to reported outcomes is part of this clarification.
+The preservation decision is to **retain and disclose** these identifiers. The raw response, all seven logs and the D01/D02 records remain byte-identical to the initial public artifact snapshot `83c935936ac57791c8ad5cb73b435e84d40679cd`. The Phase B manifest remained identical through G3; G12 briefly changed one report entry. G1 restores the original report and manifest as disclosed below. No metadata redaction, experimental rerun or change to reported outcomes is part of this clarification.
 
 ## Documentation correction and integrity
 
@@ -50,15 +50,24 @@ The DOI remains pending; no ORCID has been inferred. The original packaging
 test and replay results above remain historical results of that preparation.
 The new G3 checks are recorded separately in [G3-VERIFICATION.md](G3-VERIFICATION.md).
 
-## G12 distribution cleanup
+## G12 cleanup and G1 frozen-evidence restoration
 
-G12 removed the depositor-only workflow document and replaced one interaction-specific
-credential-provenance sentence in the historical Phase B v1.0 report. No input,
-code, raw model output, case result, numerical conclusion or experimental version
-was changed. The 837-entry Phase B manifest was regenerated for that report;
-all other 836 covered files are unchanged from the G3 base commit. The root
-manifest and license inventory describe the current distribution.
-[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json) records the excluded file,
-the corrected report, and the old/new report and manifest hashes. Historical
-checks elsewhere in this document and in G3-VERIFICATION.md retain their
-original snapshot scope. Experimental API messages remain research evidence.
+G12 removed the depositor-only workflow document and temporarily replaced one
+credential-provenance sentence in the historical Phase B v1.0 report. That
+substitution changed the D03 manifest even though no experimental result changed.
+G1 restores exactly the original report and manifest from evidence commit
+`1760109544f4420cfa21a06994ea38f1e2382c86`. The historical provenance sentence is
+retained as the single disclosed exception to the editorial cleanup. The
+depositor workflow document remains excluded; no tracking parameters were found.
+
+Direct baseline comparison passed: D01 44/44 files, D02 7/7 files, original
+fixtures 26/26 files, and D03 837/837 files. Each original manifest also matches
+byte-for-byte. [G1-VERIFICATION.json](G1-VERIFICATION.json) records the reference
+commit, fetched blob identities, manifest hashes and counts.
+[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json) records the restoration.
+
+Release tag `v1.0-dataverse.1` identifies this distribution. Its archive must
+contain exactly the tagged file tree, without `.git` or supplementary untracked
+files. Licensing remains MIT for software and CC BY 4.0 for data/documentation.
+No model experiment or deterministic replay was rerun during G1; the software
+test/replay results above retain their original checkpoint scope.

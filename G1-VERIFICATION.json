@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "date": "2026-10-09",
+  "distribution_version": "1.0",
+  "release_tag": "v1.0-dataverse.1",
+  "reference_repository": "evan-vieira/Agentic-Treasury-Account",
+  "reference_commit": "1760109544f4420cfa21a06994ea38f1e2382c86",
+  "reference_retrieval": "Manifests fetched directly from the specified private commit; returned Git blob SHA-1 identities were recomputed. Every distributed file covered by each manifest was independently hashed with SHA-256.",
+  "checks": {
+    "D01": {
+      "manifest_path": "phase-a/metadata/delivery-manifest.json",
+      "reference_git_blob_sha1": "8fdc4b810d0e5c7dc50765649d7f418d2045665e",
+      "reference_manifest_sha256": "e8f05dfd60672963eae216389ae612b08a11174ac5c19941e8edf70f47a37d0c",
+      "distribution_manifest_sha256": "e8f05dfd60672963eae216389ae612b08a11174ac5c19941e8edf70f47a37d0c",
+      "manifest_byte_identical": true,
+      "files_checked": 44,
+      "files_identical": 44,
+      "status": "PASS"
+    },
+    "D02": {
+      "manifest_path": "phase-a/metadata/supplementary-manifest.json",
+      "reference_git_blob_sha1": "15d894f8ae80a190b5554269a5490923f1c45f54",
+      "reference_manifest_sha256": "fe4818f9e8461519a633e2b298d792cf72bae4193b8ca8218b9efb93775476fd",
+      "distribution_manifest_sha256": "fe4818f9e8461519a633e2b298d792cf72bae4193b8ca8218b9efb93775476fd",
+      "manifest_byte_identical": true,
+      "files_checked": 7,
+      "files_identical": 7,
+      "status": "PASS"
+    },
+    "Sprint3C": {
+      "manifest_path": "phase-a/metadata/sprint3c-manifest.json",
+      "reference_git_blob_sha1": "984b7648e338fd39225f184db5e7a64b7abe3d20",
+      "reference_manifest_sha256": "a7307078fb2b7dbdad8d031333a0d1b5911f8fba3f6374e9376bef71ef857be8",
+      "distribution_manifest_sha256": "a7307078fb2b7dbdad8d031333a0d1b5911f8fba3f6374e9376bef71ef857be8",
+      "manifest_byte_identical": true,
+      "files_checked": 26,
+      "files_identical": 26,
+      "status": "PASS"
+    },
+    "D03": {
+      "manifest_path": "phase-b/v1.3/MANIFEST-SHA256.json",
+      "reference_git_blob_sha1": "85cca0b8b0da3b36a65a998246eeeb9c76c46a98",
+      "reference_manifest_sha256": "e4bb9b48c3fea07346f97264d5b0fda49215dabff9f695a53d358167dee85d58",
+      "distribution_manifest_sha256": "e4bb9b48c3fea07346f97264d5b0fda49215dabff9f695a53d358167dee85d58",
+      "manifest_byte_identical": true,
+      "files_checked": 837,
+      "files_identical": 837,
+      "status": "PASS"
+    }
+  },
+  "restoration": {
+    "paths": [
+      "phase-b/v1.3/prior-runs/v1.0/ata-phase-b/RELATORIO.md",
+      "phase-b/v1.3/MANIFEST-SHA256.json"
+    ],
+    "reason": "Preserve the frozen evidence bytes; supersedes the G12 editorial substitution in this historical report.",
+    "experimental_results_changed": false
+  },
+  "scope_note": "Identity applies to the frozen manifest-covered evidence and the original manifests. Public navigation, licensing and distribution metadata are separately maintained. No experiment was rerun."
+}

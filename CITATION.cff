@@ -15,13 +15,13 @@ version: "1.0"
 date-released: "2026-10-09"
 license: MIT
 repository-code: "https://github.com/evan-vieira/Agentic-Treasury-Account-Artifacts"
-url: "https://github.com/evan-vieira/Agentic-Treasury-Account-Artifacts"
+url: "https://github.com/evan-vieira/Agentic-Treasury-Account-Artifacts/tree/v1.0-dataverse.1"
 keywords:
   - agentic treasury
   - synthetic evaluation
   - reproducible research
 abstract: >-
   Research software, simulation engines and verification tools for the D01-D03
-  synthetic treasury evaluation. Distribution revisions update licensing and
-  documentation; G12 discloses one editorial report correction while preserving
-  experimental inputs, raw outputs, results and version labels.
+  synthetic treasury evaluation. Release tag v1.0-dataverse.1 retains licensing
+  and distribution documentation while preserving baseline-identical D01-D03
+  evidence and original experimental version labels.

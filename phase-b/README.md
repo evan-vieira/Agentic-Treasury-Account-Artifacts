@@ -1,6 +1,6 @@
 # Phase B agent-assisted integration demonstration
 
-**D03 is the final v1.3 run `20260924T034232955184Z`.** This directory preserves the experimental evidence under [`v1.3/`](v1.3/). G12 made one editorial correction to a historical report and regenerated the 837-entry distribution manifest; [DISTRIBUTION-CHANGES.json](../DISTRIBUTION-CHANGES.json) records the exact old/new hashes. All other 836 manifest-covered files remain byte-identical to the G3 base commit. No experiment was rerun during repository incorporation. D01 and D02 remain separately archived under [`../phase-a/`](../phase-a/).
+**D03 is the final v1.3 run `20260924T034232955184Z`.** This directory preserves the experimental evidence under [`v1.3/`](v1.3/). All 837 covered files and the original manifest are byte-identical to evidence commit `1760109544f4420cfa21a06994ea38f1e2382c86`; see [G1-VERIFICATION.json](../G1-VERIFICATION.json). The historical v1.0 report and manifest were restored after the G12 editorial revision; [DISTRIBUTION-CHANGES.json](../DISTRIBUTION-CHANGES.json) records the exact hashes. No experiment was rerun during repository incorporation. D01 and D02 remain separately archived under [`../phase-a/`](../phase-a/).
 
 Current paper interpretation: [Manuscript v1.6, Evaluation v1.8 and Matrix v2.0](../REVIEWER_GUIDE.md). D03 keeps its experimental version **v1.3**; paper revisions do not change the experiment inputs or results.
 
@@ -28,7 +28,7 @@ The four primary cases reconciled in simulation. B05 and B07 required additional
 - [Audited summary](v1.3/ata-phase-b/summary-audited.json), [case summary](v1.3/ata-phase-b/case-summary.csv) and [original Portuguese report](v1.3/ata-phase-b/RELATORIO.md).
 - [Prior runs v1.0-v1.2](v1.3/prior-runs/): preserved development history, including failures. Their cases are not pooled with the final eight.
 - [Bundled Sprint 3D dependency](v1.3/ata-sprint3d/): retained byte-for-byte so relative imports and frozen hashes continue to resolve. Its copied D01 results are not a new experiment or a second denominator. D02's authoritative archive is `phase-a/results-supplementary/`; it is not supplied by this dependency copy.
-- [Distribution manifest](v1.3/MANIFEST-SHA256.json): 837 covered files plus the manifest itself. Only the historical report entry changed during G12; the original manifest remains available at the base public commit recorded in the distribution change ledger.
+- [Original manifest](v1.3/MANIFEST-SHA256.json): 837 covered files plus the manifest itself, identical to the evidence reference. Repository navigation and distribution documentation are maintained outside this frozen directory.
 
 ## Offline verification
 
