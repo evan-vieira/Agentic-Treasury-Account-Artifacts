@@ -34,7 +34,7 @@ The distribution preserves the following metadata in the original experimental f
 | v1.2 | [run.stdout.txt](phase-b/v1.3/prior-runs/v1.2/ata-phase-b/execution-logs/run.stdout.txt), [resume-verification.stdout.txt](phase-b/v1.3/prior-runs/v1.2/ata-phase-b/execution-logs/resume-verification.stdout.txt) |
 | v1.3 (D03) | [run.stdout.txt](phase-b/v1.3/ata-phase-b/execution-logs/run.stdout.txt), [resume-verification.stdout.txt](phase-b/v1.3/ata-phase-b/execution-logs/resume-verification.stdout.txt) |
 
-The preservation decision is to **retain and disclose** these identifiers. The raw response, all seven logs, the 837-entry Phase B manifest, and the D01/D02 records remain byte-identical to the initial public artifact snapshot `83c935936ac57791c8ad5cb73b435e84d40679cd`. No metadata redaction, experimental rerun or change to reported outcomes is part of this clarification.
+The preservation decision is to **retain and disclose** these identifiers. The raw response, all seven logs and the D01/D02 records remain byte-identical to the initial public artifact snapshot `83c935936ac57791c8ad5cb73b435e84d40679cd`. The Phase B manifest remained identical through G3; G12 regenerated its one corrected report entry as disclosed below. No metadata redaction, experimental rerun or change to reported outcomes is part of this clarification.
 
 ## Documentation correction and integrity
 
@@ -49,3 +49,16 @@ adds MIT/CC BY 4.0 component licensing as defined in [LICENSE.md](LICENSE.md).
 The DOI remains pending; no ORCID has been inferred. The original packaging
 test and replay results above remain historical results of that preparation.
 The new G3 checks are recorded separately in [G3-VERIFICATION.md](G3-VERIFICATION.md).
+
+## G12 distribution cleanup
+
+G12 removed the depositor-only workflow document and replaced one interaction-specific
+credential-provenance sentence in the historical Phase B v1.0 report. No input,
+code, raw model output, case result, numerical conclusion or experimental version
+was changed. The 837-entry Phase B manifest was regenerated for that report;
+all other 836 covered files are unchanged from the G3 base commit. The root
+manifest and license inventory describe the current distribution.
+[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json) records the excluded file,
+the corrected report, and the old/new report and manifest hashes. Historical
+checks elsewhere in this document and in G3-VERIFICATION.md retain their
+original snapshot scope. Experimental API messages remain research evidence.

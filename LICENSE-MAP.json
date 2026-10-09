@@ -1,13 +1,13 @@
 {
   "distribution_version": "1.0",
-  "metadata_revision": "G3-2026-10-09",
+  "metadata_revision": "G12-2026-10-09",
   "scope": "Component-specific licenses; not an OR choice for each file. See LICENSE.md.",
   "project_files": {
     ".gitattributes": "MIT",
     ".gitignore": "MIT",
     "CITATION.cff": "CC-BY-4.0",
-    "DATAVERSE-DEPOSIT.md": "CC-BY-4.0",
     "DATAVERSE-TERMS.txt": "CC-BY-4.0",
+    "DISTRIBUTION-CHANGES.json": "CC-BY-4.0",
     "G3-VERIFICATION.md": "CC-BY-4.0",
     "LICENSE-MAP.json": "CC-BY-4.0",
     "LICENSE.md": "CC-BY-4.0",

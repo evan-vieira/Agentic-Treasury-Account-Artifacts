@@ -12,22 +12,23 @@ Start with the [reviewer guide](REVIEWER_GUIDE.md), then the [reproduction instr
 | **D02** | Five post-hoc variants, ten replays each: 50 runs reported separately. | [Supplementary report](phase-a/SUPPLEMENTARY_REPORT.md), [results](phase-a/results-supplementary/) |
 | **D03** | Phase B v1.3, eight cases and 32 sequential calls to `gpt-4.1-2025-04-14`. | [Phase B map](phase-b/EVIDENCE_MAP.md), [protocol](phase-b/v1.3/ata-phase-b/PROTOCOL.md), [final run](phase-b/v1.3/ata-phase-b/runs/20260924T034232955184Z/) |
 
-The complete D03 package retains earlier v1.0–v1.2 development runs, including failures. Their outcomes are excluded from the final D03 denominator. The original manifest covers 837 files; the manifest itself is an additional file. The bundled copy of Sprint 3D is a dependency, not an additional experiment.
+The complete D03 package retains earlier v1.0–v1.2 development runs, including failures. Their outcomes are excluded from the final D03 denominator. The current Phase B distribution manifest covers 837 files; the manifest itself is an additional file. The bundled copy of Sprint 3D is a dependency, not an additional experiment.
 
 ## Distribution revision and reuse
 
-This is the **G3 distribution revision of v1.0, dated 9 October 2026**. It adds
-licensing, citation metadata and clearer reproduction commands. The experimental
-versions and frozen records remain unchanged. The earlier `v1.0` tag remains at
+This is the **G12 distribution revision of v1.0, dated 9 October 2026**.
+It retains G3 licensing, citation metadata and reproduction instructions, removes
+depositor workflow notes, and makes one disclosed editorial correction to a
+historical report. Experimental inputs, code, raw outputs, results and version
+labels remain unchanged; see [DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). The earlier `v1.0` tag remains at
 `514d0fedccfc146ccb775eb2d4dda1729a60e43c`; use the exact new snapshot/commit
-identified with the G3 archive for deposit and citation.
+identified with the G12 archive for deposit and citation.
 
 - **Software: MIT. Data and documentation: CC BY 4.0.** See [LICENSE.md](LICENSE.md)
   and the complete [file license map](LICENSE-MAP.json).
 - **Citation:** [software metadata](CITATION.cff) and
   [data/evaluation metadata](citation/DATA-CITATION.cff).
-- **Dataverse:** [deposit settings](DATAVERSE-DEPOSIT.md) and
-  [component-license text](DATAVERSE-TERMS.txt). The DOI is still pending.
+- **Deposit license:** [component-license text](DATAVERSE-TERMS.txt). The DOI is still pending.
 
 ## Verify without model access
 
@@ -58,7 +59,7 @@ The [architecture](architecture/README.md), [six proposed agent contracts](agent
 
 The experimental evidence originated at commit `1760109544f4420cfa21a06994ea38f1e2382c86`; the selected source snapshot was `6fcd42d057317a6b815fd6513316e0213416a440`. These are provenance identifiers, not commits to check out in this independent repository. [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json) records the original blob IDs and exported checksums. [MANIFEST-SHA256.json](MANIFEST-SHA256.json) covers the distributed files.
 
-The frozen technical reports are retained in their original language and wording, including Portuguese Phase B reports and historical publication-status statements. The current English [reviewer guide](REVIEWER_GUIDE.md) and [Phase B README](phase-b/README.md) provide navigation and interpretation; historical statements do not describe the present repository status.
+Historical technical reports retain their original language, including Portuguese Phase B reports and historical publication-status statements. One credential-provenance sentence in the v1.0 report has a disclosed editorial correction; its old/new hashes and the regenerated manifest are recorded in [DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). The current English [reviewer guide](REVIEWER_GUIDE.md) and [Phase B README](phase-b/README.md) provide navigation and interpretation; historical statements do not describe the present repository status.
 
 All treasury entities, balances, providers, approvals, rails and settlement receipts are fictional or simulated. The evidence does not establish live financial integration, production security, economic superiority, general agent competence or independent external reproduction. D01's T14/T15 discrepancies remain visible. D03 observed no DENY among seven evaluated proposals; the eighth case was an abstention without a Control Plane decision.
 

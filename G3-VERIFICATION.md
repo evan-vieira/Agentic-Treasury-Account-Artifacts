@@ -1,6 +1,9 @@
 # G3 — licensing, reproduction and citation
 
-G3 distribution revision dated 9 October 2026; based on public release `v1.0`
+**Historical checkpoint:** G3 at public commit
+`24487fc846df08bf5d882dc929a51b33698c3a11`, dated 9 October 2026. The results below
+describe that snapshot. Subsequent G12 editorial changes are recorded in
+[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). G3 was based on public release `v1.0`
 at commit `514d0fedccfc146ccb775eb2d4dda1729a60e43c`.
 
 The scope is distribution metadata. No frozen experimental file or result was
@@ -15,8 +18,7 @@ is preserved. A fresh archive and root manifest are required for this revision.
 - Separate software/data CFF records avoid representing these licenses as an OR
   choice for the same file. Dates reflect the verified public release date.
 - ORCID and DOI are omitted because no verified identifier was supplied.
-- Dataverse custom terms mirror the component scopes; CC0 and the earlier
-  “All rights reserved” proposal do not describe this revised deposit candidate.
+- Dataverse component terms mirror the MIT and CC BY 4.0 file scopes.
 
 ## Validation
 

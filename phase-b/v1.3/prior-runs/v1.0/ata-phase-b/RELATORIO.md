@@ -2,7 +2,7 @@
 
 Run: `20260924T022249819508Z`. Executado em 24/09/2026 UTC (23/09/2026, horário de São Paulo).
 
-`phase_b.py freeze`, `phase_b.py run` e `phase_b.py summarize` executados, nessa ordem. Modelo solicitado e retornado: `gpt-4.1-2025-04-14`. Temperatura: 0; `max_completion_tokens`: 1400. Endpoint: https://api.openai.com/v1/chat/completions. O modelo foi escolhido nesta execução porque não havia ATA_MODEL_ID configurado. A chave existente em `.zshrc` foi reutilizada com autorização expressa do usuário; seu valor não integra o pacote.
+`phase_b.py freeze`, `phase_b.py run` e `phase_b.py summarize` executados, nessa ordem. Modelo solicitado e retornado: `gpt-4.1-2025-04-14`. Temperatura: 0; `max_completion_tokens`: 1400. Endpoint: https://api.openai.com/v1/chat/completions. O modelo foi escolhido nesta execução porque não havia ATA_MODEL_ID configurado. A credencial foi obtida do ambiente local de execução; seu valor não integra o pacote.
 
 ## Denominadores efetivos
 

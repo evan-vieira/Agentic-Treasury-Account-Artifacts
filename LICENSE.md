@@ -1,6 +1,6 @@
 # License scope
 
-Effective for this G3 distribution revision dated **9 October 2026**.
+License grants introduced with G3 on **9 October 2026** and retained in this distribution.
 
 This research compendium applies different licenses to different files. It does
 not offer a choice of MIT or CC BY for every file. [LICENSE-MAP.json](LICENSE-MAP.json)
@@ -37,8 +37,10 @@ does not transfer ownership or state how ownership is allocated between the
 author, contributors and a funding organization.
 
 The earlier `v1.0` tag at commit `514d0fedccfc146ccb775eb2d4dda1729a60e43c` remains
-an unchanged historical distribution. This G3 revision adds the license grant and
-metadata while preserving the experimental versions and bytes. Use this revised
+an unchanged historical distribution. G3 introduced the license grant and metadata. G12 retains those grants and
+records its distribution-only editorial changes in
+[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json), preserving experimental
+inputs, raw outputs, results and version labels. Use this revised
 snapshot for the Dataverse deposit; do not describe the old archive as containing
 these license files. Historical statements that a license was pending describe
 the state when those records were written.

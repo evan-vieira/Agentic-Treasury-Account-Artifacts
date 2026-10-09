@@ -1,8 +1,8 @@
 # Phase B agent-assisted integration demonstration
 
-**D03 is the final v1.3 run `20260924T034232955184Z`.** This directory preserves the complete received package under [`v1.3/`](v1.3/), including its original 837-entry SHA-256 manifest. No experiment was rerun during repository incorporation. D01 and D02 remain separately archived under [`../phase-a/`](../phase-a/).
+**D03 is the final v1.3 run `20260924T034232955184Z`.** This directory preserves the experimental evidence under [`v1.3/`](v1.3/). G12 made one editorial correction to a historical report and regenerated the 837-entry distribution manifest; [DISTRIBUTION-CHANGES.json](../DISTRIBUTION-CHANGES.json) records the exact old/new hashes. All other 836 manifest-covered files remain byte-identical to the G3 base commit. No experiment was rerun during repository incorporation. D01 and D02 remain separately archived under [`../phase-a/`](../phase-a/).
 
-Current paper interpretation: [Manuscript v1.6, Evaluation v1.8 and Matrix v2.0](../REVIEWER_GUIDE.md). D03 keeps its experimental version **v1.3**; paper revisions do not change the frozen package.
+Current paper interpretation: [Manuscript v1.6, Evaluation v1.8 and Matrix v2.0](../REVIEWER_GUIDE.md). D03 keeps its experimental version **v1.3**; paper revisions do not change the experiment inputs or results.
 
 ## Evidence and scope
 
@@ -28,7 +28,7 @@ The four primary cases reconciled in simulation. B05 and B07 required additional
 - [Audited summary](v1.3/ata-phase-b/summary-audited.json), [case summary](v1.3/ata-phase-b/case-summary.csv) and [original Portuguese report](v1.3/ata-phase-b/RELATORIO.md).
 - [Prior runs v1.0-v1.2](v1.3/prior-runs/): preserved development history, including failures. Their cases are not pooled with the final eight.
 - [Bundled Sprint 3D dependency](v1.3/ata-sprint3d/): retained byte-for-byte so relative imports and frozen hashes continue to resolve. Its copied D01 results are not a new experiment or a second denominator. D02's authoritative archive is `phase-a/results-supplementary/`; it is not supplied by this dependency copy.
-- [Original manifest](v1.3/MANIFEST-SHA256.json): 837 covered files plus the manifest itself. Repository documentation lives outside this frozen package.
+- [Distribution manifest](v1.3/MANIFEST-SHA256.json): 837 covered files plus the manifest itself. Only the historical report entry changed during G12; the original manifest remains available at the base public commit recorded in the distribution change ledger.
 
 ## Offline verification
 

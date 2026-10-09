@@ -22,5 +22,6 @@ keywords:
   - reproducible research
 abstract: >-
   Research software, simulation engines and verification tools for the D01-D03
-  synthetic treasury evaluation. The G3 distribution revision updates licensing
-  and documentation without changing frozen experimental records or versions.
+  synthetic treasury evaluation. Distribution revisions update licensing and
+  documentation; G12 discloses one editorial report correction while preserving
+  experimental inputs, raw outputs, results and version labels.
