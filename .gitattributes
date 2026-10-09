@@ -1,4 +1,3 @@
-# Preserve original bytes in frozen evidence and exact source snapshots.
+# Preserve original bytes in the distributed frozen evidence.
 phase-a/** -text
 phase-b/v1.3/** -text
-paper/source-snapshots/** -text

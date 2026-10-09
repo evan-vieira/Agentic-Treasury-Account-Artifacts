@@ -15,8 +15,8 @@
     {
       "path": ".gitattributes",
       "source_git_blob_sha1": "4b386615ddc19b4820edf403e4565aff95b5a3fd",
-      "export_sha256": "3e9b71526e1716aa92d183c88962589319f05c5fa6e00d6f19bb4d18c0800738",
-      "byte_identical_to_source": true
+      "export_sha256": "a62921d41d87bb091eb78d4d8e7529229fc5d73843adb25f269ec1220e96521e",
+      "byte_identical_to_source": false
     },
     {
       "path": ".gitignore",
@@ -5600,5 +5600,8 @@
     "phase-a/PUBLICATION.md",
     "phase-b/EVIDENCE_MAP.md",
     "phase-b/README.md"
+  ],
+  "adapted_distribution_metadata_files": [
+    ".gitattributes"
   ]
 }
