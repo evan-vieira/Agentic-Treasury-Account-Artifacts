@@ -1,7 +1,7 @@
 {
   "record_type": "G6/G7 frozen-evidence audit and editorial resolution",
   "date": "2026-10-09",
-  "scope": "The evidence_audit describes the unchanged release tag, including its 944-entry root manifest and clean checkout. It does not describe the later main-branch inventory. The audit itself does not modify DOCX files; editorial changes are recorded separately below.",
+  "scope": "The evidence_audit describes v1.0-dataverse.1, including its 944-entry root manifest and clean checkout. The record is included in v1.0-dataverse.2 without changing that historical audit scope. Editorial changes are recorded separately below.",
   "evidence_audit": {
     "date": "2026-10-09",
     "release_tag": "v1.0-dataverse.1",
@@ -168,5 +168,11 @@
     "other_gates_closed_by_this_update": []
   },
   "release_tag_changed": false,
-  "note_in_existing_tagged_archive": false
+  "note_in_existing_tagged_archive": false,
+  "distribution_inclusion": {
+    "release_tag": "v1.0-dataverse.2",
+    "included": true,
+    "historical_tag": "v1.0-dataverse.1",
+    "historical_tag_changed": false
+  }
 }

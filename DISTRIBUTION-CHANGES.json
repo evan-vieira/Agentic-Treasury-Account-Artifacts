@@ -53,5 +53,14 @@
         "LICENSE-MAP.json"
       ]
     }
-  ]
+  ],
+  "current_distribution": {
+    "release_tag": "v1.0-dataverse.2",
+    "date": "2026-10-09",
+    "base_public_commit": "bdad1ccfa4e2f70ac74657f871f8c85e8f525d8a",
+    "scope": "Consolidate G6/G7 verification and reviewer guidance; update distribution and citation references. No experimental changes.",
+    "previous_release_tag": "v1.0-dataverse.1",
+    "previous_tag_changed": false,
+    "verification_record": "RELEASE-VERIFICATION.json"
+  }
 }

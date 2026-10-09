@@ -57,10 +57,10 @@ D01, D02 and D03 denominators remain separate.
 
 ## Release boundary
 
-This verification note and its JSON record were added to `main` after the tag.
-They are not files inside the existing tagged archive. Tag `v1.0-dataverse.1`
-and its prepared deposit archive remain unchanged. The 944-entry root-manifest
-check in the audit record applies to that tag; the current root manifest covers
-the current `main` inventory. The original D01/D02 and 837-entry D03 manifests
-remain intact. This documentation update assigns no DOI, creates no deposit,
-and makes no claim of independent external reproduction or closure of other gates.
+This verification note and its JSON record are included in `v1.0-dataverse.2`.
+The original evidence audit describes `v1.0-dataverse.1`, whose tag and archive
+remain unchanged. Its 944-entry root-manifest check retains that historical scope.
+The new root manifest covers the expanded distribution. D01/D02 and the
+837-entry D03 evidence remain byte-identical. This documentation release assigns
+no DOI, creates no Dataverse deposit, and makes no claim of independent external
+reproduction or closure of other gates.

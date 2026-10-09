@@ -40,7 +40,7 @@ The earlier `v1.0` tag at commit `514d0fedccfc146ccb775eb2d4dda1729a60e43c` rema
 an unchanged historical distribution. G3 introduced the license grant and metadata.
 Release tag `v1.0-dataverse.1` retains those grants and restores exact frozen
 evidence identity after the G12 editorial revision; see
-[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). Use this tagged
-snapshot for the Dataverse deposit; do not describe the old archive as containing
+[DISTRIBUTION-CHANGES.json](DISTRIBUTION-CHANGES.json). Use the subsequent `v1.0-dataverse.2` tagged
+snapshot, which also incorporates G6/G7 documentation, for the Dataverse deposit; do not describe the old archive as containing
 these license files. Historical statements that a license was pending describe
 the state when those records were written.

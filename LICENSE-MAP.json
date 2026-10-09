@@ -1,6 +1,6 @@
 {
   "distribution_version": "1.0",
-  "metadata_revision": "G6-G7-2026-10-09",
+  "metadata_revision": "dataverse.2-2026-10-09",
   "scope": "Component-specific licenses; not an OR choice for each file. See LICENSE.md.",
   "project_files": {
     ".gitattributes": "MIT",
@@ -16,6 +16,7 @@
     "LICENSE.md": "CC-BY-4.0",
     "MANIFEST-SHA256.json": "CC-BY-4.0",
     "README.md": "CC-BY-4.0",
+    "RELEASE-VERIFICATION.json": "CC-BY-4.0",
     "REPRODUCIBILITY.md": "CC-BY-4.0",
     "REVIEWER_GUIDE.md": "CC-BY-4.0",
     "SOURCE_PROVENANCE.json": "CC-BY-4.0",

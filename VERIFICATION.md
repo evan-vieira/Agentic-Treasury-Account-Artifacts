@@ -71,3 +71,11 @@ contain exactly the tagged file tree, without `.git` or supplementary untracked
 files. Licensing remains MIT for software and CC BY 4.0 for data/documentation.
 No model experiment or deterministic replay was rerun during G1; the software
 test/replay results above retain their original checkpoint scope.
+
+## Distribution consolidation — v1.0-dataverse.2
+
+This release includes the G6/G7 verification records and revised reviewer guidance.
+All Phase A and Phase B files are byte-identical to `v1.0-dataverse.1`; the
+reference identity established in G1 therefore remains valid. See
+[RELEASE-VERIFICATION.json](RELEASE-VERIFICATION.json). Generate the deposit
+archive from `v1.0-dataverse.2`. Earlier audits retain their original scope.

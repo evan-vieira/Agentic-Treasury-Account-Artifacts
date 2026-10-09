@@ -16,8 +16,8 @@ The complete D03 package retains earlier v1.0–v1.2 development runs, including
 
 ## Distribution revision and reuse
 
-The **archived G1-verified distribution of v1.0, dated 9 October 2026**, is fixed by
-release tag `v1.0-dataverse.1`. It retains G3 licensing and citation metadata and
+The **G1-verified distribution of v1.0, dated 9 October 2026**, is fixed by
+release tag `v1.0-dataverse.2`. It retains G3 licensing and citation metadata and
 the G12 exclusion of depositor workflow notes. The historical Phase B v1.0
 report and original D03 manifest have been restored to preserve exact evidence
 identity with commit `1760109544f4420cfa21a06994ea38f1e2382c86`.
@@ -27,7 +27,7 @@ See [G1-VERIFICATION.json](G1-VERIFICATION.json) and
 The earlier `v1.0` tag remains at `514d0fedccfc146ccb775eb2d4dda1729a60e43c`.
 The new tag identifies a distribution revision; it does not change any
 experimental version. The deposited archive must be generated directly from
-`v1.0-dataverse.1`, without the Git history or any extra files.
+`v1.0-dataverse.2`, without the Git history or any extra files.
 
 - **Software: MIT. Data and documentation: CC BY 4.0.** See [LICENSE.md](LICENSE.md)
   and the complete [file license map](LICENSE-MAP.json).
@@ -44,16 +44,16 @@ safeguard X08, the 90/100 settlement composition, and T09 as the sole duplicate
 case. Read the CSV together with the raw run record for T09's first reconciliation.
 
 This note, its [JSON record](G6-G7-VERIFICATION.json), and updated reviewer
-navigation are subsequent additions to `main`; they are not part of the existing
-`v1.0-dataverse.1` archive. The tag, prepared deposit archive and all frozen
-D01–D03 evidence remain unchanged. Other release gates are unaffected.
+navigation are included in `v1.0-dataverse.2`. The original audit applies to
+`v1.0-dataverse.1`; that tag and archive remain unchanged. All frozen D01–D03
+evidence is identical in both releases. Other release gates are unaffected.
 
 ## Verify without model access
 
 Use Python 3.12 and PyYAML 6.0.3, the recorded D01/Phase B environment.
 D02 originally ran under Python 3.13.5. Extract the deposited archive and open
 its root directory, or clone this repository and record `git rev-parse HEAD`.
-A clone of `main` retrieves its current state; check out tag `v1.0-dataverse.1`
+A clone of `main` retrieves its current state; check out tag `v1.0-dataverse.2`
 when reproducing this release snapshot. Git and `.git` are unnecessary for the archive.
 
 Create and activate a virtual environment as shown in
