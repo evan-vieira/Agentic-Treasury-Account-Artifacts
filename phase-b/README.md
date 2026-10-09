@@ -2,7 +2,7 @@
 
 **D03 is the final v1.3 run `20260924T034232955184Z`.** This directory preserves the experimental evidence under [`v1.3/`](v1.3/). All 837 covered files and the original manifest are byte-identical to evidence commit `1760109544f4420cfa21a06994ea38f1e2382c86`; see [G1-VERIFICATION.json](../G1-VERIFICATION.json). The historical v1.0 report and manifest were restored after the G12 editorial revision; [DISTRIBUTION-CHANGES.json](../DISTRIBUTION-CHANGES.json) records the exact hashes. No experiment was rerun during repository incorporation. D01 and D02 remain separately archived under [`../phase-a/`](../phase-a/).
 
-Current paper interpretation: [Manuscript v1.8, Evaluation v1.10, Matrix v2.1 and Dossier v1.10](../REVIEWER_GUIDE.md). D03 keeps its experimental version **v1.3**; paper revisions do not change the experiment inputs or results.
+Current paper interpretation: [Manuscript v1.9, Evaluation v1.11, Matrix v2.2 and Dossier v1.11](../REVIEWER_GUIDE.md). D03 keeps its experimental version **v1.3**; paper revisions do not change the experiment inputs or results.
 
 ## Evidence and scope
 

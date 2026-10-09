@@ -1,6 +1,6 @@
 # Reviewer guide
 
-This guide provides an English route through the evidence supporting the separately supplied manuscript. It is aligned with Manuscript v1.8, Evaluation and Results v1.10, Claim–Evidence Matrix v2.1 and Source Dossier v1.10 (G1 documentation revisions of 9 October 2026). These versions preserve the G6/G7 clarifications. Those editorial documents are supplied separately for review.
+This guide provides an English route through the evidence supporting the separately supplied manuscript. It is aligned with Manuscript v1.9, Evaluation and Results v1.11, Claim–Evidence Matrix v2.2 and Source Dossier v1.11 (G4/G9 bibliographic revisions of 9 October 2026). These versions preserve the G6/G7 clarifications. Those editorial documents are supplied separately for review.
 
 This guide on `main` reflects the current documents. The deposited snapshot remains release `v1.0-dataverse.2`, commit `0d252375e6a87280ae3a32bbf9077f744c90514a`. Harvard Dataverse assigned DOI [10.7910/DVN/EUZE5V](https://doi.org/10.7910/DVN/EUZE5V); the deposit was submitted for review and observed as unpublished on 9 October 2026. See the [status record](README.md#harvard-dataverse-status--9-october-2026).
 

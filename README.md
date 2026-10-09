@@ -10,7 +10,7 @@ The deposit for release `v1.0-dataverse.2` (public commit `0d252375e6a87280ae3a3
 
 The submitted file is `Agentic-Treasury-Account-Artifacts-v1.0-dataverse.2.tar.gz`: 1,086,775 bytes; SHA-256 `d980fadcd3cd4de1fd252ed4ffd76d978f6a1d4ab38b82f180b51e39698f7202`. Its downloaded copy matched the original; 948 regular files and all 947 root-manifest entries were verified, without Git history. The deposited Custom Dataset Terms apply MIT to software and CC BY 4.0 to data/documentation.
 
-This status annotation is a later update to `main`; the release tag, release asset and submitted archive remain unchanged. Use the tag and exact commit above to reproduce the deposited contents. Current editorial versions are Manuscript v1.8, Evaluation and Results v1.10, Claim–Evidence Matrix v2.1 and Source Dossier v1.10. The reviewer guide and Phase A/B navigation on `main` now reference those versions, preserving the G6/G7 findings; manuscript files remain outside this public repository.
+This status annotation is a later update to `main`; the release tag, release asset and submitted archive remain unchanged. Use the tag and exact commit above to reproduce the deposited contents. Current editorial versions are Manuscript v1.9, Evaluation and Results v1.11, Claim–Evidence Matrix v2.2 and Source Dossier v1.11. The reviewer guide and Phase A/B navigation on `main` now reference those versions, preserving the G6/G7 findings and reflecting the G4/G9 bibliographic review; manuscript files remain outside this public repository.
 
 ## Evidence included
 
