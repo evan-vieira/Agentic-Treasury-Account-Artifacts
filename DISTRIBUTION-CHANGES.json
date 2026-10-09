@@ -34,5 +34,24 @@
     "other_g12_cleanup_retained": true
   },
   "retained_evidence": "All 837 Phase B manifest entries and the original manifest are byte-identical to the evidence reference. D01 and D02 hashes also match.",
-  "verification_record": "G1-VERIFICATION.json"
+  "verification_record": "G1-VERIFICATION.json",
+  "subsequent_main_updates": [
+    {
+      "date": "2026-10-09",
+      "revision": "G6-G7-2026-10-09",
+      "base_public_commit": "fbe6559bdfb53819b0ed7d825eddcfe716868434",
+      "scope": "Add G6/G7 verification records and align reviewer navigation with the separately supplied Manuscript v1.7 and Evaluation v1.9.",
+      "new_files": [
+        "G6-G7-VERIFICATION.md",
+        "G6-G7-VERIFICATION.json"
+      ],
+      "experimental_files_changed": false,
+      "release_tag_changed": false,
+      "existing_tagged_archive_changed": false,
+      "main_inventory_metadata_updated": [
+        "MANIFEST-SHA256.json",
+        "LICENSE-MAP.json"
+      ]
+    }
+  ]
 }

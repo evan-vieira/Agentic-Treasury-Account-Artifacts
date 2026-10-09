@@ -1,6 +1,6 @@
 {
   "distribution_version": "1.0",
-  "metadata_revision": "G1-2026-10-09",
+  "metadata_revision": "G6-G7-2026-10-09",
   "scope": "Component-specific licenses; not an OR choice for each file. See LICENSE.md.",
   "project_files": {
     ".gitattributes": "MIT",
@@ -10,6 +10,8 @@
     "DISTRIBUTION-CHANGES.json": "CC-BY-4.0",
     "G1-VERIFICATION.json": "CC-BY-4.0",
     "G3-VERIFICATION.md": "CC-BY-4.0",
+    "G6-G7-VERIFICATION.json": "CC-BY-4.0",
+    "G6-G7-VERIFICATION.md": "CC-BY-4.0",
     "LICENSE-MAP.json": "CC-BY-4.0",
     "LICENSE.md": "CC-BY-4.0",
     "MANIFEST-SHA256.json": "CC-BY-4.0",

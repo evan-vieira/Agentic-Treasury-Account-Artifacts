@@ -1,0 +1,172 @@
+{
+  "record_type": "G6/G7 frozen-evidence audit and editorial resolution",
+  "date": "2026-10-09",
+  "scope": "The evidence_audit describes the unchanged release tag, including its 944-entry root manifest and clean checkout. It does not describe the later main-branch inventory. The audit itself does not modify DOCX files; editorial changes are recorded separately below.",
+  "evidence_audit": {
+    "date": "2026-10-09",
+    "release_tag": "v1.0-dataverse.1",
+    "release_commit": "fbe6559bdfb53819b0ed7d825eddcfe716868434",
+    "G6": {
+      "data_verification": "PASS",
+      "adverse_scenario_grouping": {
+        "S01": [
+          "T01",
+          "T03",
+          "T09"
+        ],
+        "S02": [
+          "T04",
+          "T05",
+          "T10",
+          "T12",
+          "T15"
+        ],
+        "S03": [
+          "T06",
+          "T14"
+        ],
+        "S04": [
+          "T02",
+          "T07",
+          "T08",
+          "T11",
+          "T13"
+        ]
+      },
+      "original_labels": 33,
+      "editorial_followup": "Qualify the S03 no-information-required statement as applying to the original 33 cases; X08 is an added S03 safeguard with REQUIRE_ADDITIONAL_INFORMATION."
+    },
+    "G7": {
+      "data_verification": "PASS",
+      "reconciled_cases": [
+        "S01-A",
+        "S03-A",
+        "S01-B-APPROVED",
+        "S02-A-APPROVED",
+        "S02-B-APPROVED",
+        "S03-B-APPROVED",
+        "S04-A-APPROVED",
+        "S04-B-APPROVED",
+        "T09"
+      ],
+      "replays_per_case": 10,
+      "reconciled_records": 90,
+      "exception_case": "T13",
+      "exception_records": 10,
+      "total_settlement_records": 100,
+      "only_duplicate_case": "T09",
+      "duplicate_rejections": 10,
+      "duplicate_attempts": 10,
+      "csv_visible_reconciled_records": 80,
+      "t09_first_execution_reconciled_records": 10,
+      "editorial_followup": "Cite runs.jsonl in addition to case_summary.csv: CSV preserves the terminal T09 rejection, while the initial successful reconciliation is nested in raw execution_detail.first_execution and audit events."
+    },
+    "experimental_changes_required": false,
+    "experimental_files_modified": false,
+    "canonical_docx_modified": false,
+    "checks": [
+      {
+        "name": "47 unique cases and CSV rows, 470 raw runs",
+        "passed": true
+      },
+      {
+        "name": "Ten replays for every case",
+        "passed": true
+      },
+      {
+        "name": "Evaluation Table 8.2 adverse grouping matches frozen cases",
+        "passed": true
+      },
+      {
+        "name": "Raw scenario assignments match cases.json",
+        "passed": true
+      },
+      {
+        "name": "Original cohort consists of 33 labels",
+        "passed": true
+      },
+      {
+        "name": "No information-required S03 case in original cohort",
+        "passed": true
+      },
+      {
+        "name": "X08 adds information-required outcome in S03",
+        "passed": true
+      },
+      {
+        "name": "Exact case-level composition of 100 reconciliation records",
+        "passed": true
+      },
+      {
+        "name": "Summary agrees with 90/100 and ten exceptions",
+        "passed": true
+      },
+      {
+        "name": "CSV terminal states expose 80 reconciled and ten exceptions",
+        "passed": true
+      },
+      {
+        "name": "T09 CSV records final rejection and N/A reconciliation",
+        "passed": true
+      },
+      {
+        "name": "Every T09 first execution succeeds and reconciles",
+        "passed": true
+      },
+      {
+        "name": "Every T09 second attempt is rejected as duplicate",
+        "passed": true
+      },
+      {
+        "name": "T09 is the only duplicate fixture and observed duplicate case",
+        "passed": true
+      },
+      {
+        "name": "T13 is the only settlement-mismatch fixture",
+        "passed": true
+      },
+      {
+        "name": "No other raw run contains an extra first_execution",
+        "passed": true
+      },
+      {
+        "name": "All 944 release manifest entries remain valid",
+        "passed": true
+      },
+      {
+        "name": "Release working tree remains clean",
+        "passed": true
+      },
+      {
+        "name": "Release tag still targets the audited commit",
+        "passed": true
+      }
+    ],
+    "passed": 19,
+    "failed": 0,
+    "file_sha256": {
+      "phase-a/resolved/cases.json": "76c346e2ddfbcc9629728eeb232915be52c515dad05b06a6620b921caf8b9b42",
+      "phase-a/results/case_summary.csv": "cdf1ae2fbd77cc2e22a67fc71d2ca9d70184e08df028620d098f152815a78fe1",
+      "phase-a/results/runs.jsonl": "5df3aab863fdedb7f649bb2120ab7741cac2687275d6d45499f9f9b79a4a5f43",
+      "phase-a/results/summary.json": "3cc71d2ee86cf42b6d6d251f0415a6d4dd5af301a162a91f4b259760d9195501"
+    }
+  },
+  "editorial_resolution": {
+    "G6": "CLOSED",
+    "G7": "CLOSED",
+    "manuscript_version": "1.7",
+    "evaluation_version": "1.9",
+    "incorporated": [
+      "Original 33-case scope and X08 qualification",
+      "Fifteen adverse-case scenario assignments",
+      "Joint CSV/raw-run explanation of 90/100 settlements",
+      "T09 as the sole duplicate case; T13 as the injected exception case",
+      "Appendix A reconciliation provenance"
+    ],
+    "editorial_documents_published_here": false,
+    "experimental_files_changed": false,
+    "other_gates_closed_by_this_update": []
+  },
+  "release_tag_changed": false,
+  "note_in_existing_tagged_archive": false
+}

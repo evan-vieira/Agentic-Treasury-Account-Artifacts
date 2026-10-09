@@ -16,7 +16,7 @@ The complete D03 package retains earlier v1.0–v1.2 development runs, including
 
 ## Distribution revision and reuse
 
-This is the **G1-verified distribution of v1.0, dated 9 October 2026**, fixed by
+The **archived G1-verified distribution of v1.0, dated 9 October 2026**, is fixed by
 release tag `v1.0-dataverse.1`. It retains G3 licensing and citation metadata and
 the G12 exclusion of depositor workflow notes. The historical Phase B v1.0
 report and original D03 manifest have been restored to preserve exact evidence
@@ -34,6 +34,19 @@ experimental version. The deposited archive must be generated directly from
 - **Citation:** [software metadata](CITATION.cff) and
   [data/evaluation metadata](citation/DATA-CITATION.cff).
 - **Deposit license:** [component-license text](DATAVERSE-TERMS.txt). The DOI is still pending.
+
+## G6/G7 verification — 9 October 2026
+
+The [scenario and count verification](G6-G7-VERIFICATION.md) records 19 passing
+checks and the editorial resolution incorporated in Manuscript v1.7 and
+Evaluation and Results v1.9. It explains the original 33-case scope and S03
+safeguard X08, the 90/100 settlement composition, and T09 as the sole duplicate
+case. Read the CSV together with the raw run record for T09's first reconciliation.
+
+This note, its [JSON record](G6-G7-VERIFICATION.json), and updated reviewer
+navigation are subsequent additions to `main`; they are not part of the existing
+`v1.0-dataverse.1` archive. The tag, prepared deposit archive and all frozen
+D01–D03 evidence remain unchanged. Other release gates are unaffected.
 
 ## Verify without model access
 
