@@ -4,6 +4,14 @@ Code, synthetic data, evaluation records and verification tools accompanying **A
 
 Start with the [reviewer guide](REVIEWER_GUIDE.md), then the [reproduction instructions](REPRODUCIBILITY.md). The manuscript is supplied separately for editorial review. This repository has an independent history and contains no manuscript DOCX/PDF, editorial correspondence or private repository history.
 
+## Harvard Dataverse status — 9 October 2026
+
+The deposit for release `v1.0-dataverse.2` (public commit `0d252375e6a87280ae3a32bbf9077f744c90514a`) has assigned DOI [10.7910/DVN/EUZE5V](https://doi.org/10.7910/DVN/EUZE5V) and was submitted for administrative review on 9 October 2026. The observed status is **Draft / In Review / Unpublished**. G1 remains partial pending publication and confirmed public DOI access.
+
+The submitted file is `Agentic-Treasury-Account-Artifacts-v1.0-dataverse.2.tar.gz`: 1,086,775 bytes; SHA-256 `d980fadcd3cd4de1fd252ed4ffd76d978f6a1d4ab38b82f180b51e39698f7202`. Its downloaded copy matched the original; 948 regular files and all 947 root-manifest entries were verified, without Git history. The deposited Custom Dataset Terms apply MIT to software and CC BY 4.0 to data/documentation.
+
+This status annotation is a later update to `main`; the release tag, release asset and submitted archive remain unchanged. Use the tag and exact commit above to reproduce the deposited contents. The corresponding private manuscript/evaluation revisions are v1.8/v1.10 and preserve the G6/G7 findings; manuscript files remain outside this public repository.
+
 ## Evidence included
 
 | Record | Design and denominator | Entry points |
@@ -33,7 +41,7 @@ experimental version. The deposited archive must be generated directly from
   and the complete [file license map](LICENSE-MAP.json).
 - **Citation:** [software metadata](CITATION.cff) and
   [data/evaluation metadata](citation/DATA-CITATION.cff).
-- **Deposit license:** [component-license text](DATAVERSE-TERMS.txt). The DOI is still pending.
+- **Deposit license:** [component-license text](DATAVERSE-TERMS.txt). Assigned DOI: [10.7910/DVN/EUZE5V](https://doi.org/10.7910/DVN/EUZE5V); publication pending.
 
 ## G6/G7 verification — 9 October 2026
 
