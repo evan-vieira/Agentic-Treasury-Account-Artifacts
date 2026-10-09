@@ -5583,10 +5583,18 @@
   ],
   "new_reviewer_files": [
     "CITATION.cff",
+    "DATAVERSE-DEPOSIT.md",
+    "DATAVERSE-TERMS.txt",
+    "G3-VERIFICATION.md",
+    "LICENSE-MAP.json",
+    "LICENSE.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "LICENSES/MIT.txt",
     "README.md",
     "REPRODUCIBILITY.md",
     "REVIEWER_GUIDE.md",
     "VERIFICATION.md",
+    "citation/DATA-CITATION.cff",
     "scripts/verify_public_artifact.py"
   ],
   "adapted_navigation_files": [
@@ -5603,5 +5611,15 @@
   ],
   "adapted_distribution_metadata_files": [
     ".gitattributes"
-  ]
+  ],
+  "metadata_revision": {
+    "id": "G3-2026-10-09",
+    "base_public_commit": "514d0fedccfc146ccb775eb2d4dda1729a60e43c",
+    "changes": [
+      "MIT software and CC BY 4.0 data/documentation license scope",
+      "Software and dataset CFF records",
+      "Reproduction and Dataverse instructions"
+    ],
+    "frozen_experimental_files_changed": false
+  }
 }

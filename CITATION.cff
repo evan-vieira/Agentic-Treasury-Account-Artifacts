@@ -1,13 +1,26 @@
 cff-version: 1.2.0
 message: >-
-  Cite this research artifact and identify the exact commit used.
-  Cite the separately supplied manuscript when discussing its claims.
-  The manuscript is not included in this repository.
+  Cite this research software and identify the exact public commit used.
+  The MIT license field applies to the software scope in LICENSE.md.
+  Synthetic data and documentation are CC BY 4.0; see
+  citation/DATA-CITATION.cff. The licenses are not alternatives for the same file.
+  The separately supplied manuscript is not included in these grants.
 type: software
-title: "Agentic Treasury Account: code, synthetic data and D01-D03 evaluation artifacts"
+title: "Agentic Treasury Account: research software for D01-D03 evaluation"
 authors:
   - family-names: Vieira
     given-names: Evandro Camilo
+    affiliation: Addly
 version: "1.0"
+date-released: "2026-10-09"
+license: MIT
 repository-code: "https://github.com/evan-vieira/Agentic-Treasury-Account-Artifacts"
 url: "https://github.com/evan-vieira/Agentic-Treasury-Account-Artifacts"
+keywords:
+  - agentic treasury
+  - synthetic evaluation
+  - reproducible research
+abstract: >-
+  Research software, simulation engines and verification tools for the D01-D03
+  synthetic treasury evaluation. The G3 distribution revision updates licensing
+  and documentation without changing frozen experimental records or versions.

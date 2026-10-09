@@ -42,4 +42,10 @@ This update adds the public repository URLs to `CITATION.cff`, removes the unuse
 
 After the correction, read-only verification passed for all 935 root-manifest entries, the 44/7/26 Phase A manifest entries and 470/50 raw records, the 837 Phase B entries and final-case inventory, and the design schema/contract inventory. Git file comparison confirmed that only five root metadata/documentation files changed; all experimental files retain their original bytes.
 
-A release tag, an archival DOI and a general reuse license remain pending. No ORCID, license grant or tagged-release date is inferred by this metadata correction. The original packaging test and replay results above remain historical results of that preparation; this correction does not claim a new execution of those tests or independent external reproduction.
+At the earlier metadata correction, the release tag, archival DOI and reuse
+license were still pending. Subsequently, `v1.0` was published at commit
+`514d0fedccfc146ccb775eb2d4dda1729a60e43c` on 9 October 2026. This G3 revision
+adds MIT/CC BY 4.0 component licensing as defined in [LICENSE.md](LICENSE.md).
+The DOI remains pending; no ORCID has been inferred. The original packaging
+test and replay results above remain historical results of that preparation.
+The new G3 checks are recorded separately in [G3-VERIFICATION.md](G3-VERIFICATION.md).

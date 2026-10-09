@@ -14,9 +14,31 @@ Start with the [reviewer guide](REVIEWER_GUIDE.md), then the [reproduction instr
 
 The complete D03 package retains earlier v1.0–v1.2 development runs, including failures. Their outcomes are excluded from the final D03 denominator. The original manifest covers 837 files; the manifest itself is an additional file. The bundled copy of Sprint 3D is a dependency, not an additional experiment.
 
+## Distribution revision and reuse
+
+This is the **G3 distribution revision of v1.0, dated 9 October 2026**. It adds
+licensing, citation metadata and clearer reproduction commands. The experimental
+versions and frozen records remain unchanged. The earlier `v1.0` tag remains at
+`514d0fedccfc146ccb775eb2d4dda1729a60e43c`; use the exact new snapshot/commit
+identified with the G3 archive for deposit and citation.
+
+- **Software: MIT. Data and documentation: CC BY 4.0.** See [LICENSE.md](LICENSE.md)
+  and the complete [file license map](LICENSE-MAP.json).
+- **Citation:** [software metadata](CITATION.cff) and
+  [data/evaluation metadata](citation/DATA-CITATION.cff).
+- **Dataverse:** [deposit settings](DATAVERSE-DEPOSIT.md) and
+  [component-license text](DATAVERSE-TERMS.txt). The DOI is still pending.
+
 ## Verify without model access
 
-Use Python 3.12 and PyYAML 6.0.3, the recorded D01/Phase B environment. D02 originally ran under Python 3.13.5. From the repository root:
+Use Python 3.12 and PyYAML 6.0.3, the recorded D01/Phase B environment.
+D02 originally ran under Python 3.13.5. Extract the deposited archive and open
+its root directory, or clone this repository and record `git rev-parse HEAD`.
+A clone of `main` retrieves its current state; use the deposit's exact commit
+when reproducing that snapshot. Git and `.git` are unnecessary for the archive.
+
+Create and activate a virtual environment as shown in
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md). From the repository/archive root:
 
 ```bash
 python -m pip install -r phase-a/requirements.txt
@@ -40,4 +62,4 @@ The frozen technical reports are retained in their original language and wording
 
 All treasury entities, balances, providers, approvals, rails and settlement receipts are fictional or simulated. The evidence does not establish live financial integration, production security, economic superiority, general agent competence or independent external reproduction. D01's T14/T15 discrepancies remain visible. D03 observed no DENY among seven evaluated proposals; the eighth case was an abstention without a Control Plane decision.
 
-Citation metadata is in [CITATION.cff](CITATION.cff). Cite the exact public commit used and report D01, D02 and D03 separately. A general reuse license has not yet been selected. Making these artifacts available does not indicate acceptance or publication of the manuscript by a journal.
+Cite the exact public commit used and report D01, D02 and D03 separately. The component license grants are defined in [LICENSE.md](LICENSE.md). Making these artifacts available does not indicate acceptance or publication of the manuscript by a journal.

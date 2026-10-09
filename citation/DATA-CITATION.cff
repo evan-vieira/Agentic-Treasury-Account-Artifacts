@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: >-
+  Cite the synthetic data and evaluation record and identify the exact public
+  commit used. CC BY 4.0 applies to the data/documentation scope in LICENSE.md;
+  software files are MIT-licensed. Add the archival DOI only when it exists.
+type: dataset
+title: "Agentic Treasury Account: synthetic data and D01-D03 evaluation records"
+authors:
+  - family-names: Vieira
+    given-names: Evandro Camilo
+    affiliation: Addly
+version: "1.0"
+date-released: "2026-10-09"
+license: CC-BY-4.0
+url: "https://github.com/evan-vieira/Agentic-Treasury-Account-Artifacts"
+repository-code: "https://github.com/evan-vieira/Agentic-Treasury-Account-Artifacts"
+keywords:
+  - synthetic treasury data
+  - agentic treasury
+  - reproducible research
+abstract: >-
+  Frozen synthetic inputs and evaluation records: 470 D01 deterministic replays,
+  50 separate D02 post-hoc replays, and eight final D03 cases with 32 raw model
+  responses. Earlier Phase B development runs remain separate. Integrity
+  verification is not evidence of independent external reproduction.
